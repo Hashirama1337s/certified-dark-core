@@ -47,7 +47,7 @@ negative energy, so the two cannot feed each other until their frequencies meet.
 the "wobbles" are infinitely many field modes coupled through gravity, and the counting has to be done for every
 shape at once.
 
-![Licence: text and data CC BY 4.0, code MIT](brand/licence.svg) [![Moki & Julio lab map](brand/lab.svg)](https://github.com/Hashirama1337s)
+[![DOI 10.5281/zenodo.24359032](brand/doi.svg)](https://doi.org/10.5281/zenodo.24359032) ![Licence: text and data CC BY 4.0, code MIT](brand/licence.svg) [![Moki & Julio lab map](brand/lab.svg)](https://github.com/Hashirama1337s)
 
 **Read** [PAPER.md](PAPER.md) · **Re-run** [reproduce.md](reproduce.md) · **Check** [NUMBERS.md](NUMBERS.md) and [SCORECARD.md](SCORECARD.md) · **Full proof** [proof/PROOF-R1-v2.md](proof/PROOF-R1-v2.md)
 
@@ -263,7 +263,7 @@ What this work leaves open, for anyone who wants to take the next step.
 ## How to cite
 
 ```
-Moki & Julio (2026). A linearly stable excited dark-matter core, proved at nine points: certified spectral stability of the one-node Gross-Pitaevskii-Poisson state, and certified brackets of its stability-band edges. Version 1.0. Zenodo. https://doi.org/10.5281/zenodo.[DOI PENDING]
+Moki & Julio (2026). A linearly stable excited dark-matter core, proved at nine points: certified spectral stability of the one-node Gross-Pitaevskii-Poisson state, and certified brackets of its stability-band edges. Version 1.0. Zenodo. https://doi.org/10.5281/zenodo.24359032
 ```
 
 Machine-readable: [CITATION.cff](CITATION.cff). Text and data: CC BY 4.0 (`LICENSE`). Code: MIT (`LICENSE-CODE`).
