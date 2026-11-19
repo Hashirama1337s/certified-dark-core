@@ -1,0 +1,22 @@
+== batch 1: lo-s g165 g170 g175
+lo-s  sigma0 = 1597/1000 u_mid = 3.26257829877873232632728523408544749250724679772354387125538
+      tube sha256 a972731286c2559bfe8df519eb1cbdeee532e433ba3c453625df3f309e3fccb9 matches B.json: True ; U0'_p contained in computed U0: True ; PASS
+g165  sigma0 = 33/20     u_mid = 3.43211518960578683230289225606858139753236980535419033262268
+      tube sha256 bcf501cf76088e215f18736e2854eda8abede666184102533a67c0e1eaeb6b17 matches B.json: True ; U0'_p contained in computed U0: True ; PASS
+g170  sigma0 = 17/10     u_mid = 3.59659207485142889921563217406404416977402901494387498760527
+      tube sha256 5f55659ab04e2a95a26c59a3cde129dbbafd8c4bb21ecf0f45aeea7801aca621 matches B.json: True ; U0'_p contained in computed U0: True ; PASS
+g175  sigma0 = 7/4       u_mid = 3.76554052577800818868878023500042080295687479763023181911048
+      tube sha256 10d6a3259cff74b9d146b39a284e155674bcdcc1d262fb70a08868e8cfde3b2c matches B.json: True ; U0'_p contained in computed U0: True ; PASS
+ALL PASS
+memcap: exit 0, peak 0.79 GB of 8.00 GB cap
+== batch 2: g185 g190 g195 hi-s
+g185  sigma0 = 37/20     u_mid = 4.11710126372510784661490336736586880648244811516454564809644
+      tube sha256 851df5904ccad21636b381610b95dab749734e021803a9ff0b5750a5d6ca89b7 matches B.json: True ; U0'_p contained in computed U0: True ; PASS
+g190  sigma0 = 19/10     u_mid = 4.29983054407140852492383796452184831740940264326441840450233
+      tube sha256 87934ed628e76d6f59f0cc6ad88d82a7f24d0ef2c6df6a7472f7b201e0aa3733 matches B.json: True ; U0'_p contained in computed U0: True ; PASS
+g195  sigma0 = 39/20     u_mid = 4.48726521011202076693095150956315573980034448089016171545471
+      tube sha256 3a07fc8c0824cc63ab628088f900379db4e5d892c0524036bc4a3439159bfbf7 matches B.json: True ; U0'_p contained in computed U0: True ; PASS
+hi-s  sigma0 = 1983/1000 u_mid = 4.61357440252882992130093660916470009950424657162244902579940
+      tube sha256 2226779189e2c3ff423840a82b014e90e7e6a8b15c411c69087c8a73a0774a1a matches B.json: True ; U0'_p contained in computed U0: True ; PASS
+ALL PASS
+memcap: exit 0, peak 0.79 GB of 8.00 GB cap

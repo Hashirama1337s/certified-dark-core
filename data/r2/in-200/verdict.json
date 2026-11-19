@@ -1,0 +1,31 @@
+{
+ "tag": "in-200",
+ "mode": "unstable",
+ "sig0_exact": "2",
+ "sector": 2,
+ "controls": {
+  "C-B1": "PASS",
+  "C-B2": "PASS",
+  "C-P1": "PASS",
+  "C-P2": "PASS",
+  "C-P3": "PASS",
+  "NULL": "PASS",
+  "C-U150": "PASS",
+  "C-U205": "PASS"
+ },
+ "evans": {
+  "ok": true,
+  "lam_re": "0.03538729610 +/- 2.49e-11",
+  "lam_im": "0.4686174535 +/- 2.49e-11",
+  "re_lower": 0.03538729607535951,
+  "re_upper": 0.03538729612511064,
+  "im_lower": 0.4686174534767077,
+  "im_upper": 0.46861745352645834,
+  "growing": true,
+  "disc_r": 0.002,
+  "rel": 1e-09,
+  "why": null
+ },
+ "void_reasons": [],
+ "verdict": "HOLDS"
+}

@@ -1,0 +1,13 @@
+crude sigma on [0,r0]: [1.8000000000 +/- 2.10e-11]  crude u: [3.9390235754 +/- 7.67e-11]
+0.01 margins hold: True    sigma > 0 on [0, r0]: True
+L=0 |w|<=[1.272 +/- 1e-8]: c=[6.52e-10 +/- 4.78e-13]  R4 code/true=[3.632 +/- 5.16e-5]  R3 code/true=[3.632 +/- 5.16e-5]  R4d code/true=[2.097 +/- 4.96e-5]  ok=True
+L=0 |w|<=[0.9620 +/- 1e-9]: c=[6.42e-10 +/- 1.45e-13]  R4 code/true=[3.619 +/- 2.27e-4]  R3 code/true=[3.619 +/- 2.27e-4]  R4d code/true=[2.099 +/- 4.13e-4]  ok=True
+L=0 |w|<=[0.5320 +/- 3e-9]: c=[6.28e-10 +/- 1.90e-13]  R4 code/true=[3.601 +/- 1.44e-4]  R3 code/true=[3.601 +/- 1.44e-4]  R4d code/true=[2.101 +/- 4.81e-5]  ok=True
+L=1 |w|<=[1.272 +/- 1e-8]: c=[3.91e-10 +/- 4.87e-13]  R4 code/true=[3.352 +/- 3.87e-4]  R3 code/true=[3.352 +/- 3.87e-4]  R4d code/true=[2.097 +/- 4.96e-5]  ok=True
+L=1 |w|<=[0.9620 +/- 1e-9]: c=[3.85e-10 +/- 2.87e-13]  R4 code/true=[3.336 +/- 5.95e-5]  R3 code/true=[3.336 +/- 5.95e-5]  R4d code/true=[2.099 +/- 4.13e-4]  ok=True
+L=1 |w|<=[0.5320 +/- 3e-9]: c=[3.77e-10 +/- 3.14e-13]  R4 code/true=[3.314 +/- 1.30e-4]  R3 code/true=[3.314 +/- 1.30e-4]  R4d code/true=[2.101 +/- 4.81e-5]  ok=True
+L=2 |w|<=[1.272 +/- 1e-8]: c=[2.80e-10 +/- 3.67e-13]  R4 code/true=[3.157 +/- 1.15e-4]  R3 code/true=[3.157 +/- 1.15e-4]  R4d code/true=[2.097 +/- 4.96e-5]  ok=True
+L=2 |w|<=[0.9620 +/- 1e-9]: c=[2.75e-10 +/- 2.05e-13]  R4 code/true=[3.141 +/- 2.90e-4]  R3 code/true=[3.141 +/- 2.90e-4]  R4d code/true=[2.099 +/- 4.13e-4]  ok=True
+L=2 |w|<=[0.5320 +/- 3e-9]: c=[2.69e-10 +/- 6.18e-14]  R4 code/true=[3.118 +/- 1.88e-4]  R3 code/true=[3.118 +/- 1.88e-4]  R4d code/true=[2.101 +/- 4.81e-5]  ok=True
+ALL PASS
+memcap: exit 0, peak 0.02 GB of 8.00 GB cap

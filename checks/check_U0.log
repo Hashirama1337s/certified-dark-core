@@ -1,0 +1,9 @@
+json u_mid and tube sha match the text: True
+target-K0.log refine value 3.93902357537910961270976242947912892526530675 agrees with u_mid to < 1e-44: True
+rebuilt tube sha256 = f8b0cc27d5885a45af4b7356a1e3f6f2e0e1445510e32842cf4710f9ecfce28b match: True
+computed U0 = [3.9390235753791096127097624294791289252653067475004 +/- 4.98e-50]
+U0'        = [3.9390235753791096127097624294791289252653067475004 +/- 4.97e-50]
+U0' contained in computed U0: True
+rebuilt info u_mid equals text: True
+ALL PASS
+memcap: exit 0, peak 0.78 GB of 8.00 GB cap

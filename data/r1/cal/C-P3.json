@@ -1,0 +1,243 @@
+{
+ "job": "C-P3",
+ "config": {
+  "s": 0,
+  "n": 1,
+  "sig0": 1.0,
+  "R1": 48.0
+ },
+ "B": {
+  "E": "[-0.916274627750 +/- 1.29e-13]",
+  "m": "[7.71395112610 +/- 3.79e-12]",
+  "N": "[96.9363687516 +/- 2.17e-11]",
+  "I1": "[2.12623362973 +/- 5.85e-13]",
+  "u0": "[1.20995900198 +/- 7.13e-13]",
+  "T": "[14.8033891989 +/- 1.64e-11]",
+  "F": "[2.44810307117 +/- 2.19e-12]",
+  "D": "[29.6067783978 +/- 3.29e-11]",
+  "virial": "[+/- 1.06e-14]",
+  "virial_rel": "[+/- 3.56e-16]",
+  "kappa1": "[0.869233750278 +/- 4.42e-13]",
+  "a1": "[7.56213872197e-14 +/- 4.01e-26]",
+  "zeros": 1,
+  "tail_ok": true,
+  "existence_certified": true,
+  "R1": 48.0,
+  "u_R1": "[-0.755567312623 +/- 1.24e-13]",
+  "classify": {
+   "hi": {
+    "r": 77.74902539743046,
+    "result": "zeros",
+    "steps": 489,
+    "zeros": 2
+   },
+   "lo": {
+    "r": 77.74902539743046,
+    "result": "escape",
+    "steps": 489,
+    "zeros": 1
+   }
+  },
+  "delta": 1e-50,
+  "prec": 320,
+  "K": 56,
+  "tube_sha256": "64573e77b45eade27afccfc6539afc7b56fc0f18fc6fa3aa828aa4e98f018a84",
+  "tube_source": "disk cache s+0_n1_sig1.0_R48.0_p320_K56_d50_r0e-5_v5.json",
+  "nsteps": 371,
+  "sig0_exact": "1",
+  "virial_rel_upper": 3.554640413230528e-16
+ },
+ "brackets": {
+  "s": 0,
+  "n": 1,
+  "sig0": 1.0,
+  "sig0_exact": "1",
+  "R1": 48.0,
+  "eps": 0.001,
+  "K": 24,
+  "E": "[-0.916274627750 +/- 1.29e-13]",
+  "m": "[7.71395112610 +/- 3.79e-12]",
+  "tube_sha256": "64573e77b45eade27afccfc6539afc7b56fc0f18fc6fa3aa828aa4e98f018a84",
+  "tube_source": "disk cache s+0_n1_sig1.0_R48.0_p320_K56_d50_r0e-5_v5.json",
+  "radii": {
+   "20.0": {
+    "2": {
+     "delta": "[0.000117035 +/- 1.28e-10]",
+     "ext_margin": "[0.529460 +/- 3.66e-8]",
+     "ext_ok": true,
+     "+": {
+      "upper": 1,
+      "lower": 1,
+      "up_detail": {
+       "L": 2,
+       "which": "+",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[0.18193399 +/- 2.42e-10]",
+       "ok": true,
+       "fail": null,
+       "steps": 259,
+       "eta": 5.826839190118982e-06,
+       "count": 1
+      },
+      "lo_detail": {
+       "L": 2,
+       "which": "+",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[0.25520349 +/- 4.17e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 259,
+       "eta": 5.826671997443701e-06,
+       "count": 1
+      }
+     },
+     "-": {
+      "upper": 0,
+      "lower": 0,
+      "up_detail": {
+       "L": 2,
+       "which": "-",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 0,
+       "endpoint": 0,
+       "endpoint_val": "[0.72887401 +/- 4.86e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 259,
+       "eta": 1.7442271457151197e-06,
+       "count": 0
+      },
+      "lo_detail": {
+       "L": 2,
+       "which": "-",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 0,
+       "endpoint": 0,
+       "endpoint_val": "[2.6398502e+19 +/- 2.60e+11]",
+       "ok": true,
+       "fail": null,
+       "steps": 259,
+       "eta": 1.7442271457151197e-06,
+       "count": 0
+      }
+     }
+    }
+   },
+   "28.0": {
+    "2": {
+     "delta": "[1.94467e-7 +/- 4.79e-13]",
+     "ext_margin": "[0.639776 +/- 1.79e-7]",
+     "ext_ok": true,
+     "+": {
+      "upper": 1,
+      "lower": 1,
+      "up_detail": {
+       "L": 2,
+       "which": "+",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[0.14004130 +/- 3.65e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 291,
+       "eta": 5.826672275253016e-06,
+       "count": 1
+      },
+      "lo_detail": {
+       "L": 2,
+       "which": "+",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[0.18281779 +/- 9.67e-10]",
+       "ok": true,
+       "fail": null,
+       "steps": 291,
+       "eta": 5.826671997443701e-06,
+       "count": 1
+      }
+     },
+     "-": {
+      "upper": 0,
+      "lower": 0,
+      "up_detail": {
+       "L": 2,
+       "which": "-",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 0,
+       "endpoint": 0,
+       "endpoint_val": "[0.80082731 +/- 4.99e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 291,
+       "eta": 1.7442271457151197e-06,
+       "count": 0
+      },
+      "lo_detail": {
+       "L": 2,
+       "which": "-",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 0,
+       "endpoint": 0,
+       "endpoint_val": "[1.2579150e+22 +/- 3.17e+14]",
+       "ok": true,
+       "fail": null,
+       "steps": 291,
+       "eta": 1.7442271457151197e-06,
+       "count": 0
+      }
+     }
+    }
+   }
+  },
+  "seconds": 3.8383142948150635
+ },
+ "evans": {
+  "ok": true,
+  "L": 2,
+  "lam_re": "0.09917673961 +/- 8.69e-13",
+  "lam_im": "1.005825039e-32 +/- 8.69e-13",
+  "growing": true,
+  "re_lower": 0.09917673961346397,
+  "lam_over_2absE_re": "0.05411954921 +/- 4.74e-13",
+  "lam_over_2absE_im": "0 +/- 4.74e-13",
+  "lam_over_absE_re": "0.1082390984 +/- 9.48e-13",
+  "seconds": 261.43044114112854,
+  "rel": 1e-09,
+  "r_m": 10.0,
+  "center_on_real_axis": true
+ },
+ "CW": {
+  "ok": true,
+  "R": 20.0,
+  "s0_lo": 1.0769261244460477e-05,
+  "s0_hi": 2.650260434924506e-05,
+  "qa_upper": 2.894758928846183,
+  "X": 24959769907.545994,
+  "Q_at_X_upper": -2.8947589288461826,
+  "slope_upper": -2.3195397550287684e-10,
+  "note": "Q(X) <= q_a - 2 s0^2 X -> -inf as X -> inf (w-Neumann exterior Schur form unbounded below)"
+ },
+ "wall_seconds": 265.4343659877777
+}

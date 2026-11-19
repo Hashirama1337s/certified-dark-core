@@ -1,0 +1,23 @@
+{
+ "controls": {
+  "C-B1": "PASS",
+  "C-B2": "PASS",
+  "C-P1": "PASS",
+  "C-P2": "PASS",
+  "C-P3": "PASS",
+  "NULL": "PASS"
+ },
+ "K": {
+  "0": 2,
+  "1": 2,
+  "2": 2,
+  "3": 0
+ },
+ "negative_krein_certified": {
+  "0": true,
+  "1": true,
+  "2": true
+ },
+ "void_reasons": [],
+ "verdict": "HOLDS"
+}

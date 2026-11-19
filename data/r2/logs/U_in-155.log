@@ -1,0 +1,21 @@
+float u0 = 3.11630972461784
+kappa guess 1.56025 turning radius 6.65
+  refine R*=18.5 u0=3.11630972461968194057111633611923236282207963 steps ['1.8e-12', '-3.1e-21', '1.2e-31'] err 1.0e-12
+  refine R*=21.4 u0=3.11630972461953804941575162248013996809025167 steps ['-1.4e-13', '9.6e-24', '-3.9e-35'] err 1.0e-16
+  refine R*=27.3 u0=3.11630972461953798368598467207647091504283812 steps ['-6.6e-17', '-3.9e-29', '1.9e-44'] err 1.0e-24
+  refine R*=39.1 u0=3.11630972461953798368597705909014675145583014 steps ['-7.6e-24', '-4.3e-36', '-1.2e-50'] err 1.0e-40
+  refine R*=62.7 u0=3.11630972461953798368597705909014675142952013 steps ['-2.6e-38', '-3.8e-50', '-2.7e-64'] err 2.7e-63
+  classify lo: {'result': 'escape', 'r': 50.212667384935465, 'zeros': 1, 'steps': 410}
+  classify hi: {'result': 'zeros', 'r': 50.212667384935465, 'zeros': 2, 'steps': 410}
+  r=0.000 h=0.0000 width(sigma)=3.02e-56 sigma=1.550e+00
+  r=0.010 h=0.0007 width(sigma)=1.61e-51 sigma=1.550e+00
+  r=0.312 h=0.0208 width(sigma)=9.21e-47 sigma=1.532e+00
+  r=3.471 h=0.0776 width(sigma)=7.06e-42 sigma=-2.814e-01
+  r=10.288 h=0.2215 width(sigma)=1.52e-38 sigma=-7.375e-03
+  r=22.713 h=0.2500 width(sigma)=6.89e-32 sigma=-1.229e-09
+    newton it 0: par=(0.029367442234973132+0.9781685355448824j) |F|=8.03e-12 svmin/svmax=2.48e-12
+    newton it 1: par=(0.02936744223497339+0.9781685355448824j) |F|=4.27e-16 svmin/svmax=3.61e-18
+   Krawczyk rel=1e-09: inside=True  K(par)=[0.029367442235 +/- 6.87e-13] + [0.978168535545 +/- 7.78e-13]j
+   refine: inside=True K(par)=[0.029367442235 +/- 6.23e-13] + [0.978168535545 +/- 7.14e-13]j
+wrote code/r2/out\in-155\U.json wall 443 s
+memcap: exit 0, peak 0.79 GB of 8.00 GB cap

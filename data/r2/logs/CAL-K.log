@@ -1,0 +1,12 @@
+    newton it 0: par=0.17627941218626483 |F|=3.72e-06 svmin/svmax=1.16e-06
+    newton it 1: par=0.17627940393633926 |F|=1.49e-09 svmin/svmax=4.64e-10
+    newton it 2: par=0.1762794039363382 |F|=5.85e-16 svmin/svmax=3.83e-17
+   Krawczyk rel=1e-09: inside=True  K(par)=[0.176279403936 +/- 3.40e-13]
+   refine: inside=True K(par)=[0.176279403936338 +/- 7.94e-17]
+    newton it 0: par=0.3646045761770048 |F|=9.15e-07 svmin/svmax=2.94e-07
+    newton it 1: par=0.3646045761606023 |F|=3.28e-12 svmin/svmax=1.05e-12
+    newton it 2: par=0.3646045761606023 |F|=7.66e-16 svmin/svmax=6.38e-18
+   Krawczyk rel=1e-09: inside=True  K(par)=[0.364604576161 +/- 4.00e-13]
+   refine: inside=True K(par)=[0.364604576160602 +/- 3.36e-16]
+wrote code/r2/out\cal\CAL-K.json wall 465 s
+memcap: exit 0, peak 0.42 GB of 8.00 GB cap

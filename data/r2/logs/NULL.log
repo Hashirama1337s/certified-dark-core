@@ -1,0 +1,34 @@
+float u0 = 0.706946463581252
+kappa guess 0.73308 turning radius 11.82
+  refine R*=37.0 u0=0.706946463581371728771710276670322483782789737 steps ['1.2e-13', '-4.3e-22', '1.8e-33'] err 1.0e-12
+  refine R*=43.2 u0=0.706946463581342325817582997552017267671713798 steps ['-2.9e-14', '1.9e-24', '-2.7e-36'] err 1.0e-16
+  refine R*=55.8 u0=0.706946463581342315043766711822095329711963805 steps ['-1.1e-17', '-1.5e-30', '8.8e-46'] err 1.0e-24
+  refine R*=80.9 u0=0.706946463581342315043765851970145023239647573 steps ['-8.6e-25', '-4.9e-38', '-1.2e-53'] err 1.0e-40
+  refine R*=131.2 u0=0.706946463581342315043765851970145023237962300 steps ['-1.7e-39', '-1.4e-52', '-5.9e-68'] err 5.9e-67
+  classify lo: {'result': 'escape', 'r': 102.4302411707177, 'zeros': 1, 'steps': 585}
+  classify hi: {'result': 'zeros', 'r': 102.4302411707177, 'zeros': 2, 'steps': 585}
+  r=0.000 h=0.0000 width(sigma)=9.74e-57 sigma=5.000e-01
+  r=0.010 h=0.0007 width(sigma)=5.18e-52 sigma=5.000e-01
+  r=0.312 h=0.0208 width(sigma)=2.74e-47 sigma=4.963e-01
+  r=6.285 h=0.2132 width(sigma)=2.65e-42 sigma=-9.309e-02
+  r=18.680 h=0.2500 width(sigma)=1.95e-39 sigma=-2.581e-03
+  r=31.180 h=0.2500 width(sigma)=2.10e-36 sigma=-1.947e-06
+  r=43.680 h=0.2500 width(sigma)=5.52e-33 sigma=-6.966e-10
+  r=56.180 h=0.2500 width(sigma)=2.09e-29 sigma=-1.786e-13
+  R=24 L=0 +: upper #(<+eps)=2  lower #(<-eps)=2  delta=[0.00213045 +/- 1.06e-10] [3s]
+  R=24 L=0 -: upper #(<+eps)=2  lower #(<-eps)=1  delta=[0.00213045 +/- 1.06e-10] [3s]
+  R=24 D0 node: n(B)=2 d2=[-3.296293053 +/- 4.24e-10] M=[2.003e+4 +/- 1.04] ok=True -> n(L+(0)|g-perp) <= 1
+  R=24 L=2 +: upper #(<+eps)=1  lower #(<-eps)=1  delta=[0.000426090 +/- 2.11e-11] [6s]
+  R=24 L=2 -: upper #(<+eps)=0  lower #(<-eps)=0  delta=[0.000426090 +/- 2.11e-11] [7s]
+  R=32 L=0 +: upper #(<+eps)=2  lower #(<-eps)=2  delta=[1.98825e-5 +/- 4.84e-11] [9s]
+  R=32 L=0 -: upper #(<+eps)=2  lower #(<-eps)=1  delta=[1.98825e-5 +/- 4.84e-11] [9s]
+  R=32 D0 node: n(B)=2 d2=[-3.346073022 +/- 3.41e-11] M=[2.160e+8 +/- 8.96e+3] ok=True -> n(L+(0)|g-perp) <= 1
+  R=32 L=2 +: upper #(<+eps)=1  lower #(<-eps)=1  delta=[3.97649e-6 +/- 3.39e-13] [13s]
+  R=32 L=2 -: upper #(<+eps)=0  lower #(<-eps)=0  delta=[3.97649e-6 +/- 3.39e-13] [13s]
+    newton it 0: par=(0.024132255057024224+0.2832272446970676j) |F|=5.89e-06 svmin/svmax=1.98e-06
+    newton it 1: par=(0.0241322927266357+0.28322720040454263j) |F|=8.10e-09 svmin/svmax=2.73e-09
+    newton it 2: par=(0.024132292726563403+0.2832272004046259j) |F|=1.54e-14 svmin/svmax=5.17e-15
+   Krawczyk rel=1e-09: inside=True  K(par)=[0.024132292727 +/- 8.10e-13] + [0.283227200405 +/- 7.47e-13]j
+   refine: inside=True K(par)=[0.024132292727 +/- 6.73e-13] + [0.283227200405 +/- 6.10e-13]j
+wrote code/r2/out\cal\NULL.json wall 542 s
+memcap: exit 0, peak 0.80 GB of 8.00 GB cap

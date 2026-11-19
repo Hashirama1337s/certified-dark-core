@@ -1,0 +1,109 @@
+{
+ "C-B1": {
+  "result": "PASS",
+  "label": "CALIBRATION (sigma0 matched post hoc)",
+  "T191": "[0.558401458204 +/- 1.13e-13]",
+  "F191": "[0.0466781605948 +/- 4.58e-14]",
+  "T1047": "[5.64187998321 +/- 6.19e-13]",
+  "F1047": "[1.88788680711 +/- 3.65e-12]",
+  "virial_rel": [
+   8.225518428558234e-15,
+   1.0258357075997658e-14
+  ],
+  "note": "attractive: existence of the decaying solution inside the tube is not certified (s=-1)"
+ },
+ "C-B2": {
+  "result": "PASS",
+  "ratio": "[0.189203706825 +/- 1.76e-13]",
+  "window": [
+   0.1884,
+   0.1896
+  ]
+ },
+ "C-P1": {
+  "result": "PASS",
+  "K": {
+   "R10.0_L0": 0,
+   "R10.0_L1": 0,
+   "R10.0_L2": 0,
+   "R10.0_L3": 0,
+   "R14.0_L0": 0,
+   "R14.0_L1": 0,
+   "R14.0_L2": 0,
+   "R14.0_L3": 0
+  },
+  "rule": "K(L) = 0 for L = 0..3 at both radii"
+ },
+ "C-R(C-P1 background)": {
+  "result": "PASS",
+  "rule": "identical certified counts at both radii"
+ },
+ "C-W(C-P1 background)": {
+  "result": "PASS",
+  "Q_at_X_upper": -4.621730884399019,
+  "slope_upper": -1.2810549594812164e-17
+ },
+ "C-P2": {
+  "result": "PASS",
+  "K0": {
+   "R20.0": 2,
+   "R28.0": 2
+  },
+  "lam_re": "0.08827420126 +/- 1.41e-12",
+  "lam_im": "0.5829039426 +/- 1.41e-12",
+  "ratio_re": "0.04817016568 +/- 7.69e-13",
+  "ratio_im": "0.3180836427 +/- 7.69e-13",
+  "windows": {
+   "re": [
+    0.04059,
+    0.04961000000000001
+   ],
+   "im": [
+    0.31525,
+    0.33475000000000005
+   ]
+  },
+  "reading": "K(0) <= 2 and one certified non-real Re>0 eigenvalue (a quartet, 2 directions) => exactly one quartet",
+  "tolerance_disclosure": "the 10% real-part gate was set after a 7% float mismatch was seen (mock-informed)"
+ },
+ "C-W(SP background)": {
+  "result": "PASS",
+  "Q_at_X_upper": -2.8947589288461826
+ },
+ "C-R(C-P2 background)": {
+  "result": "PASS"
+ },
+ "C-P3": {
+  "result": "PASS",
+  "K2": {
+   "R20.0": 1,
+   "R28.0": 1
+  },
+  "lam_re": "0.09917673961 +/- 8.69e-13",
+  "lam_im": "1.005825039e-32 +/- 8.69e-13",
+  "reading": "K(2) <= 1 and one certified real eigenvalue lam > 0 => exactly one real pair (no parity used)"
+ },
+ "C-R(C-P3 background)": {
+  "result": "PASS"
+ },
+ "NULL": {
+  "result": "PASS",
+  "lam_re": "0.02413229273 +/- 2.35e-13",
+  "lam_im": "0.2832272004 +/- 2.35e-13",
+  "K_descriptive": {
+   "R24.0_L0": 2,
+   "R24.0_L2": 1,
+   "R32.0_L0": 2,
+   "R32.0_L2": 1
+  },
+  "rule": "certified eigenvalue with Re > 0 at L = 0 (sigma0 = 0.50)"
+ },
+ "CAL-K": {
+  "result": "PASS",
+  "neg_w": "0.1762794039 +/- 2.02e-19",
+  "neg_ad": "-0.0004180824634 +/- 9.64e-14",
+  "pos_w": "0.3646045762 +/- 1.45e-17",
+  "pos_ad": "0.001083262574 +/- 1.13e-13",
+  "label": "instrument calibration (not a BAR control)"
+ }
+}

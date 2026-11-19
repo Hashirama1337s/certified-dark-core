@@ -1,0 +1,38 @@
+{
+ "C-U150": {
+  "result": "PASS",
+  "lam_re": "0.04031295638 +/- 1.24e-12",
+  "lam_im": "0.9392591602 +/- 1.24e-12",
+  "rule": "certified eigenvalue with Re > 0 in sector L=0, background certified"
+ },
+ "C-U205": {
+  "result": "PASS",
+  "lam_re": "0.07352351727 +/- 1.02e-11",
+  "lam_im": "0.4841455701 +/- 1.02e-11",
+  "rule": "certified eigenvalue with Re > 0 in sector L=2, background certified"
+ },
+ "CAL-KD": {
+  "result": "PASS",
+  "neg_w": [
+   "0.1762794039 +/- 2.02e-19",
+   "0.1762794039 +/- 2.02e-19"
+  ],
+  "pos_w": [
+   "0.3646045762 +/- 1.45e-17",
+   "0.3646045762 +/- 1.45e-17"
+  ],
+  "rule": "disc 0.0005 vs 0.002: same signs, overlapping w"
+ },
+ "CAL-ED": {
+  "result": "PASS",
+  "lam": [
+   "0.08827420126 +/- 1.41e-12",
+   "0.5829039426 +/- 1.41e-12"
+  ],
+  "ref": [
+   "0.08827420126 +/- 1.41e-12",
+   "0.5829039426 +/- 1.41e-12"
+  ],
+  "rule": "disc 0.0005 vs 0.002: overlapping lam"
+ }
+}

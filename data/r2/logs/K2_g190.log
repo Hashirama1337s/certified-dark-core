@@ -1,0 +1,28 @@
+float u0 = 4.29983054406882
+kappa guess 1.84469 turning radius 6.01
+  refine R*=16.0 u0=4.29983054407159718947311535541855387430825986 steps ['2.8e-12', '-4.6e-21', '3.0e-31'] err 1.0e-12
+  refine R*=18.5 u0=4.29983054407140861883749547868039953927659177 steps ['-1.9e-13', '1.7e-23', '-9.8e-35'] err 1.0e-16
+  refine R*=23.5 u0=4.29983054407140852492385057069755996995021416 steps ['-9.4e-17', '-1.1e-28', '4.6e-45'] err 1.0e-24
+  refine R*=33.5 u0=4.29983054407140852492383796452184831746409880 steps ['-1.3e-23', '-1.5e-35', '-9.1e-50'] err 1.0e-40
+  refine R*=53.4 u0=4.29983054407140852492383796452184831740940264 steps ['-5.5e-38', '-1.9e-49', '-3.5e-63'] err 3.5e-62
+  refine R*=80.2 u0=4.29983054407140852492383796452184831740940264 steps ['-7.2e-68', '-1.8e-89', '2.6e-96'] err 2.5e-90
+  classify lo: {'result': 'escape', 'r': 43.235499194857105, 'zeros': 1, 'steps': 392}
+  classify hi: {'result': 'zeros', 'r': 43.235499194857105, 'zeros': 2, 'steps': 392}
+  r=0.000 h=0.0000 width(sigma)=3.70e-56 sigma=1.900e+00
+  r=0.010 h=0.0007 width(sigma)=1.97e-51 sigma=1.900e+00
+  r=0.312 h=0.0208 width(sigma)=1.18e-46 sigma=1.879e+00
+  r=3.060 h=0.0617 width(sigma)=1.10e-41 sigma=-2.876e-01
+  r=8.405 h=0.1696 width(sigma)=1.65e-38 sigma=-2.322e-02
+  r=20.235 h=0.2500 width(sigma)=3.47e-31 sigma=-7.684e-10
+    newton it 0: par=0.35966527723347014 |F|=6.21e-08 svmin/svmax=1.88e-08
+    newton it 1: par=0.35966527742117815 |F|=2.47e-12 svmin/svmax=7.47e-13
+    newton it 2: par=0.35966527742117826 |F|=1.40e-15 svmin/svmax=3.19e-17
+   Krawczyk rel=1e-09: inside=True  K(par)=[0.3596652774 +/- 3.80e-11]
+   refine: inside=True K(par)=[0.3596652774 +/- 3.80e-11]
+    newton it 0: par=0.5159753830712666 |F|=5.71e-08 svmin/svmax=1.72e-08
+    newton it 1: par=0.5159753829652146 |F|=1.31e-12 svmin/svmax=3.96e-13
+    newton it 2: par=0.5159753829652105 |F|=4.13e-16 svmin/svmax=5.48e-18
+   Krawczyk rel=1e-09: inside=True  K(par)=[0.5159753830 +/- 5.39e-11]
+   refine: inside=True K(par)=[0.5159753830 +/- 5.39e-11]
+wrote code/r2/out\g190\K2.json wall 674 s
+memcap: exit 0, peak 0.79 GB of 8.00 GB cap

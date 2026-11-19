@@ -1,0 +1,50 @@
+[s95] L=0: n(L+)=2 n(L-)=1 conv modes:
+     {'w': '0.5728495431', 'krein': 1, 'n_eff_hydrogenic': '6.0194', 'max_change': '3.1e-14'}
+     {'w': '1.1049110805', 'krein': -1, 'n_eff_hydrogenic': '6.7727', 'max_change': '1.6e-14'}
+     {'w': '1.2592133714', 'krein': 1, 'n_eff_hydrogenic': '7.0501', 'max_change': '3.3e-14'}
+     {'w': '1.6950530232', 'krein': 1, 'n_eff_hydrogenic': '8.0662', 'max_change': '1.8e-14'}
+     {'w': '1.9849674202', 'krein': 1, 'n_eff_hydrogenic': '9.0497', 'max_change': '2.7e-14'}
+     {'w': '2.1940718974', 'krein': 1, 'n_eff_hydrogenic': '10.0344', 'max_change': '5.5e-14'}
+     {'w': '2.3500559196', 'krein': 1, 'n_eff_hydrogenic': '11.0218', 'max_change': '3.6e-14'}
+     {'w': '2.4694369460', 'krein': 1, 'n_eff_hydrogenic': '12.0118', 'max_change': '1.9e-13'}
+     unconverged: 12 ['2.5628', '3.0652'] maxRe excl: 5.5e-13 unst: [[], [], [], []]
+[s95] L=1: n(L+)=1 n(L-)=1 conv modes:
+     {'w': '0.5399256680', 'krein': -1, 'n_eff_hydrogenic': '5.9807', 'max_change': '8.1e-14'}
+     {'w': '0.9510282377', 'krein': 1, 'n_eff_hydrogenic': '6.5264', 'max_change': '3.1e-14'}
+     {'w': '1.4946824096', 'krein': 1, 'n_eff_hydrogenic': '7.5478', 'max_change': '2.6e-14'}
+     {'w': '1.8449316531', 'krein': 1, 'n_eff_hydrogenic': '8.5322', 'max_change': '4.7e-15'}
+     {'w': '2.0923466100', 'krein': 1, 'n_eff_hydrogenic': '9.5173', 'max_change': '1.7e-14'}
+     {'w': '2.2739275224', 'krein': 1, 'n_eff_hydrogenic': '10.5051', 'max_change': '1.4e-14'}
+     {'w': '2.4110408122', 'krein': 1, 'n_eff_hydrogenic': '11.4956', 'max_change': '1.6e-14'}
+     {'w': '2.5170266071', 'krein': 1, 'n_eff_hydrogenic': '12.4881', 'max_change': '8.3e-12'}
+     unconverged: 12 ['2.6006', '3.0914'] maxRe excl: 5.4e-12 unst: [[], [], [], []]
+[s95] L=2: n(L+)=1 n(L-)=1 conv modes:
+     {'w': '0.2968148506', 'krein': -1, 'n_eff_hydrogenic': '5.7160', 'max_change': '1.5e-14'}
+     {'w': '0.5179458643', 'krein': 1, 'n_eff_hydrogenic': '5.9552', 'max_change': '1.7e-14'}
+     {'w': '1.2396528658', 'krein': 1, 'n_eff_hydrogenic': '7.0130', 'max_change': '3.2e-14'}
+     {'w': '1.6726980251', 'krein': 1, 'n_eff_hydrogenic': '8.0030', 'max_change': '5.0e-14'}
+     {'w': '1.9705958803', 'krein': 1, 'n_eff_hydrogenic': '8.9922', 'max_change': '1.5e-14'}
+     {'w': '2.1847702815', 'krein': 1, 'n_eff_hydrogenic': '9.9835', 'max_change': '2.5e-14'}
+     {'w': '2.3438400095', 'krein': 1, 'n_eff_hydrogenic': '10.9767', 'max_change': '4.6e-14'}
+     {'w': '2.4651406337', 'krein': 1, 'n_eff_hydrogenic': '11.9714', 'max_change': '1.4e-13'}
+     unconverged: 12 ['2.5597', '3.0620'] maxRe excl: 7.6e-12 unst: [[], [], [], []]
+[s95] L=3: n(L+)=0 n(L-)=0 conv modes:
+     {'w': '0.2995950853', 'krein': 1, 'n_eff_hydrogenic': '5.7188', 'max_change': '3.3e-14'}
+     {'w': '0.9778756726', 'krein': 1, 'n_eff_hydrogenic': '6.5674', 'max_change': '2.6e-14'}
+     {'w': '1.4837222704', 'krein': 1, 'n_eff_hydrogenic': '7.5223', 'max_change': '2.9e-14'}
+     {'w': '1.8377257957', 'krein': 1, 'n_eff_hydrogenic': '8.5080', 'max_change': '2.9e-15'}
+     {'w': '2.0888660858', 'krein': 1, 'n_eff_hydrogenic': '9.5009', 'max_change': '2.8e-14'}
+     {'w': '2.2725787241', 'krein': 1, 'n_eff_hydrogenic': '10.4966', 'max_change': '1.8e-14'}
+     {'w': '2.4108067443', 'krein': 1, 'n_eff_hydrogenic': '11.4937', 'max_change': '3.7e-14'}
+     {'w': '2.5173495475', 'krein': 1, 'n_eff_hydrogenic': '12.4915', 'max_change': '4.9e-12'}
+     unconverged: 12 ['2.6012', '3.0890'] maxRe excl: 1.6e-11 unst: [[], [], [], []]
+[s12] L=0: n(L+)=2 n(L-)=1 conv modes:
+     {'w': '0.1056087400', 'krein': 1, 'n_eff_hydrogenic': '4.8354', 'max_change': '2.5e-14'}
+     {'w': '0.3087816605', 'krein': 1, 'n_eff_hydrogenic': '6.6452', 'max_change': '2.0e-14'}
+     {'w': '0.3736871041', 'krein': 1, 'n_eff_hydrogenic': '7.8528', 'max_change': '9.4e-15'}
+     {'w': '0.4093059777', 'krein': 1, 'n_eff_hydrogenic': '8.8776', 'max_change': '4.6e-15'}
+     {'w': '0.4341014996', 'krein': 1, 'n_eff_hydrogenic': '9.8858', 'max_change': '9.1e-12'}
+     unconverged: 10 ['0.4523', '0.5355'] maxRe excl: 2.4e-02 unst: [[['0.0241322927266', '0.2832272004046'], ['0.0241322927266', '-0.2832272004046']], [['0.0241322927266', '0.2832272004046'], ['0.0241322927266', '-0.2832272004046']], [['0.0241322927266', '0.2832272004046'], ['0.0241322927266', '-0.2832272004046']], [['0.0241322927266', '0.2832272004046'], ['0.0241322927266', '-0.2832272004046']]]
+written
+written2
+memcap: exit 0, peak 0.40 GB of 8.00 GB cap

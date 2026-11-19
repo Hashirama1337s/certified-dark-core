@@ -1,0 +1,57 @@
+one tube sha256 in all four outputs (f8b0cc27d5...)            OK
+B: zeros = 1, tail_ok, existence_certified                     OK
+B: E < 0, u(R1) < 0, kappa1 > 0                                OK
+D1 = 3m/4 > 0                                                  OK
+R=10.0 L=0 ext margin |E|-m/R-delta-eps > 0 ([1.10045 +/- 3.65e-6]) OK
+R=10.0 L=0 + counts certified, upper 2 >= lower 2              OK
+R=10.0 L=0 - counts certified, upper 2 >= lower 1              OK
+R=10.0 L=1 ext margin |E|-m/R-delta-eps > 0 ([1.15920 +/- 2.79e-6]) OK
+R=10.0 L=1 + counts certified, upper 2 >= lower 1              OK
+R=10.0 L=1 - counts certified, upper 1 >= lower 1              OK
+R=10.0 L=2 ext margin |E|-m/R-delta-eps > 0 ([1.17095 +/- 4.08e-6]) OK
+R=10.0 L=2 + counts certified, upper 1 >= lower 1              OK
+R=10.0 L=2 - counts certified, upper 1 >= lower 1              OK
+R=10.0 L=3 ext margin |E|-m/R-delta-eps > 0 ([1.17598 +/- 1.10e-6]) OK
+R=10.0 L=3 + counts certified, upper 0 >= lower 0              OK
+R=10.0 L=3 - counts certified, upper 0 >= lower 0              OK
+R=10.0 D0: n(B)=2, d2 < 0, M|d2| > 1 (M|d2| = [1133.8 +/- 0.0894]) OK
+R=10.0 D0: M recomputed from g1, ge, ext0 = [5.6e+2 +/- 4.57], consistent OK
+   R=10.0: K = (2, 2, 2, 0)
+R=10.0 K(0..2) <= 2 and K(3) = 0                               OK
+R=14.0 L=0 ext margin |E|-m/R-delta-eps > 0 ([1.73551 +/- 4.81e-6]) OK
+R=14.0 L=0 + counts certified, upper 2 >= lower 2              OK
+R=14.0 L=0 - counts certified, upper 2 >= lower 1              OK
+R=14.0 L=1 ext margin |E|-m/R-delta-eps > 0 ([1.73581 +/- 2.13e-6]) OK
+R=14.0 L=1 + counts certified, upper 2 >= lower 1              OK
+R=14.0 L=1 - counts certified, upper 1 >= lower 1              OK
+R=14.0 L=2 ext margin |E|-m/R-delta-eps > 0 ([1.73587 +/- 1.60e-6]) OK
+R=14.0 L=2 + counts certified, upper 1 >= lower 1              OK
+R=14.0 L=2 - counts certified, upper 1 >= lower 1              OK
+R=14.0 L=3 ext margin |E|-m/R-delta-eps > 0 ([1.73590 +/- 2.93e-6]) OK
+R=14.0 L=3 + counts certified, upper 0 >= lower 0              OK
+R=14.0 L=3 - counts certified, upper 0 >= lower 0              OK
+R=14.0 D0: n(B)=2, d2 < 0, M|d2| > 1 (M|d2| = [4.775e+7 +/- 6.25e+3]) OK
+R=14.0 D0: M recomputed from g1, ge, ext0 = [2.198e+7 +/- 3.86e+3], consistent OK
+   R=14.0: K = (2, 2, 2, 0)
+R=14.0 K(0..2) <= 2 and K(3) = 0                               OK
+L=0 neg: Krawczyk ok, 0 < w < |E| (w=[1.10491108047 +/- 4.89e-12]) OK
+L=0 neg: <a,d> = -3.061281342e-6 +/- 4.63e-13 certified <0, tail 2.44e-20, theta 3.69e-12 < 1/2 OK
+   NOTE L=0 neg: JSON w string 1.104911080 +/- 3.76e-16 is NOT an enclosure (truncated midpoint); log ball [1.10491108047488 +/- 4.15e-15] used
+L=0 pos: Krawczyk ok, 0 < w < |E| (w=[1.25921337138 +/- 4.35e-12]) OK
+L=0 pos: <a,d> = 4.507783361e-7 +/- 5.77e-13 certified >0, tail 5.61e-19, theta 3.75e-12 < 1/2 OK
+   NOTE L=0 pos: JSON w string 1.259213371 +/- 2.98e-15 is NOT an enclosure (truncated midpoint); log ball [1.25921337137566 +/- 6.39e-15] used
+L=1 neg: Krawczyk ok, 0 < w < |E| (w=[0.539925668013 +/- 4.56e-13]) OK
+L=1 neg: <a,d> = -6.212149350e-5 +/- 1.10e-13 certified <0, tail 8.69e-24, theta 1.17e-12 < 1/2 OK
+   NOTE L=1 neg: JSON w string 0.5399256680 +/- 9.71e-18 is NOT an enclosure (truncated midpoint); log ball [0.539925668013455 +/- 2.97e-16] used
+L=1 pos: Krawczyk ok, 0 < w < |E| (w=[0.951028237700 +/- 1.09e-13]) OK
+L=1 pos: <a,d> = 0.0001018646815 +/- 2.29e-13 certified >0, tail 1.10e-19, theta 1.21e-12 < 1/2 OK
+   NOTE L=1 pos: JSON w string 0.9510282377 +/- 5.63e-17 is NOT an enclosure (truncated midpoint); log ball [0.951028237700108 +/- 2.59e-16] used
+L=2 neg: Krawczyk ok, 0 < w < |E| (w=[0.2968148506 +/- 6.43e-11]) OK
+L=2 neg: <a,d> = -0.0002403151062 +/- 1.86e-07 certified <0, tail 1.84e-07, theta 6.86e-13 < 1/2 OK
+   NOTE L=2 neg: JSON w string 0.2968148506 +/- 2.22e-11 is NOT an enclosure (truncated midpoint); log ball [0.2968148506 +/- 6.42e-11] used
+L=2 pos: Krawczyk ok, 0 < w < |E| (w=[0.5179458643 +/- 7.14e-11]) OK
+L=2 pos: <a,d> = 6.296727417e-5 +/- 5.82e-08 certified >0, tail 5.77e-08, theta 6.98e-13 < 1/2 OK
+   NOTE L=2 pos: JSON w string 0.5179458643 +/- 2.65e-11 is NOT an enclosure (truncated midpoint); log ball [0.5179458643 +/- 7.13e-11] used
+C-P3: K(2) <= 1 at both radii ([1, 1]) and Re lam lower end 0.0991767 > 0 OK
+ALL PASS
+memcap: exit 0, peak 0.01 GB of 8.00 GB cap

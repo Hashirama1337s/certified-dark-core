@@ -1,0 +1,38 @@
+{
+  "upload_type": "software",
+  "title": "A linearly stable excited dark-matter core, proved at nine points: certified spectral stability of the one-node Gross-Pitaevskii-Poisson state, and certified brackets of its stability-band edges",
+  "creators": [
+    {
+      "name": "Moki & Julio"
+    }
+  ],
+  "description": "<p><strong>In plain words.</strong> If dark matter is an ultralight particle, it can settle into a ball held together by its own gravity. The next ball up from the simplest one has a hollow shell inside it, and such balls are usually unstable. A 2024 numerical study (arXiv:2402.07998) found a narrow window of central densities in which the one-shell ball survives every small shake. We prove linear (spectral) stability, with computer-checked error bars, at nine points of the window, and we map and certify where the window ends and how it breaks.</p><p><strong>Result A (computer-assisted).</strong> At central amplitude sigma0 = 9/5 exactly, the linearised operator J L of the repulsive Gross-Pitaevskii-Poisson system on L^2(R^3) has no spectrum with Re lambda &gt; 0; its spectrum lies on the imaginary axis. The proof certifies the state (E = [-3.10544025447 +/- 3.02e-12]), brackets the Morse indices of L+ (which carries the nonlocal Poisson term) and L- in every angular sector (n(L+) = (2, 1, 1, 0), n(L-) = (1, 1, 1, 0) for L = 0..3, none beyond), certifies a negative-Krein imaginary eigenvalue at L = 0, 1, 2, and closes with a direct Hamiltonian index inequality. A blind float replication from the paper alone reproduced every count and all six Krein frequencies to ten digits (sealed pass rule: relative 1e-4; the ten-digit agreement is a POST HOC observation).</p><p><strong>Result B (float map, certified grid and edge brackets).</strong> The common stability band is [1.5963117, 1.9841288] (float; bracketed to 1e-7 on the refined grid, base and refined grids agree to 3e-7), narrower than the published 1.55-2.07. Both edges are Krein collisions (our float finding): L = 0 below, L = 2 above (sectors as in Fig. 8 of arXiv:2402.07998). A sealed certified test (all twelve points HOLD) proves linear stability at 1597/1000, 33/20, 17/10, 7/4, 37/20, 19/10, 39/20 and 1983/1000 (nine points with 9/5), and linear instability (a certified growing quartet) at 1595/1000 and 31/20 (L = 0) and at 2 and 1985/1000 (L = 2). The edges therefore lie in certified brackets [1.595, 1.597] and [1.983, 1.985]. The published range contains 1.55 and 2, where the state is now certified unstable; the published band is confirmed in substance and refined in extent.</p><p><strong>Not claimed.</strong> Nonlinear or orbital stability; uniqueness of the state; stability between the certified points (there the window is a float result); any statement about real halos. To our knowledge (search of arXiv to 16 November, INSPIRE and Zenodo to 17-18 November 2026), this is the first rigorous proof that the first excited (one-node) Gross-Pitaevskii-Poisson state is linearly stable at any sigma0.</p><p><strong>Checks.</strong> Sealed tests, all listed (one duplicate seal VOID); internal hostile referee rounds and an engine audit (internal lab checks, not external peer review); a blind replication; proof checks and a number checker that ties every printed number to its file.</p><p>Prepared with AI assistance; what was checked, and by what, is stated above.</p>",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "version": "1.0",
+  "language": "eng",
+  "keywords": [
+    "dark matter",
+    "ultralight dark matter",
+    "boson stars",
+    "Gross-Pitaevskii-Poisson",
+    "Schrodinger-Poisson",
+    "excited states",
+    "spectral stability",
+    "Krein signature",
+    "Hamiltonian-Krein index",
+    "computer-assisted proof",
+    "interval arithmetic",
+    "rigorous numerics"
+  ],
+  "related_identifiers": [
+    {"relation": "isSupplementedBy", "identifier": "https://github.com/Hashirama1337s/certified-dark-core", "scheme": "url"},
+    {"relation": "references", "identifier": "arXiv:2402.07998", "scheme": "arxiv"},
+    {"relation": "references", "identifier": "arXiv:2512.04376", "scheme": "arxiv"},
+    {"relation": "references", "identifier": "arXiv:2506.06442", "scheme": "arxiv"},
+    {"relation": "references", "identifier": "arXiv:math-ph/0208045", "scheme": "arxiv"},
+    {"relation": "references", "identifier": "arXiv:2310.18405", "scheme": "arxiv"},
+    {"relation": "references", "identifier": "arXiv:2403.18718", "scheme": "arxiv"},
+    {"relation": "references", "identifier": "arXiv:1702.03374", "scheme": "arxiv"}
+  ]
+}

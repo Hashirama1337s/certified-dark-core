@@ -1,0 +1,11 @@
+  R=20 L=2 +: upper #(<+eps)=1  lower #(<-eps)=1  delta=[0.000117035 +/- 1.28e-10] [2s]
+  R=20 L=2 -: upper #(<+eps)=0  lower #(<-eps)=0  delta=[0.000117035 +/- 1.28e-10] [2s]
+  R=28 L=2 +: upper #(<+eps)=1  lower #(<-eps)=1  delta=[1.94467e-7 +/- 4.79e-13] [3s]
+  R=28 L=2 -: upper #(<+eps)=0  lower #(<-eps)=0  delta=[1.94467e-7 +/- 4.79e-13] [4s]
+    newton it 0: par=(0.09917674018646065-4.904347269660923e-09j) |F|=3.03e-05 svmin/svmax=6.74e-06
+    newton it 1: par=(0.09917673961433247+2.2775297088763424e-16j) |F|=6.43e-09 svmin/svmax=1.43e-09
+    newton it 2: par=(0.09917673961433254-4.1780267225662736e-17j) |F|=5.90e-16 svmin/svmax=7.01e-17
+   Krawczyk rel=1e-09: inside=True  K(par)=[0.09917673961 +/- 5.21e-12] + [+/- 8.70e-13]j
+   refine: inside=True K(par)=[0.09917673961 +/- 5.21e-12] + [+/- 8.69e-13]j
+wrote code/r2/out\cal\C-P3.json wall 338 s
+memcap: exit 0, peak 0.42 GB of 8.00 GB cap

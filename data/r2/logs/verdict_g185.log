@@ -1,0 +1,77 @@
+{
+ "tag": "g185",
+ "mode": "stable",
+ "sig0_exact": "37/20",
+ "controls": {
+  "C-B1": "PASS",
+  "C-B2": "PASS",
+  "C-P1": "PASS",
+  "C-P2": "PASS",
+  "C-P3": "PASS",
+  "NULL": "PASS",
+  "C-U150": "PASS",
+  "C-U205": "PASS"
+ },
+ "K": {
+  "0": 2,
+  "1": 2,
+  "2": 2,
+  "3": 0
+ },
+ "K_all": {
+  "R10.0_L0": 2,
+  "R10.0_L1": 2,
+  "R10.0_L2": 2,
+  "R10.0_L3": 0,
+  "R14.0_L0": 2,
+  "R14.0_L1": 2,
+  "R14.0_L2": 2,
+  "R14.0_L3": 0
+ },
+ "negative_krein_certified": {
+  "0": true,
+  "1": true,
+  "2": true
+ },
+ "separation": {
+  "0": {
+   "gap_guess": 0.17947000000000002,
+   "disc_r": 0.002,
+   "disc_rule": "min(0.002, gap/4)",
+   "neg_capture": true,
+   "pos_capture": true,
+   "disjoint": true,
+   "certified_separation_lower": 0.17946762420975104,
+   "disc_excludes_other": true,
+   "ok": true
+  },
+  "1": {
+   "gap_guess": 0.4257000000000001,
+   "disc_r": 0.002,
+   "disc_rule": "min(0.002, gap/4)",
+   "neg_capture": true,
+   "pos_capture": true,
+   "disjoint": true,
+   "certified_separation_lower": 0.42569927771676064,
+   "disc_excludes_other": true,
+   "ok": true
+  },
+  "2": {
+   "gap_guess": 0.19308999999999998,
+   "disc_r": 0.002,
+   "disc_rule": "min(0.002, gap/4)",
+   "neg_capture": true,
+   "pos_capture": true,
+   "disjoint": true,
+   "certified_separation_lower": 0.19308008127156284,
+   "disc_excludes_other": true,
+   "ok": true
+  }
+ },
+ "tube_sha256": [
+  "851df5904ccad21636b381610b95dab749734e021803a9ff0b5750a5d6ca89b7"
+ ],
+ "void_reasons": [],
+ "verdict": "HOLDS"
+}
+memcap: exit 0, peak 0.01 GB of 8.00 GB cap

@@ -1,0 +1,8 @@
+    newton it 0: par=(0.0882742044368134+0.5829039429618552j) |F|=1.97e-06 svmin/svmax=6.33e-07
+    newton it 1: par=(0.08827420125558243+0.5829039425588626j) |F|=2.42e-10 svmin/svmax=7.77e-11
+    newton it 2: par=(0.08827420125558245+0.5829039425588626j) |F|=3.25e-16 svmin/svmax=2.49e-17
+   Krawczyk rel=1e-09: inside=False  K(par)=[0.08827420126 +/- 6.85e-12] + [0.58290394256 +/- 3.57e-12]j
+   inflate 0: inside=True  K(par)=[0.08827420126 +/- 7.27e-12] + [0.58290394256 +/- 3.99e-12]j
+   refine: inside=True K(par)=[0.08827420126 +/- 5.83e-12] + [0.58290394256 +/- 2.55e-12]j
+wrote code/r2/out\cal\CAL-ED.json wall 481 s
+memcap: exit 0, peak 0.42 GB of 8.00 GB cap

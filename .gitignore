@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+work/
+code/r1/out/
+code/r1/cache/
+code/r1/SEALED.ok
+code/r2/out/
+code/r2/cache/
+code/r2/SEALED-*.ok
+_preview/

@@ -1,0 +1,735 @@
+{
+ "job": "B:lo-s",
+ "config": {
+  "sig0": "1597/1000",
+  "mode": "stable",
+  "krein": {
+   "0": [
+    1.01157,
+    1.01906
+   ],
+   "1": [
+    0.4543,
+    0.80839
+   ],
+   "2": [
+    0.20178,
+    0.49162
+   ]
+  },
+  "R1": 26.0,
+  "r_m": 8.0,
+  "s": 1,
+  "n": 1,
+  "sig0_label": 1.597,
+  "sig0_exact": "1597/1000",
+  "tag": "lo-s"
+ },
+ "B": {
+  "E": "[-2.55292041571 +/- 4.31e-12]",
+  "m": "[16.7190037783 +/- 1.57e-11]",
+  "N": "[210.097197781 +/- 1.86e-10]",
+  "I1": "[5.81549871449 +/- 3.05e-12]",
+  "u0": "[3.26257829878 +/- 1.27e-12]",
+  "T": "[59.6901733533 +/- 3.86e-11]",
+  "F": "[22.2775481725 +/- 9.61e-12]",
+  "D": "[186.212991224 +/- 1.49e-10]",
+  "virial": "[+/- 1.62e-13]",
+  "virial_rel": "[+/- 8.67e-16]",
+  "kappa1": "[1.38198473539 +/- 1.83e-12]",
+  "a1": "[1.71958384871e-10 +/- 4.41e-22]",
+  "zeros": 1,
+  "tail_ok": true,
+  "existence_certified": true,
+  "R1": 26.0,
+  "u_R1": "[-1.90988180886 +/- 3.99e-12]",
+  "classify": {
+   "hi": {
+    "r": 49.10709979001482,
+    "result": "zeros",
+    "steps": 407,
+    "zeros": 2
+   },
+   "lo": {
+    "r": 49.10709979001482,
+    "result": "escape",
+    "steps": 407,
+    "zeros": 1
+   }
+  },
+  "delta": 1e-50,
+  "prec": 320,
+  "K": 56,
+  "tube_sha256": "a972731286c2559bfe8df519eb1cbdeee532e433ba3c453625df3f309e3fccb9",
+  "tube_source": "built in this run (79 s)",
+  "nsteps": 315,
+  "sig0_exact": "1597/1000",
+  "virial_rel_upper": 8.66141206524802e-16
+ },
+ "D1": "[12.5392528337 +/- 3.68e-11]",
+ "brackets": {
+  "s": 1,
+  "n": 1,
+  "sig0": 1.597,
+  "sig0_exact": "1597/1000",
+  "R1": 26.0,
+  "eps": 0.001,
+  "K": 24,
+  "E": "[-2.55292041571 +/- 4.31e-12]",
+  "m": "[16.7190037783 +/- 1.57e-11]",
+  "tube_sha256": "a972731286c2559bfe8df519eb1cbdeee532e433ba3c453625df3f309e3fccb9",
+  "tube_source": "built in this run (79 s)",
+  "radii": {
+   "10.0": {
+    "0": {
+     "delta": "[0.130931 +/- 4.97e-8]",
+     "ext_margin": "[0.749089 +/- 8.75e-8]",
+     "ext_ok": true,
+     "+": {
+      "upper": 2,
+      "lower": 2,
+      "up_detail": {
+       "L": 0,
+       "which": "+",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 2,
+       "endpoint": 0,
+       "endpoint_val": "[0.12430781 +/- 3.26e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 251,
+       "eta": 5.232712882285185e-05,
+       "count": 2
+      },
+      "lo_detail": {
+       "L": 0,
+       "which": "+",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 2,
+       "endpoint": 0,
+       "endpoint_val": "[0.18499802 +/- 2.94e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 251,
+       "eta": 5.189069232107931e-05,
+       "count": 2
+      }
+     },
+     "-": {
+      "upper": 2,
+      "lower": 1,
+      "up_detail": {
+       "L": 0,
+       "which": "-",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 2,
+       "endpoint": 0,
+       "endpoint_val": "[10.070722 +/- 1.23e-7]",
+       "ok": true,
+       "fail": null,
+       "steps": 251,
+       "eta": 1.9520090999739448e-05,
+       "count": 2
+      },
+      "lo_detail": {
+       "L": 0,
+       "which": "-",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[-11968.009 +/- 5.60e-5]",
+       "ok": true,
+       "fail": null,
+       "steps": 251,
+       "eta": 1.9520090999739448e-05,
+       "count": 1
+      }
+     },
+     "D0": {
+      "ok": true,
+      "nB": 2,
+      "d2": "[-1.916371072 +/- 3.79e-11]",
+      "M": "[142.1 +/- 0.0222]",
+      "g1": "[8.61e-16 +/- 1.84e-19]",
+      "ge": "[0.00528 +/- 5.78e-7]",
+      "constrained_upper": 1,
+      "detail": {
+       "L": 0,
+       "which": "+",
+       "lam": 0.0,
+       "bc": "N",
+       "side": "lo",
+       "conj": 2,
+       "endpoint": 0,
+       "endpoint_val": "[0.12625839 +/- 2.16e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 251,
+       "eta": 5.898712883026538e-05,
+       "count": 2
+      }
+     }
+    },
+    "1": {
+     "delta": "[0.0436437 +/- 4.99e-8]",
+     "ext_margin": "[0.836376 +/- 3.88e-7]",
+     "ext_ok": true,
+     "+": {
+      "upper": 2,
+      "lower": 1,
+      "up_detail": {
+       "L": 1,
+       "which": "+",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 1,
+       "endpoint": 1,
+       "endpoint_val": "[-1.6055462 +/- 5.97e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 251,
+       "eta": 3.122170268650321e-05,
+       "count": 2
+      },
+      "lo_detail": {
+       "L": 1,
+       "which": "+",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[0.028057560 +/- 3.39e-10]",
+       "ok": true,
+       "fail": null,
+       "steps": 251,
+       "eta": 3.1134415386185244e-05,
+       "count": 1
+      }
+     },
+     "-": {
+      "upper": 1,
+      "lower": 1,
+      "up_detail": {
+       "L": 1,
+       "which": "-",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[0.88235354 +/- 2.86e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 251,
+       "eta": 1.1712054598929187e-05,
+       "count": 1
+      },
+      "lo_detail": {
+       "L": 1,
+       "which": "-",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[-4.0058396e+11 +/- 6.8]",
+       "ok": true,
+       "fail": null,
+       "steps": 251,
+       "eta": 1.1712054598929187e-05,
+       "count": 1
+      }
+     }
+    },
+    "2": {
+     "delta": "[0.0261862 +/- 9.93e-9]",
+     "ext_margin": "[0.853834 +/- 1.53e-7]",
+     "ext_ok": true,
+     "+": {
+      "upper": 1,
+      "lower": 1,
+      "up_detail": {
+       "L": 2,
+       "which": "+",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[0.48562069 +/- 4.99e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 251,
+       "eta": 2.227627697399793e-05,
+       "count": 1
+      },
+      "lo_detail": {
+       "L": 2,
+       "which": "+",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[0.54596242 +/- 2.69e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 251,
+       "eta": 2.223886813101119e-05,
+       "count": 1
+      }
+     },
+     "-": {
+      "upper": 1,
+      "lower": 1,
+      "up_detail": {
+       "L": 2,
+       "which": "-",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[0.91825814 +/- 4.93e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 251,
+       "eta": 8.365753284669476e-06,
+       "count": 1
+      },
+      "lo_detail": {
+       "L": 2,
+       "which": "-",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[-8.8966370e+16 +/- 4.92e+8]",
+       "ok": true,
+       "fail": null,
+       "steps": 251,
+       "eta": 8.365753284669476e-06,
+       "count": 1
+      }
+     }
+    },
+    "3": {
+     "delta": "[0.0187044 +/- 2.15e-8]",
+     "ext_margin": "[0.861316 +/- 3.84e-7]",
+     "ext_ok": true,
+     "+": {
+      "upper": 0,
+      "lower": 0,
+      "up_detail": {
+       "L": 3,
+       "which": "+",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 0,
+       "endpoint": 0,
+       "endpoint_val": "[0.62809083 +/- 1.52e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 251,
+       "eta": 1.731768012492225e-05,
+       "count": 0
+      },
+      "lo_detail": {
+       "L": 3,
+       "which": "+",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 0,
+       "endpoint": 0,
+       "endpoint_val": "[0.67529858 +/- 1.43e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 251,
+       "eta": 1.7296897434376116e-05,
+       "count": 0
+      }
+     },
+     "-": {
+      "upper": 0,
+      "lower": 0,
+      "up_detail": {
+       "L": 3,
+       "which": "-",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 0,
+       "endpoint": 0,
+       "endpoint_val": "[0.95356077 +/- 4.15e-10]",
+       "ok": true,
+       "fail": null,
+       "steps": 251,
+       "eta": 6.506696999066408e-06,
+       "count": 0
+      },
+      "lo_detail": {
+       "L": 3,
+       "which": "-",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 0,
+       "endpoint": 0,
+       "endpoint_val": "[2.0843573e+23 +/- 1.26e+15]",
+       "ok": true,
+       "fail": null,
+       "steps": 251,
+       "eta": 6.506696999066408e-06,
+       "count": 0
+      }
+     }
+    }
+   },
+   "14.0": {
+    "0": {
+     "delta": "[0.00151595 +/- 3.35e-9]",
+     "ext_margin": "[1.35619 +/- 9.35e-8]",
+     "ext_ok": true,
+     "+": {
+      "upper": 2,
+      "lower": 2,
+      "up_detail": {
+       "L": 0,
+       "which": "+",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 2,
+       "endpoint": 0,
+       "endpoint_val": "[0.11683670 +/- 2.50e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 267,
+       "eta": 5.189574549889494e-05,
+       "count": 2
+      },
+      "lo_detail": {
+       "L": 0,
+       "which": "+",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 2,
+       "endpoint": 0,
+       "endpoint_val": "[0.10841401 +/- 1.16e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 267,
+       "eta": 5.189069232107931e-05,
+       "count": 2
+      }
+     },
+     "-": {
+      "upper": 2,
+      "lower": 1,
+      "up_detail": {
+       "L": 0,
+       "which": "-",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 2,
+       "endpoint": 0,
+       "endpoint_val": "[1.1480565 +/- 3.17e-8]",
+       "ok": true,
+       "fail": null,
+       "steps": 267,
+       "eta": 1.9520090999739448e-05,
+       "count": 2
+      },
+      "lo_detail": {
+       "L": 0,
+       "which": "-",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[-413539.46 +/- 1.42e-3]",
+       "ok": true,
+       "fail": null,
+       "steps": 267,
+       "eta": 1.9520090999739448e-05,
+       "count": 1
+      }
+     },
+     "D0": {
+      "ok": true,
+      "nB": 2,
+      "d2": "[-2.244060425 +/- 4.06e-10]",
+      "M": "[1.290e+6 +/- 2.92e+2]",
+      "g1": "[8.61e-16 +/- 1.84e-19]",
+      "ge": "[1.05e-6 +/- 1.85e-9]",
+      "constrained_upper": 1,
+      "detail": {
+       "L": 0,
+       "which": "+",
+       "lam": 0.0,
+       "bc": "N",
+       "side": "lo",
+       "conj": 2,
+       "endpoint": 0,
+       "endpoint_val": "[0.12063163 +/- 4.84e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 267,
+       "eta": 5.855574550625101e-05,
+       "count": 2
+      }
+     }
+    },
+    "1": {
+     "delta": "[0.000505318 +/- 2.19e-10]",
+     "ext_margin": "[1.35720 +/- 5.43e-7]",
+     "ext_ok": true,
+     "+": {
+      "upper": 2,
+      "lower": 1,
+      "up_detail": {
+       "L": 1,
+       "which": "+",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 1,
+       "endpoint": 1,
+       "endpoint_val": "[-0.066273504 +/- 4.51e-10]",
+       "ok": true,
+       "fail": null,
+       "steps": 267,
+       "eta": 3.113542602174795e-05,
+       "count": 2
+      },
+      "lo_detail": {
+       "L": 1,
+       "which": "+",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[0.035836614 +/- 7.42e-11]",
+       "ok": true,
+       "fail": null,
+       "steps": 267,
+       "eta": 3.1134415386185244e-05,
+       "count": 1
+      }
+     },
+     "-": {
+      "upper": 1,
+      "lower": 1,
+      "up_detail": {
+       "L": 1,
+       "which": "-",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[1.1525045 +/- 1.73e-8]",
+       "ok": true,
+       "fail": null,
+       "steps": 267,
+       "eta": 1.1712054598929187e-05,
+       "count": 1
+      },
+      "lo_detail": {
+       "L": 1,
+       "which": "-",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[-2.6017056e+13 +/- 2.22e+5]",
+       "ok": true,
+       "fail": null,
+       "steps": 267,
+       "eta": 1.1712054598929187e-05,
+       "count": 1
+      }
+     }
+    },
+    "2": {
+     "delta": "[0.000303191 +/- 3.32e-10]",
+     "ext_margin": "[1.35740 +/- 2.67e-6]",
+     "ext_ok": true,
+     "+": {
+      "upper": 1,
+      "lower": 1,
+      "up_detail": {
+       "L": 2,
+       "which": "+",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[0.41909646 +/- 2.24e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 267,
+       "eta": 2.2239301260537985e-05,
+       "count": 1
+      },
+      "lo_detail": {
+       "L": 2,
+       "which": "+",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[0.36454367 +/- 1.68e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 267,
+       "eta": 2.223886813101119e-05,
+       "count": 1
+      }
+     },
+     "-": {
+      "upper": 1,
+      "lower": 1,
+      "up_detail": {
+       "L": 2,
+       "which": "-",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[1.1621116 +/- 2.59e-8]",
+       "ok": true,
+       "fail": null,
+       "steps": 267,
+       "eta": 8.365753284669476e-06,
+       "count": 1
+      },
+      "lo_detail": {
+       "L": 2,
+       "which": "-",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 1,
+       "endpoint": 0,
+       "endpoint_val": "[-6.1882744e+18 +/- 3.46e+10]",
+       "ok": true,
+       "fail": null,
+       "steps": 267,
+       "eta": 8.365753284669476e-06,
+       "count": 1
+      }
+     }
+    },
+    "3": {
+     "delta": "[0.000216565 +/- 2.37e-10]",
+     "ext_margin": "[1.35749 +/- 7.05e-7]",
+     "ext_ok": true,
+     "+": {
+      "upper": 0,
+      "lower": 0,
+      "up_detail": {
+       "L": 3,
+       "which": "+",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 0,
+       "endpoint": 0,
+       "endpoint_val": "[0.58399137 +/- 3.51e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 267,
+       "eta": 1.729713806189098e-05,
+       "count": 0
+      },
+      "lo_detail": {
+       "L": 3,
+       "which": "+",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 0,
+       "endpoint": 0,
+       "endpoint_val": "[0.49969024 +/- 1.75e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 267,
+       "eta": 1.7296897434376116e-05,
+       "count": 0
+      }
+     },
+     "-": {
+      "upper": 0,
+      "lower": 0,
+      "up_detail": {
+       "L": 3,
+       "which": "-",
+       "lam": 0.001,
+       "bc": "N",
+       "side": "lo",
+       "conj": 0,
+       "endpoint": 0,
+       "endpoint_val": "[1.1763363 +/- 5.60e-9]",
+       "ok": true,
+       "fail": null,
+       "steps": 267,
+       "eta": 6.506696999066408e-06,
+       "count": 0
+      },
+      "lo_detail": {
+       "L": 3,
+       "which": "-",
+       "lam": -0.001,
+       "bc": "D",
+       "side": "hi",
+       "conj": 0,
+       "endpoint": 0,
+       "endpoint_val": "[1.5884079e+25 +/- 4.51e+17]",
+       "ok": true,
+       "fail": null,
+       "steps": 267,
+       "eta": 6.506696999066408e-06,
+       "count": 0
+      }
+     }
+    }
+   }
+  },
+  "seconds": 22.511406421661377
+ },
+ "CW": {
+  "ok": true,
+  "R": 14.0,
+  "s0_lo": 1.098512556858482e-05,
+  "s0_hi": 3.832670470977833e-05,
+  "qa_upper": 3.6044226103199444,
+  "X": 29869341903.080727,
+  "Q_at_X_upper": -3.604422610319944,
+  "slope_upper": -2.4134596751515196e-10,
+  "note": "Q(X) <= q_a - 2 s0^2 X -> -inf as X -> inf (w-Neumann exterior Schur form unbounded below)"
+ },
+ "seconds": 101.59113240242004,
+ "wall_seconds": 101.59113240242004
+}

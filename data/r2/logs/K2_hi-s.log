@@ -1,0 +1,27 @@
+float u0 = 4.61357440252609
+kappa guess 1.91389 turning radius 5.88
+  refine R*=15.5 u0=4.61357440252902823776722279361133335627028364 steps ['2.9e-12', '-5.0e-21', '3.5e-31'] err 1.0e-12
+  refine R*=17.9 u0=4.61357440252883002213867378034086806350064234 steps ['-2.0e-13', '1.9e-23', '-1.2e-34'] err 1.0e-16
+  refine R*=22.7 u0=4.61357440252882992130095064676803280184096302 steps ['-1.0e-16', '-1.3e-28', '-3.5e-44'] err 1.0e-24
+  refine R*=32.4 u0=4.61357440252882992130093660916470009956868854 steps ['-1.4e-23', '-2.0e-35', '-1.4e-49'] err 1.0e-40
+  refine R*=51.6 u0=4.61357440252882992130093660916470009950424657 steps ['-6.4e-38', '-2.8e-49', '-6.3e-63'] err 6.3e-62
+  refine R*=77.1 u0=4.61357440252882992130093660916470009950424657 steps ['-9.2e-68', '-2.0e-89', '2.3e-96'] err 2.5e-90
+  classify lo: {'result': 'escape', 'r': 41.65211647733282, 'zeros': 1, 'steps': 388}
+  classify hi: {'result': 'zeros', 'r': 41.65211647733282, 'zeros': 2, 'steps': 388}
+  r=0.000 h=0.0000 width(sigma)=3.86e-56 sigma=1.983e+00
+  r=0.010 h=0.0007 width(sigma)=2.06e-51 sigma=1.983e+00
+  r=0.312 h=0.0208 width(sigma)=1.25e-46 sigma=1.961e+00
+  r=2.981 h=0.0601 width(sigma)=1.23e-41 sigma=-2.825e-01
+  r=8.028 h=0.1532 width(sigma)=1.72e-38 sigma=-3.030e-02
+  r=19.652 h=0.2500 width(sigma)=4.44e-31 sigma=-7.979e-10
+    newton it 0: par=0.4539843094138691 |F|=4.47e-09 svmin/svmax=1.45e-09
+    newton it 1: par=0.4539843104336378 |F|=1.06e-12 svmin/svmax=3.43e-13
+    newton it 2: par=0.4539843104336764 |F|=2.73e-16 svmin/svmax=2.06e-17
+   Krawczyk rel=1e-09: inside=True  K(par)=[0.453984310 +/- 5.20e-10]
+   refine: inside=True K(par)=[0.453984310 +/- 5.20e-10]
+    newton it 0: par=0.4727302964548147 |F|=3.05e-10 svmin/svmax=9.88e-11
+    newton it 1: par=0.4727302964502586 |F|=4.83e-15 svmin/svmax=1.49e-15
+   Krawczyk rel=1e-09: inside=True  K(par)=[0.472730296 +/- 5.38e-10]
+   refine: inside=True K(par)=[0.472730296 +/- 5.38e-10]
+wrote code/r2/out\hi-s\K2.json wall 634 s
+memcap: exit 0, peak 0.79 GB of 8.00 GB cap

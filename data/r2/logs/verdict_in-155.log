@@ -1,0 +1,32 @@
+{
+ "tag": "in-155",
+ "mode": "unstable",
+ "sig0_exact": "31/20",
+ "sector": 0,
+ "controls": {
+  "C-B1": "PASS",
+  "C-B2": "PASS",
+  "C-P1": "PASS",
+  "C-P2": "PASS",
+  "C-P3": "PASS",
+  "NULL": "PASS",
+  "C-U150": "PASS",
+  "C-U205": "PASS"
+ },
+ "evans": {
+  "ok": true,
+  "lam_re": "0.02936744223 +/- 5.96e-13",
+  "lam_im": "0.9781685355 +/- 5.96e-13",
+  "re_lower": 0.029367442234377105,
+  "re_upper": 0.029367442235569377,
+  "im_lower": 0.9781685355442862,
+  "im_upper": 0.9781685355454786,
+  "growing": true,
+  "disc_r": 0.002,
+  "rel": 1e-09,
+  "why": null
+ },
+ "void_reasons": [],
+ "verdict": "HOLDS"
+}
+memcap: exit 0, peak 0.01 GB of 8.00 GB cap

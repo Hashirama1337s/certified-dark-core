@@ -1,0 +1,53 @@
+Wed Nov 18 21:48:40 AST 2026
+U:hi-u exit 0 21:56:47
+U:lo-u exit 0 21:57:35
+U:in-155 exit 0 22:04:11
+U:in-200 exit 0 22:05:24
+B:lo-s exit 0 22:05:53
+K1:lo-s exit 0 22:15:06
+K0:lo-s exit 0 22:16:10
+B:hi-s exit 0 22:18:13
+K2:lo-s exit 0 22:25:43
+K0:hi-s exit 0 22:28:21
+K1:hi-s exit 0 22:36:30
+B:g165 exit 0 22:38:15
+K2:hi-s exit 0 22:38:55
+K1:g165 exit 0 22:49:08
+K0:g165 exit 0 22:49:20
+B:g170 exit 0 22:51:07
+K2:g165 exit 0 22:59:12
+K0:g170 exit 0 23:02:19
+K1:g170 exit 0 23:08:40
+B:g175 exit 0 23:10:45
+K2:g170 exit 0 23:13:03
+K0:g175 exit 0 23:20:47
+K1:g175 exit 0 23:23:41
+B:g185 exit 0 23:25:46
+K2:g175 exit 0 23:31:10
+K0:g185 exit 0 23:36:37
+K1:g185 exit 0 23:40:58
+B:g190 exit 0 23:43:01
+K2:g185 exit 0 23:47:46
+K0:g190 exit 0 23:52:55
+K1:g190 exit 0 23:57:46
+B:g195 exit 0 23:59:47
+K2:g190 exit 0 00:04:09
+K0:g195 exit 0 00:09:49
+K1:g195 exit 0 00:14:48
+K2:g195 exit 0 00:17:48
+Thu Nov 19 00:17:49 AST 2026
+controls exit 0
+controls-r2 exit 0
+verdict lo-u exit 0
+verdict lo-s exit 0
+verdict hi-s exit 0
+verdict hi-u exit 0
+verdict in-155 exit 0
+verdict in-200 exit 0
+verdict g165 exit 0
+verdict g170 exit 0
+verdict g175 exit 0
+verdict g185 exit 0
+verdict g190 exit 0
+verdict g195 exit 0
+Thu Nov 19 00:17:52 AST 2026

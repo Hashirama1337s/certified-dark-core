@@ -1,0 +1,14 @@
+  R=20 L=0 +: upper #(<+eps)=2  lower #(<-eps)=2  delta=[0.000585174 +/- 3.64e-10] [2s]
+  R=20 L=0 -: upper #(<+eps)=2  lower #(<-eps)=1  delta=[0.000585174 +/- 3.64e-10] [2s]
+  R=20 D0 node: n(B)=2 d2=[-2.097812173 +/- 1.43e-10] M=[9.983e+5 +/- 14.9] ok=True -> n(L+(0)|g-perp) <= 1
+  R=28 L=0 +: upper #(<+eps)=2  lower #(<-eps)=2  delta=[9.72333e-7 +/- 3.95e-13] [4s]
+  R=28 L=0 -: upper #(<+eps)=2  lower #(<-eps)=1  delta=[9.72333e-7 +/- 3.95e-13] [5s]
+  R=28 D0 node: n(B)=2 d2=[-2.104693650 +/- 6.98e-11] M=[3.116e+11 +/- 3.20e+7] ok=True -> n(L+(0)|g-perp) <= 1
+    newton it 0: par=(0.0882742044368134+0.5829039429618552j) |F|=1.97e-06 svmin/svmax=6.33e-07
+    newton it 1: par=(0.08827420125558243+0.5829039425588626j) |F|=2.42e-10 svmin/svmax=7.77e-11
+    newton it 2: par=(0.08827420125558245+0.5829039425588626j) |F|=3.25e-16 svmin/svmax=2.49e-17
+   Krawczyk rel=1e-09: inside=False  K(par)=[0.08827420126 +/- 6.80e-12] + [0.58290394256 +/- 3.52e-12]j
+   inflate 0: inside=True  K(par)=[0.08827420126 +/- 7.25e-12] + [0.58290394256 +/- 3.97e-12]j
+   refine: inside=True K(par)=[0.08827420126 +/- 5.83e-12] + [0.58290394256 +/- 2.55e-12]j
+wrote code/r1/out\cal\C-P2.json wall 352 s
+memcap: exit 0, peak 0.42 GB of 8.00 GB cap

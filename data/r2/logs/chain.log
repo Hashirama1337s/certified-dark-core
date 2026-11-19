@@ -1,0 +1,28 @@
+Wed Nov 18 20:43:42 AST 2026
+DONE C-P1 exit 0 memcap: exit 0, peak 0.79 GB of 8.00 GB cap
+DONE C-B1 exit 0 memcap: exit 0, peak 0.79 GB of 8.00 GB cap
+Wed Nov 18 20:47:20 AST 2026
+DONE C-P3 exit 0 memcap: exit 0, peak 0.42 GB of 8.00 GB cap
+DONE C-P2 exit 0 memcap: exit 0, peak 0.42 GB of 8.00 GB cap
+Wed Nov 18 20:54:25 AST 2026
+DONE CAL-K exit 0 memcap: exit 0, peak 0.42 GB of 8.00 GB cap
+DONE NULL exit 0 memcap: exit 0, peak 0.80 GB of 8.00 GB cap
+Wed Nov 18 21:03:28 AST 2026
+DONE B:r1 exit 0 memcap: exit 0, peak 0.79 GB of 8.00 GB cap
+DONE K0:r1 exit 0 memcap: exit 0, peak 0.79 GB of 8.00 GB cap
+Wed Nov 18 21:11:50 AST 2026
+DONE K2:r1 exit 0 memcap: exit 0, peak 0.79 GB of 8.00 GB cap
+DONE K1:r1 exit 0 memcap: exit 0, peak 0.79 GB of 8.00 GB cap
+Wed Nov 18 21:23:12 AST 2026
+DONE U:u150 exit 0 memcap: exit 0, peak 0.79 GB of 8.00 GB cap
+DONE U:u205 exit 0 memcap: exit 0, peak 0.79 GB of 8.00 GB cap
+Wed Nov 18 21:31:07 AST 2026
+DONE CAL-KD exit 0 memcap: exit 0, peak 0.42 GB of 8.00 GB cap
+DONE CAL-ED exit 0 memcap: exit 0, peak 0.42 GB of 8.00 GB cap
+Wed Nov 18 21:39:08 AST 2026
+DONE K0:p161 exit 0 memcap: exit 0, peak 0.79 GB of 8.00 GB cap
+Wed Nov 18 21:45:57 AST 2026
+verdict controls exit 0
+verdict controls-r2 exit 0
+verdict r1 exit 0
+Wed Nov 18 21:45:58 AST 2026

@@ -1,0 +1,34 @@
+lo-s  L=0 |w|<=[1.0211 +/- 4.39e-5]: R4 code/true=[3.669 +/- 1.55e-4] R4d code/true=[2.105 +/- 3.43e-4] ok=True
+lo-s  L=1 |w|<=[0.81039 +/- 1.42e-6]: R4 code/true=[3.374 +/- 2.61e-4] R4d code/true=[2.107 +/- 1.83e-4] ok=True
+lo-s  L=2 |w|<=[0.49363 +/- 3.44e-6]: R4 code/true=[3.156 +/- 3.38e-4] R4d code/true=[2.109 +/- 1.16e-4] ok=True
+lo-s  crude sigma [1.5970000000 +/- 1.90e-11]  crude u [3.2625782988 +/- 6.64e-11]  margins True  sigma>0 True  => PASS
+hi-s  L=0 |w|<=[1.4661 +/- 1.59e-6]: R4 code/true=[3.601 +/- 2.91e-4] R4d code/true=[2.091 +/- 3.76e-4] ok=True
+hi-s  L=1 |w|<=[1.0900 +/- 9.1e-8]: R4 code/true=[3.306 +/- 1.41e-5] R4d code/true=[2.092 +/- 2.02e-4] ok=True
+hi-s  L=2 |w|<=[0.47473 +/- 2.97e-7]: R4 code/true=[3.084 +/- 4.80e-4] R4d code/true=[2.095 +/- 9.73e-5] ok=True
+hi-s  crude sigma [1.9830000000 +/- 2.26e-11]  crude u [4.613574403 +/- 5.40e-10]  margins True  sigma>0 True  => PASS
+g165  L=0 |w|<=[1.0946 +/- 2.28e-6]: R4 code/true=[3.659 +/- 1.21e-4] R4d code/true=[2.103 +/- 4.48e-5] ok=True
+g165  L=1 |w|<=[0.84668 +/- 5.49e-7]: R4 code/true=[3.363 +/- 1.76e-4] R4d code/true=[2.105 +/- 4.38e-4] ok=True
+g165  L=2 |w|<=[0.50282 +/- 2.19e-6]: R4 code/true=[3.145 +/- 8.51e-5] R4d code/true=[2.107 +/- 1.23e-4] ok=True
+g165  crude sigma [1.6500000000 +/- 1.96e-11]  crude u [3.4321151896 +/- 6.81e-11]  margins True  sigma>0 True  => PASS
+g170  L=0 |w|<=[1.1511 +/- 3.79e-5]: R4 code/true=[3.650 +/- 3.42e-4] R4d code/true=[2.101 +/- 1.16e-4] ok=True
+g170  L=1 |w|<=[0.88153 +/- 2.28e-6]: R4 code/true=[3.354 +/- 3.82e-4] R4d code/true=[2.103 +/- 4.85e-4] ok=True
+g170  L=2 |w|<=[0.51021 +/- 3.21e-6]: R4 code/true=[3.135 +/- 4.70e-4] R4d code/true=[2.105 +/- 1.51e-4] ok=True
+g170  crude sigma [1.7000000000 +/- 2.01e-11]  crude u [3.596592075 +/- 2.03e-10]  margins True  sigma>0 True  => PASS
+g175  L=0 |w|<=[1.2063 +/- 3.15e-5]: R4 code/true=[3.640 +/- 4.42e-4] R4d code/true=[2.099 +/- 9.37e-5] ok=True
+g175  L=1 |w|<=[0.91698 +/- 2.00e-6]: R4 code/true=[3.344 +/- 4.36e-4] R4d code/true=[2.101 +/- 4.60e-4] ok=True
+g175  L=2 |w|<=[0.51607 +/- 2.43e-6]: R4 code/true=[3.126 +/- 1.75e-4] R4d code/true=[2.103 +/- 1.03e-4] ok=True
+g175  crude sigma [1.7500000000 +/- 2.06e-11]  crude u [3.7655405258 +/- 7.71e-11]  margins True  sigma>0 True  => PASS
+g185  L=0 |w|<=[1.3164 +/- 3.54e-5]: R4 code/true=[3.623 +/- 1.23e-4] R4d code/true=[2.095 +/- 1.78e-4] ok=True
+g185  L=1 |w|<=[0.98967 +/- 1.29e-6]: R4 code/true=[3.327 +/- 1.06e-4] R4d code/true=[2.097 +/- 2.04e-4] ok=True
+g185  L=2 |w|<=[0.52110 +/- 4.93e-6]: R4 code/true=[3.108 +/- 3.86e-4] R4d code/true=[2.099 +/- 2.16e-4] ok=True
+g185  crude sigma [1.8500000000 +/- 2.15e-11]  crude u [4.117101264 +/- 3.42e-10]  margins True  sigma>0 True  => PASS
+g190  L=0 |w|<=[1.3722 +/- 3.81e-5]: R4 code/true=[3.615 +/- 4.68e-4] R4d code/true=[2.093 +/- 4.16e-4] ok=True
+g190  L=1 |w|<=[1.0269 +/- 4.22e-7]: R4 code/true=[3.319 +/- 7.86e-5] R4d code/true=[2.095 +/- 2.01e-5] ok=True
+g190  L=2 |w|<=[0.51798 +/- 4.62e-6]: R4 code/true=[3.100 +/- 2.39e-4] R4d code/true=[2.097 +/- 4.89e-4] ok=True
+g190  crude sigma [1.9000000000 +/- 2.19e-11]  crude u [4.2998305441 +/- 9.44e-11]  margins True  sigma>0 True  => PASS
+g195  L=0 |w|<=[1.4285 +/- 2.05e-5]: R4 code/true=[3.606 +/- 4.66e-4] R4d code/true=[2.092 +/- 2.86e-4] ok=True
+g195  L=1 |w|<=[1.0647 +/- 1.96e-5]: R4 code/true=[3.311 +/- 3.54e-5] R4d code/true=[2.093 +/- 3.04e-4] ok=True
+g195  L=2 |w|<=[0.50602 +/- 7.75e-7]: R4 code/true=[3.091 +/- 8.05e-5] R4d code/true=[2.096 +/- 1.48e-4] ok=True
+g195  crude sigma [1.9500000000 +/- 2.23e-11]  crude u [4.4872652101 +/- 7.95e-11]  margins True  sigma>0 True  => PASS
+ALL 8 POINTS PASS
+memcap: exit 0, peak 0.02 GB of 4.00 GB cap
