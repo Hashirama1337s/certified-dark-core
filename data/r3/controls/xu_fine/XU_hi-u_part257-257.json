@@ -1,0 +1,26 @@
+{
+ "job": "XU:hi-u",
+ "sig0": "1985/1000",
+ "named_L": 2,
+ "R": 20.0,
+ "tube_sha256": "67dbe4533c9b85661e602c9f9bff87464141aea4d64b7334c7917116f73dd129",
+ "wmax": 2.59054626407492,
+ "grid_step": "0.01",
+ "jmax": 259,
+ "jlo": 257,
+ "jhi": 257,
+ "scan": [
+  [
+   2.57,
+   6,
+   6
+  ]
+ ],
+ "undecided": 0,
+ "drop_pairs": [],
+ "n_drop_pairs": 0,
+ "other_sectors": null,
+ "PASS": null,
+ "outcome": "part (merged by verdict_w)",
+ "seconds": 94.86153483390808
+}

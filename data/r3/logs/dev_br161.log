@@ -1,0 +1,29 @@
+  GREEN: U columns marched [1.4s]
+  GREEN: V1 columns marched [2.0s]
+  GREEN: Z columns marched [2.5s]
+  GREEN: U columns marched [1.4s]
+  GREEN: V1 columns marched [2.0s]
+  GREEN: Z columns marched [2.6s]
+nodes 5.2s
+    half_tms step 0/315 [0s]
+    half_tms step 50/315 [1s]
+    half_tms step 100/315 [1s]
+    half_tms step 150/315 [2s]
+    half_tms step 200/315 [3s]
+    half_tms step 250/315 [3s]
+    half_tms step 300/315 [4s]
+tms 4.4s
+    br_half step 0 [0s]
+    br_half step 50 [0s]
+    br_half step 100 [0s]
+    br_half step 150 [0s]
+    br_half step 200 [1s]
+    br_half step 250 [1s]
+    br_half step 300 [1s]
+    BR half: TM profiles [0.9s]
+{'ok': True, 'Y0': '[4.1223e-7 +/- 1.38e-13]', 'Z1': '[0.62733 +/- 3.05e-6]', 'Z2': '[32.062 +/- 4.88e-4]', 'r_u': '[0.0058091 +/- 1.72e-8]', 'diag': {'Y0': {'D_int': '[3.371e-7 +/- 4.47e-11]', 'V_int': '[2.579e-7 +/- 2.13e-13]', 'D_ext': '[3.284e-11 +/- 1.16e-15]', 'V_ext_over_su': '[4.122e-7 +/- 3.02e-11]', 'd_r0': '[6.062e-10 +/- 3.77e-14]', 'v_r0': '[2.294e-8 +/- 4.79e-12]'}, 'Z1': {'D_int': '[0.5441 +/- 4.44e-5]', 'V_int': '[0.3920 +/- 2.84e-5]', 'D_ext': '[0.06994 +/- 3.69e-6]', 'V_ext_over_su': '[0.6273 +/- 2.70e-5]', 'd_r0': '[0.009782 +/- 1.19e-7]', 'v_r0': '[0.1194 +/- 1.32e-6]'}, 'p1y_max': '[1.04e-7 +/- 1.63e-10]', 'p1y_argmax': 3.071444901940206, 'p1z_max': '[0.490 +/- 2.38e-4]', 'p1z_argmax': 1.0357142857142857e-05, 'ext': {'cY1': '[1.36e-12 +/- 4.69e-15]', 'cY2': '[6.24e-23 +/- 7.90e-27]', 'al1': '[1.81e-11 +/- 1.46e-16]', 'D2x': '[0.125 +/- 1.72e-4]', 'iY1': '[4.52e-8 +/- 6.88e-12]'}}, 'kappa': '[0.81357 +/- 4.94e-6]', 'rho': '[2.2123e-6 +/- 1.16e-11]', 'selfmap': True, 'seconds': 1.4666898250579834, 'why': None}
+LOO theta 13/53 {'X': '[5.8869e-8 +/- 2.26e-13]', 'd_int': '[5.8869e-8 +/- 2.26e-13]', 'v_int': '[3.1191e-9 +/- 3.10e-14]', 'd_ext': '[6.2586e-10 +/- 2.39e-15]', 'v_ext': '[1.3019e-9 +/- 2.87e-14]', 'inner_note': 'sigma(0) equal; [0, r0] covered by the first box enclosure of the grid quantities'}
+gate: tube of 161/100 inside BR ball: True
+tube X-diameter [5.72e-10 +/- 9.24e-14] < r_u [0.00581 +/- 9.18e-7] : True
+total 14.0s
+memcap: exit 0, peak 0.48 GB of 8.00 GB cap

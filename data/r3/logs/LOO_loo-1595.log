@@ -1,0 +1,85 @@
+float u0 = 3.11630972461784
+kappa guess 1.56025 turning radius 6.65
+  refine R*=18.5 u0=3.11630972461968194057111633611923236282207963 steps ['1.8e-12', '-3.1e-21', '1.2e-31'] err 1.0e-12
+  refine R*=21.4 u0=3.11630972461953804941575162248013996809025167 steps ['-1.4e-13', '9.6e-24', '-3.9e-35'] err 1.0e-16
+  refine R*=27.3 u0=3.11630972461953798368598467207647091504283812 steps ['-6.6e-17', '-3.9e-29', '1.9e-44'] err 1.0e-24
+  refine R*=39.1 u0=3.11630972461953798368597705909014675145583014 steps ['-7.6e-24', '-4.3e-36', '-1.2e-50'] err 1.0e-40
+  refine R*=62.7 u0=3.11630972461953798368597705909014675142952013 steps ['-2.6e-38', '-3.8e-50', '-2.7e-64'] err 2.7e-63
+  classify lo: {'result': 'escape', 'r': 50.212667384935465, 'zeros': 1, 'steps': 410}
+  classify hi: {'result': 'zeros', 'r': 50.212667384935465, 'zeros': 2, 'steps': 410}
+  r=0.000 h=0.0000 width(sigma)=3.02e-56 sigma=1.550e+00
+  r=0.010 h=0.0007 width(sigma)=1.61e-51 sigma=1.550e+00
+  r=0.312 h=0.0208 width(sigma)=9.21e-47 sigma=1.532e+00
+  r=3.471 h=0.0776 width(sigma)=7.06e-42 sigma=-2.814e-01
+  r=10.288 h=0.2215 width(sigma)=1.52e-38 sigma=-7.375e-03
+  r=22.713 h=0.2500 width(sigma)=6.89e-32 sigma=-1.229e-09
+  GREEN: U columns marched [1.4s]
+  GREEN: V1 columns marched [1.9s]
+  GREEN: Z columns marched [2.5s]
+float u0 = 3.26257829877683
+kappa guess 1.59779 turning radius 6.55
+  refine R*=18.1 u0=3.26257829877888247215094789540652999266105857 steps ['2.1e-12', '-3.4e-21', '1.5e-31'] err 1.0e-12
+  refine R*=21.0 u0=3.26257829877873239565976129843141457946618058 steps ['-1.5e-13', '1.0e-23', '-4.4e-35'] err 1.0e-16
+  refine R*=26.7 u0=3.26257829877873232632729341997975414505796433 steps ['-6.9e-17', '-4.5e-29', '1.7e-44'] err 1.0e-24
+  refine R*=38.3 u0=3.26257829877873232632728523408544749253638415 steps ['-8.2e-24', '-5.1e-36', '-1.6e-50'] err 1.0e-40
+  refine R*=61.3 u0=3.26257829877873232632728523408544749250724680 steps ['-2.9e-38', '-4.7e-50', '-3.8e-64'] err 3.8e-63
+  classify lo: {'result': 'escape', 'r': 49.10709979001482, 'zeros': 1, 'steps': 407}
+  classify hi: {'result': 'zeros', 'r': 49.10709979001482, 'zeros': 2, 'steps': 407}
+  r=0.000 h=0.0000 width(sigma)=3.11e-56 sigma=1.597e+00
+  r=0.010 h=0.0007 width(sigma)=1.66e-51 sigma=1.597e+00
+  r=0.312 h=0.0208 width(sigma)=9.54e-47 sigma=1.578e+00
+  r=3.404 h=0.0748 width(sigma)=7.40e-42 sigma=-2.828e-01
+  r=9.980 h=0.2065 width(sigma)=1.49e-38 sigma=-8.832e-03
+  r=22.357 h=0.2500 width(sigma)=8.77e-32 sigma=-1.121e-09
+  GREEN: U columns marched [1.4s]
+  GREEN: V1 columns marched [2.0s]
+  GREEN: Z columns marched [2.6s]
+float u0 = 3.256276525975
+kappa guess 1.59618 turning radius 6.55
+  refine R*=18.1 u0=3.25627652597704875508635382556845877930536901 steps ['2.0e-12', '-3.4e-21', '1.4e-31'] err 1.0e-12
+  refine R*=21.0 u0=3.25627652597689894154444447256929708984524876 steps ['-1.5e-13', '1.0e-23', '-4.4e-35'] err 1.0e-16
+  refine R*=26.7 u0=3.25627652597689887236680106811942567584543015 steps ['-6.9e-17', '-4.5e-29', '2.3e-44'] err 1.0e-24
+  refine R*=38.3 u0=3.25627652597689887236679290720684902739059243 steps ['-8.2e-24', '-5.1e-36', '-1.6e-50'] err 1.0e-40
+  refine R*=61.4 u0=3.25627652597689887236679290720684902736158066 steps ['-2.9e-38', '-4.7e-50', '-3.7e-64'] err 3.7e-63
+  classify lo: {'result': 'escape', 'r': 49.121357836093225, 'zeros': 1, 'steps': 407}
+  classify hi: {'result': 'zeros', 'r': 49.121357836093225, 'zeros': 2, 'steps': 407}
+  r=0.000 h=0.0000 width(sigma)=3.11e-56 sigma=1.595e+00
+  r=0.010 h=0.0007 width(sigma)=1.65e-51 sigma=1.595e+00
+  r=0.312 h=0.0208 width(sigma)=9.53e-47 sigma=1.576e+00
+  r=3.408 h=0.0749 width(sigma)=7.40e-42 sigma=-2.833e-01
+  r=9.993 h=0.2069 width(sigma)=1.49e-38 sigma=-8.772e-03
+  r=22.371 h=0.2500 width(sigma)=8.67e-32 sigma=-1.126e-09
+    half_tms step 0/314 [0s]
+    half_tms step 50/314 [1s]
+    half_tms step 100/314 [1s]
+    half_tms step 150/314 [2s]
+    half_tms step 200/314 [3s]
+    half_tms step 250/314 [3s]
+    half_tms step 300/314 [4s]
+    half_tms step 0/315 [0s]
+    half_tms step 50/315 [0s]
+    half_tms step 100/315 [1s]
+    half_tms step 150/315 [1s]
+    half_tms step 200/315 [2s]
+    half_tms step 250/315 [2s]
+    half_tms step 300/315 [3s]
+  cross-grid TMs [7.5s]
+    br_half step 0 [0s]
+    br_half step 50 [0s]
+    br_half step 100 [0s]
+    br_half step 150 [0s]
+    br_half step 200 [1s]
+    br_half step 250 [1s]
+    br_half step 300 [1s]
+    BR half: TM profiles [0.8s]
+    br_half step 0 [0s]
+    br_half step 50 [0s]
+    br_half step 100 [0s]
+    br_half step 150 [0s]
+    br_half step 200 [1s]
+    br_half step 250 [1s]
+    br_half step 300 [1s]
+    BR half: TM profiles [0.8s]
+  BR + CH [16.3s]
+LOO:loo-1595 done in 176 s
+memcap: exit 0, peak 0.91 GB of 8.00 GB cap

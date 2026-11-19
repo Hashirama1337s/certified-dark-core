@@ -8,3 +8,10 @@ code/r2/out/
 code/r2/cache/
 code/r2/SEALED-*.ok
 _preview/
+code/r3/out/
+code/r3/cache/
+code/r3/logs/
+code/r3/SEALED-*.ok
+build-3/
+a.txt
+b.txt

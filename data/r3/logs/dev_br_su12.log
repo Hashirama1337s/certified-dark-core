@@ -1,0 +1,25 @@
+  GREEN: U columns marched [1.4s]
+  GREEN: V1 columns marched [2.0s]
+  GREEN: Z columns marched [2.6s]
+  GREEN: U columns marched [1.4s]
+  GREEN: V1 columns marched [2.0s]
+  GREEN: Z columns marched [2.6s]
+nodes 5.2s
+    half_tms step 0/319 [0s]
+    half_tms step 50/319 [1s]
+    half_tms step 100/319 [1s]
+    half_tms step 150/319 [2s]
+    half_tms step 200/319 [3s]
+    half_tms step 250/319 [3s]
+    half_tms step 300/319 [4s]
+tms 4.5s
+    br_half step 0 [0s]
+    br_half step 50 [0s]
+    br_half step 100 [0s]
+    br_half step 150 [0s]
+    br_half step 200 [1s]
+    br_half step 250 [1s]
+    br_half step 300 [1s]
+    BR half: TM profiles [0.9s]
+{'ok': False, 'why': 'Z1 >= 1 ([2.2294 +/- 4.39e-5])', 'Y0': '[0.0020696 +/- 2.04e-8]', 'Z1': '[2.2294 +/- 4.39e-5]', 'diag': {'Y0': {'D_int': '[0.002070 +/- 3.80e-7]', 'V_int': '[0.0002440 +/- 3.59e-8]', 'D_ext': '[6.049e-12 +/- 4.39e-16]', 'V_ext_over_su': '[1.107e-6 +/- 2.87e-10]', 'd_r0': '[0.002070 +/- 3.80e-7]', 'v_r0': '[0.0002440 +/- 3.59e-8]'}, 'Z1': {'D_int': '[2.229 +/- 4.44e-4]', 'V_int': '[0.4401 +/- 4.08e-5]', 'D_ext': '[0.1310 +/- 2.97e-5]', 'V_ext_over_su': '[0.6765 +/- 4.62e-5]', 'd_r0': '[0.1599 +/- 4.15e-5]', 'v_r0': '[0.1173 +/- 4.20e-5]'}, 'p1y_max': '[1.36e-6 +/- 4.76e-9]', 'p1y_argmax': 2.9189940332483033, 'p1z_max': '[1.69 +/- 2.22e-3]', 'p1z_argmax': 1.1096938775510205e-05, 'ext': {'cY1': '[2.97e-13 +/- 1.89e-16]', 'cY2': '[6.99e-25 +/- 3.01e-28]', 'al1': '[7.05e-12 +/- 2.33e-15]', 'D2x': '[0.261 +/- 4.80e-4]', 'iY1': '[0.101 +/- 1.9e-7]'}}, 'seconds': 1.3632245063781738}
+memcap: exit 1, peak 0.48 GB of 8.00 GB cap

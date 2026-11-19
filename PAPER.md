@@ -1,14 +1,20 @@
-# A linearly stable excited dark-matter core, proved at nine points: certified spectral stability of the one-node Gross-Pitaevskii-Poisson state, and certified brackets of its stability-band edges
+# A linearly stable excited dark-matter core, proved across its window up to 0.002-wide edge brackets: certified spectral stability of the one-node Gross-Pitaevskii-Poisson state for every central amplitude in [1597/1000, 1983/1000], and certified brackets of its stability-band edges
 
 **Moki & Julio** (AI-assisted)
 
-Version 1.0, 2026. Every number below is traced to a file of this repository in `NUMBERS.md`, and
+Version 2.0, 2026. Version 1.0 proved stability at nine points; version 2.0 adds Result C (Section 12): stability
+for every σ0 in [1597/1000, 1983/1000]. Every number below is traced to a file of this repository in `NUMBERS.md`, and
 `tools/check_numbers.py` checks each one. Certified numbers are outward-rounded balls `[mid +/- rad]` from ball
 arithmetic; numbers marked **float** are double-precision values checked only by changing the resolution.
 
 ---
 
-> **The magic trick.** A computer that only does arithmetic it can prove counts every way a one-shell dark-matter
+> **The magic trick (v2.0).** The computer builds only 23 of the cores, yet it proves that one continuous family of
+> cores, one for each amplitude in between, is stable. It never computes an in-between core. It proves that the true family cannot stray
+> far from a smooth guess drawn between two built cores, and that a straight-line mix of two safe operators stays
+> safe as long as that small stray is smaller than a safety margin it has certified at both ends.
+>
+> **The magic trick (v1.0).** A computer that only does arithmetic it can prove counts every way a one-shell dark-matter
 > ball could lose energy. It finds at most two in each shape class. Then it finds, in each of the three shape classes
 > that have any, a wobble that provably carries negative energy, and a negative-energy wobble uses up exactly two of
 > those directions. Nothing is left over for a growing mode. So no small shake of any shape can grow exponentially.
@@ -28,6 +34,12 @@ arithmetic; numbers marked **float** are double-precision values checked only by
 > in time. The proof is computer-assisted: every number the computer uses carries a guaranteed error bar. The same
 > certificate then holds at eight more points spread across the window, from 1.597 to 1.983.
 >
+> **New in version 2.0: the window up to its edge brackets.** The same holds for **every** central amplitude from 1.597 to 1.983, not
+> only at the nine points: one continuous family of one-shell cores, all spectrally stable (Section 12). Together with
+> the certified unstable points 1.595 and 1.985, the stable window is now pinned to within 0.002 at each end. The proof
+> is computer-assisted (interval arithmetic), was checked by internal AI referee seats, and is not checked in a proof
+> assistant.
+>
 > **What we mapped.** With ordinary (float) numerics, bisected on a refined grid and checked against a coarser one, the
 > window is
 > [1.5963117, 1.9841288]. That is a little narrower than the published 1.55 to 2.07. At each edge, two wobbles of
@@ -35,8 +47,9 @@ arithmetic; numbers marked **float** are double-precision values checked only by
 > the state is proved unstable at 1.595 and stable at 1.597, stable at 1.983 and unstable at 1.985. It is also proved
 > unstable at 1.55 and at 2.00, two points inside the published range.
 >
-> **What we did not prove.** Nothing about large shakes, long-time nonlinear behaviour, the points between the
-> certified ones (there the window is a float result), or whether real galaxies contain such cores.
+> **What we did not prove.** Nothing about large shakes, long-time nonlinear behaviour, the exact edge points (they
+> remain brackets of width 0.002), uniqueness of the core beyond a stated small ball, or whether real galaxies contain
+> such cores. (In version 1.0 the stretches between the nine points were a float result; version 2.0 proves them.)
 
 ---
 
@@ -65,8 +78,21 @@ the axis as a complex quartet, with the Morse indices unchanged. The sectors (L 
 Fig. 8 of arXiv:2402.07998. A sealed certified test (twelve points, all HOLD) proves linear stability at
 1597/1000, 33/20, 17/10, 7/4, 37/20, 19/10, 39/20 and 1983/1000, and linear instability (a certified growing quartet)
 at 1595/1000 and 31/20 (L = 0) and at 2 and 1985/1000 (L = 2). The float edges therefore lie in certified brackets
-[1.595, 1.597] and [1.983, 1.985]. Stability between the certified points is not claimed. The points 31/20 = 1.55 and 2
-lie inside the published range 1.55 ≲ σ0 ≲ 2.07.
+[1.595, 1.597] and [1.983, 1.985]. Result B by itself claims nothing between the certified points (Result C does). The
+points 31/20 = 1.55 and 2 lie inside the published range 1.55 ≲ σ0 ≲ 2.07.
+
+**Result C (v2.0; proved, computer-assisted with interval arithmetic; sealed; internally AI-refereed; not checked in a
+proof assistant).** For every σ0 in [1597/1000, 1983/1000] there is a decaying one-node solution with σ(0) = σ0,
+continuous in σ0, equal to the certified state at each of 23 rational nodes and unique in an explicit ball around a
+cubic Hermite predictor; for each of these states the spectrum of J L on L²(R³; C²) has no point with Re λ > 0. The
+proof never computes an eigenvector between the nodes. It certifies a drop in the inertia of H(w) = L + i w J between
+two frequencies (the classical local Krein index identity, used here as a computer-assisted certificate), makes it
+uniform on each of 22 cells by a convexity cover with closed-form chord bounds, and encloses the family of states
+between two nodes by a Newton-Kantorovich argument with a residual that vanishes like t²(1 − t)² at the nodes. The
+sealed bar BAR-W1 settled HOLD: 22 of 22 cells, 23 of 23 nodes and 16 of 16 controls. An independent exact-rational
+checker re-applied the sealed rule to every output (0 problems); in 14 of 14 mutation tests it behaved as required
+(12 planted errors caught, 2 honest variants passed). With the certified
+unstable points of Result B, the stable window is bracketed to within 0.002 at each end.
 
 ---
 
@@ -105,6 +131,12 @@ every L ≥ 3. ker L−(0) = span(rσ) and ker L+(1) = span(rσ′); every other
 **Result B.** Float common stability band [1.5963117, 1.9841288]; lower edge set by L = 0, upper edge by L = 2;
 both edges are Krein collisions (float, Section 7). Certified (Section 7.4): stable at nine points including 9/5;
 unstable at 1595/1000, 31/20, 2 and 1985/1000; edges bracketed in [1.595, 1.597] and [1.983, 1.985].
+
+**Theorem C (v2.0; Section 12).** For every σ0 in [1597/1000, 1983/1000] there is a decaying one-node solution
+Σ(σ0) of (2.1) with σ(0) = σ0 such that σ0 ↦ Σ(σ0) is continuous, Σ equals the certified node state at each of the 23
+nodes of Section 12.9, and on each half-cell Σ is the unique solution in the stated X-ball of radius r_u around the
+cubic Hermite predictor. For each of these states σ(J L) has no point with Re λ > 0. Proved, computer-assisted
+(interval arithmetic), AI-refereed; not checked in a proof assistant.
 
 ---
 
@@ -415,7 +447,7 @@ changes in the bar and in PATCHES.md, part B):
 - two points inside the published band where the float map shows growth: 31/20 (L = 0) and 2 (L = 2).
 
 If both points of an edge HOLD, that edge is bracketed in an interval of width 0.002 containing the float edge.
-Stability is claimed only at the sealed points, not on the intervals between them.
+This bar claims stability only at the sealed points, not on the intervals between them (those are Section 12).
 
 ### 7.4 Certified outcomes (BAR-R2-EDGES settled HOLD; all twelve points HOLD; all controls PASS)
 
@@ -464,8 +496,10 @@ neighbour certified positive, one tube sha256 per point, and the separation reco
   stable at 1.983 and unstable at 1.985. So a change from instability to stability lies in [1.595, 1.597] and one from
   stability to instability lies in [1.983, 1.985]. The float edges 1.5963117 and 1.9841288 lie inside these brackets.
   The certificates do not say that each transition is a single point.
-- **Not certified:** stability between the certified points. The window [1.5963117, 1.9841288] as a whole is a float
-  result: certified at nine points and float-mapped continuously in between.
+- **Not certified by R2:** stability between the certified points. In version 1.0 the window
+  [1.5963117, 1.9841288] as a whole was a float result: certified at nine points and float-mapped continuously in
+  between. Version 2.0 proves stability on all of [1597/1000, 1983/1000] (Section 12); the parts of the float window
+  outside it, [1.5963117, 1.597) and (1.983, 1.9841288], remain float results.
 - **Mechanism, certified in the weak sense of the bar:** each certified growing eigenvalue just outside an edge is
   non-real (a quartet), and just inside each edge the two colliding modes are certified with opposite Krein signs and
   separated (gap at least 0.007489 at 1597/1000 and 0.018745 at 1983/1000). The collision itself is a float
@@ -536,6 +570,23 @@ and σ0 = 2 (L = 2), both inside the published range. Section 8 says how we read
   ([CDRS] Sec. IV.4), a toy kernel ([MM]) and a symmetry-restricted class ([CS26]). The two nonlocal counts we found
   have one negative direction and no negative-Krein eigenvalue (Cadiot, arXiv:2403.18718; analytically, Georgiev and
   Stefanov, arXiv:1702.03374).
+- **For Result C (v2.0), to our knowledge** (prior-art search of arXiv to 13 November (Krein-count use) and 16-17 November (interval stability), INSPIRE and Zenodo to
+  19 November 2026): we found no earlier computer-assisted proof of spectral stability for every value of a parameter
+  in an interval for a Hamiltonian state with Krein-signed spectrum and a nonlocal kernel, and no earlier use of the
+  local Krein index identity as a computer-assisted certificate, at a point or uniformly over a parameter interval.
+  The identity itself is **classical** and is not ours: Kollar and Bosak (arXiv:1212.5691, Theorem 4, the local
+  index theorem for Hermitian pencils), Kollar and Miller (SIAM Rev. 56 (2014), arXiv:1209.3185, graphical Krein
+  signature; their Theorem 7 gives the finite-dimensional index count) and, earlier, Binding and Browne (1988). Our
+  written proof (Section 12.3) only covers the infinite-dimensional case with essential spectrum, which Kollár and Bosák
+  call straightforward. The general method class "stable for every parameter in an interval, by interval arithmetic"
+  has precedents for other objects, which we credit for method: Barker (arXiv:1401.5371, roll waves: stable on a whole
+  interval of periods, edges bracketed), Breden, Payan, Reisch and Tang (arXiv:2504.05066, a nonlocal reaction-diffusion
+  system: stable for all δ below a bracketed threshold) and Braz e Silva (Zenodo 10.5281/zenodo.23772125, micropolar
+  Couette flow: a parameter-set cover with validated Evans-function boxes). The idea of certified grid points plus a
+  perturbation argument between them is in Hoang, Plum and Wieners (ZAMP 60 (2009), photonic band gaps). Barker and
+  Zumbrun (arXiv:1601.00837, Remark 1.2) note in print that carrying the parameter as an interval naively is not
+  computationally useful, which is why Result C never does it. Kollar and Pego (arXiv:1103.0157) track Krein signatures
+  along a parameter numerically (not certified); compare their Lemma 1 with the non-degeneracy step of Section 12.3.
 - **Brito, Herdeiro, Radu, Sanchis-Gual and Zilhão (arXiv:2506.06442)** studied relativistic excited boson stars by
   3+1 evolution and state that their runs do not allow them to verify the narrow band.
 - **Harrison, Moroz and Tod (math-ph/0208045)** found numerically that excited Schrödinger-Newton states are radially
@@ -556,16 +607,25 @@ and σ0 = 2 (L = 2), both inside the published range. Section 8 says how we read
 
 ## 9. What we do not claim
 
-- **Nine points, not an interval.** Stability is certified at σ0 = 9/5 (R1) and at the eight R2 points, with s = +1,
-  α = 1, n = 1; instability at the four R2 unstable points. Nothing is certified between those points: there the
-  window [1.5963117, 1.9841288] is a float result. An edge bracket [a, b] does not say that the transition in it is a
-  single point.
+- **The interval, not the edges.** Version 2.0 proves stability for every σ0 in [1597/1000, 1983/1000] (Section 12),
+  with s = +1, α = 1, n = 1; instability is certified at the four R2 unstable points. The edges themselves are not
+  located: they remain in the brackets [1.595, 1.597] and [1.983, 1.985], and the float window parts
+  [1.5963117, 1.597) and (1.983, 1.9841288] are float results. An edge bracket [a, b] does not say that the transition in
+  it is a single point.
+- **Along the certified branch only.** Result C is about the family Σ(σ0) built in Section 12: continuous in σ0,
+  equal to the certified node states, and unique in the stated X-ball of radius r_u around the predictor on each
+  half-cell (and, at the 23 nodes, unique among decaying solutions whose start value lies in the node's certified
+  tube). It does not exclude other decaying one-node solutions with the same σ0 outside that ball.
+- **Proved, computer-assisted, not formally verified.** Result C rests on interval arithmetic (Arb through
+  python-flint), on lemmas written out in `design/` and condensed in Section 12, and on internal AI referee and audit
+  seats. No step is checked in a proof assistant, and none of the reviews is external peer review.
 - **Linear and spectral only.** No nonlinear or orbital stability; no claim about bounded growth of the linear
   semigroup, embedded eigenvalues in ±i[|E|, ∞), or the Jordan structure at 0. For excited states of other nonlinear
   Schrödinger equations, internal modes of negative Krein signature are known to be able to cause nonlinear
   instability (Cuccagna, arXiv:0801.4237; Kevrekidis, Pelinovsky and Saxena, arXiv:1412.1522).
-- **Uniqueness of the state.** The theorem holds for every decaying one-node solution with u0 in U0'; that there is
-  only one is not proved. At the R2 points, read U0'_p (the table in Section 7.4) for U0'.
+- **Uniqueness of the state.** Theorem A holds for every decaying one-node solution with u0 in U0'; at the R2 points,
+  read U0'_p (the table in Section 7.4) for U0'. Version 2.0 adds uniqueness only in the local sense above (node tube
+  and BR ball); global uniqueness of the one-node state at a given σ0 is not proved.
 - **No count of imaginary eigenvalues** and no algebraic simplicity.
 - **One unchecked field in the R2 verdict code.** For the unstable points, `code/r2/verdict.py` (`point_unstable`)
   does not compare the sector of the certified eigenvalue with the sealed sector, while `controls_r2` does. The sector
@@ -580,11 +640,20 @@ and σ0 = 2 (L = 2), both inside the published range. Section 8 says how we read
 
 ## 10. Open doors
 
-- **Stability on a whole interval, not a grid.** Nine points are certified stable; a continuity or perturbation
-  argument between them would give the proved stable window as an interval.
-  *Status:* UNTESTED; not part of any sealed test. *Start here:* the R2 outputs in `data/r2/` and the margins they
-  record (exterior margins, M|d2|, the Krein separations).
-  *Ceiling:* the exact, proved stable window of a one-shell dark-matter core.
+- **Done in v2.0: stability on a whole interval.** The door that version 1.0 left open here (a perturbation argument
+  between the certified points) is Result C (Section 12).
+- **A Lean check of the convexity step.** Each of the 242 convexity-cover tests (22 cells, 11 certificates per cell) is
+  a statement about one quadratic polynomial in t on [0, 1] with exact rational coefficients, and
+  `checks/w3/check_w3.py` already decides them in exact rationals. Stating Lemma CC's quadratic step and the 242
+  instances as Lean theorems would turn that part of the proof into a kernel-checked one.
+  *Status:* UNTESTED; not part of any sealed test. *Start here:* `checks/w3/check_w3.py` and the cell files in
+  `data/r3/cells/`.
+- **Uniqueness beyond the ball.** Result C gives uniqueness only in a small X-ball around the predictor (radius r_u)
+  and in the node tubes. Whether the one-node state at each σ0 in the window is unique among all decaying one-node
+  solutions is open. *Status:* open. *Ceiling:* the stable window as a statement about THE first excited state.
+- **The exact edges.** The edges are bracketed to width 0.002. Locating each transition to a single certified point
+  (and proving that it is a single Krein collision) would need a certificate that follows the two colliding modes.
+  *Status:* UNTESTED. *Start here:* the R2 separation records at 1597/1000 and 1983/1000 (Section 7.4).
 - **Why L = 1 never breaks.** L = 1 carries a negative-Krein mode too (w ≈ 0.540 at 9/5), but on the whole float range
   [0.3, 5] it never collides. *Status:* UNTESTED observation from the float map. *Ceiling:* a structural reason that
   one sector of an excited core is always protected.
@@ -609,12 +678,280 @@ and σ0 = 2 (L = 2), both inside the published range. Section 8 says how we read
 | R1 amendment | 6ad54f5713 | referee-3 fixes, re-run at σ0 = 9/5 exactly | HOLD |
 | R1 blind | f47da860b7 | blind float replication | HOLD (PB1-PB5, PC) |
 | R2 | 3ad051728e | certified edges and grid, 12 points | HOLD (all 12 points) |
+| R3 (BAR-W1) | 5e6d7bfed0 | stability for every σ0 in [1597/1000, 1983/1000] (v2.0) | HOLD (22/22 cells, 23/23 nodes, 16/16 controls) |
 
 Sealed texts: `seals/`. Every bar's predictions and pass rules were hashed before its run. The R1 predictions were
 written after float smokes (mock-informed, disclosed in the bar); the R1 verdict is a certificate and cannot be moved by
 them. The same holds for the R2 predictions (read off the float map, disclosed in BAR-R2-EDGES). The R1 items P1-P4
-were sealed as MATCH/MISS predictions; they scored MATCH and are shown with the HOLD chip. The shipped copies have
-local folder names replaced (PATCHES.md, part A); the original sha256 of each sealed file is listed there.
+were sealed as MATCH/MISS predictions; they scored MATCH and are shown with the HOLD chip. BAR-W1 (R3) was sealed after
+its controls had run (by design: controls are calibration objects, and no window node or cell was certified before the
+seal); one control rule was set after seeing that control's data (the XU-1985 rule, Section 12.11), and the bar
+discloses it. The shipped copies have local folder names replaced (PATCHES.md, part A); the original sha256 of each
+sealed file is listed there.
+
+---
+
+## 12. Result C: stability for every σ0 in [1597/1000, 1983/1000] (version 2.0)
+
+Labels in this section: **PROVED** = argument written out in `design/` (condensed here) and reviewed by internal
+referee seats; **CERTIFIED** = an outward-rounded interval enclosure from the sealed run (`data/r3/`); **FLOAT** = a
+double-precision probe, used for steering or as a control, never on a proof path. The lemmas are written out in
+`design/DESIGN-W2.md` (Sections 3.2-3.7) and `design/DESIGN-W3.md` (Sections 3.5-3.7 and Amendment W3-A1, which
+supersede W2 where they say so); `design/DESIGN-W1.md` is the first design, kept for the record. They are shipped as the
+referees read them, not as a polished proof document.
+
+### 12.1 Statement
+
+**Theorem C.** For every σ0 in [1597/1000, 1983/1000] there is a decaying one-node solution Σ(σ0) = (σ, u) of (2.1)
+(s = +1, α = 1) with σ(0) = σ0, such that:
+1. σ0 ↦ Σ(σ0) is continuous, and Σ equals the certified node state at each of the 23 nodes of Section 12.9;
+2. on each half of each cell, Σ is the unique solution in the X-ball of radius r_u around the cubic Hermite predictor
+   H_t (the norm X is defined in 12.6; r_u is recorded as [0.0100000 +/- 1e-12] in all 44 half-cells), and at each
+   node it is the unique decaying solution whose start value lies in that node's certified tube;
+3. for each of these states the spectrum of J L on L²(R³; C²) has no point with Re λ > 0.
+
+In words: spectrally stable along the certified branch, unique in the stated ball. Not claimed: uniqueness outside the
+ball; the edges (they remain the R2 brackets); nonlinear stability. Status: proved, computer-assisted (interval
+arithmetic), AI-refereed; not checked in a proof assistant. At the nine R2 points the node tubes are the R1/R2 tubes
+(identical sha256, e.g. `a972731286c2559b…` at 1597/1000 and `f8b0cc27d5885a45…` at 9/5), so Theorem C extends
+Theorem A (and its nine-point form, Section 7.4) without replacing their states.
+
+### 12.2 The idea
+
+Carrying σ0 as an interval through the computation does not work: the interval Taylor stepper inflates a start width
+by many orders of magnitude (FLOAT probe in `design/DESIGN-W1.md`, Q2), and a parametric Krawczyk test on the
+eigenvalue problem would need boxes of width about 10⁻⁵ (Q1; condition number about 3.3·10³ of the Krawczyk
+Jacobian at 7/4, L = 0, FLOAT). Barker and Zumbrun say the same in print for viscous shocks ([BZ], Remark 1.2). Result
+C uses three replacements instead:
+1. **Counts instead of eigenvectors.** A certified drop in the number of negative directions of one fixed symmetric
+   operator H(w) between two frequencies certifies negative-Krein spectrum between them (12.3).
+2. **Convexity instead of interval parameters.** Along a cell the operators are, up to a certified remainder, a
+   straight-line mix of the two end operators. Certified positive margins of both ends on one common explicit subspace
+   then hold all along the cell (12.4).
+3. **A Newton-Kantorovich branch instead of a parametric tube.** The family of states between two nodes is enclosed by a
+   contraction around a cubic Hermite predictor, using only linear solves at the nodes (12.6).
+Nothing on the proof path uses a Krawczyk certificate, an eigenvector or an interval-valued σ0 (DESIGN-W2, 3.7).
+
+### 12.3 The Krein count by inertia (Lemmas KC and IDXC; classical)
+
+For real w with |w| < |E| let H(w) := [[L+, −w], [−w, L−]], the form of L + i w J after a fixed unitary change of
+variables, and N(w) := n(H(w)), its number of negative directions in a sector.
+
+**Lemma KC (local Krein index identity).** If 0 ≤ w1 < w2 < |E| are not eigen-frequencies and S is the sum of the Riesz
+spectral subspaces of J L for the eigenvalues i w, w1 < w < w2, then S is finite-dimensional and
+N(w1) − N(w2) = n(h_w1 on S) − n(h_w2 on S), with n(h_w1 on S) = n(ω on S). So a certified count drop certifies
+negative-Krein spectrum in i(w1, w2). **This identity is classical** ([KB] Theorem 4, eq. (14); [KMi]; [BB]); those
+sources work in finite dimensions or with compact resolvent, and the extension is one which Kollár and Bosák call straightforward. DESIGN-W2, Section
+3.2, writes out a proof for our operator, which has essential spectrum (above |E| − |w|) and may have Jordan chains:
+Riesz projections are [·,·]-symmetric, so S and its complement are form-orthogonal for every h_w; on S the index is
+constant on [0, w1]; on the complement it is constant on [w1, w2] because no eigenvalue of the restricted operator
+crosses 0. A robust form allows frequencies within the counting level of w1 and w2.
+
+**Lemma IDXC.** N₊ + 2 (N(w1) − N(w2)) ≤ n(L restricted to Y_L) ≤ K(L). With K(L) = 2 and one certified drop, N₊ = 0.
+This is the Hamiltonian-Krein count plus KC ([KMi] Theorem 7 in finite dimensions). An internal referee checked it on
+3999 random finite-dimensional cases with 0 violations (DESIGN-W2, 3.3).
+
+What the gate found open is the **use**: the identity as a computer-assisted certificate (interval inertia counts at two
+frequencies, no eigenvector), and uniformly over a parameter interval.
+
+Count pattern used per sector (the drop sits across the negative-Krein frequency w− of v1.0; w1 below it, w2 between
+w− and its positive-Krein partner w+):
+
+| L | N(w1) | N(w2) | w1 | w2 |
+|---|---|---|---|---|
+| 0 | 4 | 3 | below w− (about 0.93 w−) | between w− and w+ |
+| 1 | 3 | 2 | below w− (about 0.6 w−) | between w− and w+ |
+| 2 | 2 | 1 | 0 | between w− and w+ |
+
+The frequencies are chosen per cell by float steering (`code/r3/steer.py`); floats choose, they never decide.
+
+### 12.4 Convexity cover and chord bounds (Lemmas CC and CH)
+
+On a cell [a, b] of width Δ write σ0 = a + tΔ, t ∈ [0, 1], chord(f) := (1 − t) f_a + t f_b and w_t := chord(w).
+
+**Lemma CC (convexity cover).** Upper: if both end forms are ≥ m_a, m_b on a common subspace M of codimension k, and
+T ≥ chord(T) − η₂ with η₂ < chord(m), then T > 0 on M and n(T) ≤ k. Lower: if both end forms are ≤ −m_a, −m_b on a common
+(k + 1)-dimensional space and T ≤ chord(T) + η₂', η₂' < chord(m), then n(T) ≥ k + 1. The certificate is the pair of
+**margins on a common subspace**: end counts alone imply nothing inside.
+
+**Lemma CH (chord inequalities).** With e_σ, e_u the pointwise distances of the true state from the chord (from BR,
+12.6): η₂(t) collects the local loss (3 t(1 − t) Δσ² + 6 |σ_lin| e_σ + e_u) and the nonlocal loss
+((4 n_e I_lin + 2 n_e²)/(2L + 1)); η₂' has the nonlocal convexity term on the unfavourable side and an extra 3 e_σ².
+In closed form (DESIGN-W3, 3.5), η₂(t) ≤ C0 + C1 t(1 − t) and likewise η₂', with C0 of the order of the BR radius.
+
+**Exact test.** For each certificate the condition m_a (1 − t) + m_b t − C0 − C1 t(1 − t) > 0 for all t ∈ [0, 1] is a
+quadratic in t with exact rational coefficients (the printed enclosures, rounded the safe way); it is decided exactly.
+For the penalised L = 0 certificate the loss is η₂ + M' Γ(t) with M' = 5.
+
+### 12.5 Endpoint margins (Lemma CPOSL) and the 11 certificates
+
+At each cell end the margin m is certified on the complement of k explicit vectors by a 3-channel count of an
+interior form B_m on [r0, R] with R = 20 (count of conjugate points, per-step re-basing, Robin start, exterior margin),
+plus a Haynsworth inertia step with k forcing columns (the Schur matrix S must be negative definite). For L = 0 the
+phase constraint is handled by a penalty M' = 5 and a Sherman-Morrison sign. Each cell end carries 11 certificates:
+
+| certificate | sectors | what it gives on the whole cell (with CC) |
+|---|---|---|
+| CPOS H(w2) | L = 0, 1, 2 | N(w2) ≤ 3, 2, 1 |
+| RITZ H(w1) (Gram matrix on explicit trial functions) | L = 0, 1, 2 | N(w1) ≥ 4, 3, 2 |
+| CPOS H(0) with k = 4, 3, 2 | L = 0, 1, 2 | L± > 0 off finitely many directions: finite index, and with the exact kernels n(L−(0)), n(L+(1)) ≤ 1 |
+| count H(0), k = 0 | L = 3 | L±(3) > 0, hence every L ≥ 3 (monotonicity, PROOF-R1-v2 Lemma 7.1) |
+| PEN (penalised L+(0) on (rσ)^⊥) | L = 0 | the constrained count, hence K(0) ≤ 2 |
+
+Together: N(w1) − N(w2) ≥ 1 for L = 0, 1, 2 and K(L) ≤ 2 at every σ0 of the cell; IDXC gives N₊ = 0; L ≥ 3 and the
+three-dimensional statement follow as in Theorem 7.3. The w-checks 0 ≤ w1 < w2 < |E| are certified at both ends.
+
+### 12.6 The branch between two nodes (Lemma BR' with GREEN)
+
+**Spaces.** ω(r) := 1 + (r/4)²; X: pairs z = (d, v) with d(0) = 0, norm max(sup |d| ω, sup |v|/s_u), s_u = 3.
+
+**Predictor and residual.** H_t is the cubic Hermite interpolant of the two node states and their first variations
+τ_a, τ_b in σ0. Its first component at r = 0 is exactly a + tΔ. The residual F(H_t) is a polynomial in t that vanishes
+with its t-derivative at both ends, so F(H_t) = t²(1 − t)² Q_t exactly. The coefficients of Q_t come from a symbolic
+division with remainder 0 (re-derived by an internal referee); the coded formulas are re-checked against the definition
+at random points at the start of every cell job (`cell._sym_check`, float, an assertion only). No derivative of node
+data appears.
+
+**Theorem BR' (one fixed ball per half-cell).** On t ∈ [0, 1/2] linearise at node a, on [1/2, 1] at node b. With
+certified Y0 (residual), Z1 (linear defect) and Z2 (nonlinear) bounds, ρ := 2 Y0/(1 − Z1), r_u ≥ ρ,
+Y0 + Z1 ρ + Z2 ρ² ≤ ρ and κ(r_u) := Z1 + r_u Z2 < 1: the map is a contraction on the X-ball of radius r_u, uniformly in
+t; its fixed point is the unique solution there and depends continuously on t. The two halves agree at t = 1/2
+(checked: ρ of each half lies inside r_u of the other). Because the residual factor vanishes at t = 0, 1, both
+neighbouring cells return exactly the node state, so the branch is continuous across nodes. If the certified tube's
+X-diameter is below r_u, every decaying solution in the node tube is the node state (uniqueness in the tube). The same
+bounds give E(σ0) < 0, one node, and |E(σ0)| ≥ −u(σ0)(R1) as a certified lower bound along the branch.
+
+**GREEN (Lemma G, Lemma EXT).** The solution operator of the linearised node problem is written as an explicit
+kernel in the basis {U2, V1hat, Z1, Z2} (regular and decaying solutions, each marched in its stable direction, so no
+cancellation is done on boxes), with nondegeneracy α = [U2, V1hat] ≠ 0 and c = [Z1, Z2] ≠ 0 certified at every node.
+The exterior r ≥ R1 = 26 is closed by a lemma for the decaying solution, a maximum principle with constant
+1/(κ1² − 1/8) and Gauss's law.
+
+### 12.7 Why no parametric Krawczyk
+
+The R1/R2 certificate of a negative-Krein eigenvalue is a Krawczyk proof at one σ0. Over a cell the eigenvalue moves,
+and near the edges its positive-Krein partner comes close (gaps 0.007489 at 1597/1000 and 0.018745 at 1983/1000,
+Section 7.4). A parametric Krawczyk would have to enclose a moving eigenpair to high relative accuracy over the whole
+cell. The count drop needs only two frequencies strictly inside the gap and positive margins there, which convexity
+carries across the cell.
+
+### 12.8 The sealed run
+
+BAR-W1 (seal 5e6d7bfed0; `seals/BAR-W1.md`) fixed the schedule, the outcome rules, the controls and every parameter
+before any window node or cell was computed: R = 20, s_u = 3, ω = 1 + (r/4)², M' = 5, Taylor order 24 (linear steps; 56 for the tube), precision 320
+bits (tube) and 200 bits (linear steps), CC margin fraction 0.7 (fallback 0.35, never used), 8 t-sub-intervals per
+half for the envelopes. A cell HOLDS only if BR' closes on both halves, both tube diameters are below r_u, one node and
+E < 0 are certified, all 11 certificates at both ends are certified, every CC quadratic test passes and the w-checks
+hold. There is no bisection: a cell that does not close stays INCONCLUSIVE. Instruments: `code/r3/` (21 files pinned by
+sha256 in `code/r3/RUN.md`). Run: 23 node jobs then 22 cell jobs, two at a time, every job once, all exit 0
+(`data/r3/logs/run_w1.log`): 81 minutes of wall time from the first to the last timestamp of that log.
+
+### 12.9 Schedule
+
+Nodes (23): 1597/1000, 1600/1000, 1605/1000, 1612/1000, 1625/1000, 33/20, 1675/1000, 17/10, 1725/1000, 7/4,
+1775/1000, 9/5, 1825/1000, 37/20, 1875/1000, 19/10, 1925/1000, 39/20, 1962/1000, 1970/1000, 1976/1000, 1980/1000,
+1983/1000. Cells c01 ... c22 are the consecutive pairs, widths 0.003 to 0.025 (narrow near the edges, where the end
+margins are smallest). Per node: tube (R1 = 26), brackets at R = 10 and 14 (K = (2, 2, 2, 0) required), GREEN. Every
+node gives K = (2, 2, 2, 0) at R = 10 and R = 14; E runs from -2.5529204157 at 1597/1000 to -3.6629582174 at 1983/1000
+(float rendering of the certified balls; e.g. E = [-2.55292041571 +/- 4.31e-12] and [-3.66295821740 +/- 7.26e-13]).
+
+### 12.10 Results per cell (all HOLD)
+
+From the independent checker's log (`checks/w3/logs/check_w3.log`), which recomputes them from the cell files. Columns:
+min 1 − Z1 over the two halves; max κ(r_u); max ρ/r_u; max tube X-diameter/r_u; certified lower bound of |E| on the
+cell; the tightest convexity-cover test and its smallest ratio chord(m)/(C0 + C1 t(1 − t)) over t (a ratio above 1 passes).
+
+| cell | interval | width | 1 − Z1 | κ | ρ/r_u | diam/r_u | abs(E) ≥ | tightest test | ratio | verdict |
+|---|---|---|---|---|---|---|---|---|---|---|
+| c01 | [1597/1000, 1600/1000] | 0.003 | 0.9647 | 0.3540 | 8.820e-10 | 5.721e-08 | 1.90632 | H(w2) L0 | 6.493 | HOLDS |
+| c02 | [1600/1000, 1605/1000] | 0.005 | 0.9412 | 0.3773 | 6.949e-09 | 5.472e-08 | 1.91213 | H(w2) L0 | 8.222 | HOLDS |
+| c03 | [1605/1000, 1612/1000] | 0.007 | 0.9178 | 0.4004 | 2.721e-08 | 5.071e-08 | 1.92191 | H(w2) L0 | 8.659 | HOLDS |
+| c04 | [1612/1000, 1625/1000] | 0.013 | 0.8474 | 0.4704 | 3.475e-07 | 4.563e-08 | 1.93573 | H(w2) L0 | 4.620 | HOLDS |
+| c05 | [1625/1000, 33/20] | 0.025 | 0.7061 | 0.6116 | 5.620e-06 | 3.750e-08 | 1.96784 | H(w2) L0 | 2.336 | HOLDS |
+| c06 | [33/20, 1675/1000] | 0.025 | 0.7082 | 0.6069 | 5.443e-06 | 2.571e-08 | 2.02208 | H(w2) L0 | 3.915 | HOLDS |
+| c07 | [1675/1000, 17/10] | 0.025 | 0.7087 | 0.6050 | 5.303e-06 | 1.763e-08 | 2.07314 | H(w2) L0 | 5.542 | HOLDS |
+| c08 | [17/10, 1725/1000] | 0.025 | 0.7092 | 0.6032 | 5.167e-06 | 1.200e-08 | 2.13203 | H(w2) L0 | 7.225 | HOLDS |
+| c09 | [1725/1000, 7/4] | 0.025 | 0.7107 | 0.5994 | 5.014e-06 | 8.190e-09 | 2.19028 | H(w2) L0 | 8.965 | HOLDS |
+| c10 | [7/4, 1775/1000] | 0.025 | 0.7111 | 0.5978 | 4.893e-06 | 5.581e-09 | 2.24353 | H(w2) L0 | 10.764 | HOLDS |
+| c11 | [1775/1000, 9/5] | 0.025 | 0.7115 | 0.5961 | 4.772e-06 | 3.802e-09 | 2.30505 | H(w2) L0 | 12.622 | HOLDS |
+| c12 | [9/5, 1825/1000] | 0.025 | 0.7131 | 0.5921 | 4.635e-06 | 3.181e-09 | 2.36515 | H(w2) L0 | 14.539 | HOLDS |
+| c13 | [1825/1000, 37/20] | 0.025 | 0.7135 | 0.5905 | 4.529e-06 | 3.213e-09 | 2.42832 | RITZ L0 | 16.005 | HOLDS |
+| c14 | [37/20, 1875/1000] | 0.025 | 0.7137 | 0.5893 | 4.431e-06 | 3.245e-09 | 2.48586 | RITZ L0 | 16.455 | HOLDS |
+| c15 | [1875/1000, 19/10] | 0.025 | 0.7149 | 0.5862 | 4.319e-06 | 3.283e-09 | 2.55054 | H(w2) L2 | 16.560 | HOLDS |
+| c16 | [19/10, 1925/1000] | 0.025 | 0.7152 | 0.5847 | 4.227e-06 | 3.312e-09 | 2.61610 | H(w2) L2 | 12.354 | HOLDS |
+| c17 | [1925/1000, 39/20] | 0.025 | 0.7153 | 0.5836 | 4.140e-06 | 3.342e-09 | 2.67603 | H(w2) L2 | 8.017 | HOLDS |
+| c18 | [39/20, 1962/1000] | 0.012 | 0.8642 | 0.4321 | 1.776e-07 | 3.353e-09 | 2.74249 | H(w2) L2 | 21.414 | HOLDS |
+| c19 | [1962/1000, 1970/1000] | 0.008 | 0.9094 | 0.3866 | 3.300e-08 | 3.362e-09 | 2.77113 | H(w2) L2 | 31.118 | HOLDS |
+| c20 | [1970/1000, 1976/1000] | 0.006 | 0.9322 | 0.3633 | 1.012e-08 | 3.371e-09 | 2.79884 | H(w2) L2 | 33.690 | HOLDS |
+| c21 | [1976/1000, 1980/1000] | 0.004 | 0.9548 | 0.3401 | 1.940e-09 | 3.374e-09 | 2.81362 | H(w2) L2 | 41.025 | HOLDS |
+| c22 | [1980/1000, 1983/1000] | 0.003 | 0.9661 | 0.3285 | 6.046e-10 | 3.383e-09 | 2.82348 | H(w2) L2 | 28.115 | HOLDS |
+
+Tightest values (referee-W3): the smallest ratio is 2.336 (c05, CPOS H(w2) at L = 0); the smallest absolute CC
+minimum is 5.031e-05 (c01, H(w2) L = 0, at t = 0, set by the end margin at 1597/1000, against C0 = 3.521e-10); the
+smallest 1 − Z1 is 0.7061 (c05, κ = 0.6116); the largest ρ/r_u is 5.620e-06 (c05) and the largest tube diameter/r_u is
+5.721e-08 (c01). Every margin used the 0.7 fraction. The largest w2 used by any cell is 1.3411 (c22, L = 0), against
+|E| ≥ 1.90632 on the first cell. The window verdict file reads "HOLDS on [1597/1000, 1983/1000]"
+(`data/r3/window_verdict.json`).
+
+### 12.11 Controls (all 16 PASS; `data/r3/controls_verdict.json`)
+
+| control | what it tests | result |
+|---|---|---|
+| XK (nine R2 stable points) | the counter: at w = 0 the kernel is booked, (upper, lower) = (4, 3), (3, 2), (2, 2); counts agree at w± ∓ 0.002; drop exactly 1 across every w−, rise exactly 1 across every w+ | PASS 9/9 (27/27 sectors; all nine tube sha256 equal R2) |
+| XU 1595/1000 (L = 0) | a certified unstable point must show no drop in L = 0 on the scan grid w = 0.01 j | PASS: 171 points, 0 drop pairs, 0 undecided; the L = 1 and L = 2 drops certified |
+| XU 1985/1000 (L = 2) | the same in L = 2 | PASS under a rule set after seeing the data (caveat below): 258 points, 0 drop pairs, one point re-counted |
+| LOO-161 | leave-one-out: on [1597/1000, 33/20] the certified R2 tube at 161/100 must lie in the BR ball of its half | PASS (X-distance 5.89e-8 ≤ ρ) |
+| LOO-1595 | the same on [31/20, 1597/1000] with the R2 tube at 1595/1000 | PASS (X-distance 1.92e-9 ≤ ρ) |
+| XI | bad node data (τ_b plus a 10⁻³ bump) must be refused | PASS (REJECTED) |
+| XC (FLOAT) | at 5 interior points the true lowest eigenvalue on the common subspace lies in [chord − η₂, chord + η₂'] | PASS 5/5 |
+| R1REG | the brackets at 9/5 equal the R1/R2 brackets | PASS |
+
+A seal-guard test (`code/r3/guard_test.py`) checks that the job runner refuses window jobs without a seal file.
+
+**Caveat: the XU-1985 control rule.** Under the rule as first written (every grid point up to w_max must be decided),
+XU at 1985/1000 **FAILED**: no drop pair anywhere, but at w = 2.27 the upper count was undecided, and the last point
+w = 2.59, 5.5·10⁻⁴ below the counter's upper limit w_max = 2.590546 (= |E| − m/R − δ_L(R) − 10⁻⁵, where its exterior margin runs out; |E| = 3.669 there), did not finish in 900 s. The lab's lead then set, **after seeing these
+data and before the seal**, a top margin (scan w < w_max − 10⁻³) and a single-point re-count rule (an undecided point
+counts only if a re-count at the same w with a finer level decides both counts). At w = 2.27 the re-count at level
+10⁻⁷ decided it (upper 4 = lower 4), and XU-1985 passed. This is disclosed in BAR-W1 and in
+`code/r3/CALIBRATION.md`. Why it does not touch the result: the excluded region is above every frequency the
+certificate uses. The cells count only at w2 ≤ max w+ = 1.4641 (the largest certified positive-Krein frequency at the
+nine R2 points; the largest w2 actually used is 1.3411), while |E(σ0)| ≥ 1.9 along the branch, so no cell counts within
+0.4 of |E|. A reader who rejects the post-hoc rule should read XU-1985 as a failed control of the counter near the
+counter's upper limit w_max, a region the theorem does not use.
+
+### 12.12 Review status
+
+- **Design:** referee-W1 on the first design (KC correct with fixes, IDXC correct, CC correct; the branch lemma and one
+  chord sign were gaps, fixed in DESIGN-W2); referee-W2 on DESIGN-W2 (four fixes before the seal, applied in DESIGN-W3:
+  one fixed ball with a uniqueness radius, the leave-one-out and bad-data controls, the XC control, the kernel booked
+  in XK).
+- **Engines and mathematics:** audit-W on the new instruments and the open items of DESIGN-W3 (verdict FIX FIRST; all
+  patches applied before the final control batch; `code/r3/PATCHES-buildW.md`, item 10, and Amendment W3-A1).
+- **Outputs:** referee-W3, after the seal, with its own tools: `checks/w3/check_w3.py` re-applies the sealed per-cell
+  rule in exact rational arithmetic to the printed enclosures (TOTAL PROBLEMS: 0; all 22 cells, all 23 nodes, exact
+  tiling); `checks/w3/nulls_w3.py` plants errors (14 of 14 mutation tests behave as required); `checks/w3/float_spot.py`
+  recomputes four cells with its own shooting and finite differences (every certified margin lies below its float
+  value; the node energies agree to about 10⁻¹⁰). The referee found nothing blocking. It asked for the wording used
+  here, for the XU caveat above, and for two record-only additions to the cell files (12.13).
+- These are internal lab seats run with AI assistance, not external peer review. No step is checked in a proof
+  assistant.
+
+### 12.13 Limits of Result C
+
+- Linear (spectral) stability only, along the certified branch, unique only in the stated ball and node tubes.
+- The edges are not located beyond the brackets [1.595, 1.597] and [1.983, 1.985].
+- Not Lean-checked; the CC quadratic steps are the natural first candidate (Section 10).
+- Two record-only gaps found by referee-W3, not fixed in the shipped data (fixing them needs no rerun, but the sealed
+  instruments were not changed after the run): the cell files do not record (a) the block-purity pattern of the H(0)
+  vectors that the K-row deduction uses (cell.py enforces it but does not write it down; the float spot check found the
+  vectors exactly block-pure), and (b) the intermediate constants behind C0, C1 and the one-node test (H1lo, H2up, r_n,
+  sup0, sup1, Np, Imax), so an outside reader can re-check the CC tests from C0, C1 but cannot re-derive C0, C1 from the
+  JSON alone.
+- The XU-1985 control rule was set after seeing its data (12.11).
+- At 1985/1000 the certified unstable state is not shown to continue the proved branch; at 1595/1000 the control
+  LOO-1595 shows it.
+- The lemmas are written in design documents, not in a single proof document like PROOF-R1-v2.
 
 ---
 
@@ -661,6 +998,28 @@ Labels: OPENED = the lab read the full text; ABSTRACT = abstract or record only.
 - [Kra] R. Krawczyk, "Newton-Algorithmen zur Bestimmung von Nullstellen mit Fehlerschranken", Computing 4 (1969)
   187-201, DOI 10.1007/BF02234767. Standard; not opened.
 - [Arb] F. Johansson, Arb (ball arithmetic), used through python-flint 0.9.0.
+
+Added for Result C (v2.0); labels from the lab's prior-art gate:
+
+- [KB] R. Kollár, R. Bosák, "Index Theorems for Polynomial Pencils", arXiv:1212.5691. OPENED (Theorem 4, eq. (14),
+  the local index theorem).
+- [KMi] R. Kollár, P. D. Miller, "Graphical Krein Signature Theory and Evans-Krein Functions", SIAM Rev. 56 (2014),
+  DOI 10.1137/120891423, arXiv:1209.3185. OPENED.
+- [BB] Binding and Browne, Appl. Anal. 29 (1988) 107-142, DOI 10.1080/00036818808839776. Not opened (cited through
+  [KB], Proposition 5.5 there).
+- [KP] R. Kollár, R. L. Pego, "Spectral stability of vortices in two-dimensional Bose-Einstein condensates via the
+  Evans function and Krein signature", arXiv:1103.0157. OPENED.
+- [Bar] B. Barker, "Numerical proof of stability of roll waves in the small-amplitude limit for inclined thin film
+  flow", J. Differential Equations 257 (2014) 2950-2983, arXiv:1401.5371. OPENED.
+- [BZ] B. Barker, K. Zumbrun, "Numerical proof of stability of viscous shock profiles", M3AS (2016), arXiv:1601.00837.
+  OPENED (Remark 1.2).
+- [BPRT] M. Breden, M. Payan, C. Reisch, B. Q. Tang, "Turing instability for nonlocal heterogeneous reaction-diffusion
+  systems: A computer-assisted proof approach", arXiv:2504.05066. OPENED.
+- [BeS] P. Braz e Silva, "micropolar-couette-cap: codes and certificates for the computer-assisted proof of linear
+  stability of micropolar plane Couette flow", v1.1.0, Zenodo, DOI 10.5281/zenodo.23772125. OPENED (README and
+  abstract).
+- [HPW] V. Hoang, M. Plum, C. Wieners, "A computer-assisted proof for photonic band gaps", ZAMP 60 (2009),
+  DOI 10.1007/s00033-008-8021-2. OPENED (preprint).
 
 ---
 

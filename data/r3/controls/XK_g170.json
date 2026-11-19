@@ -1,0 +1,219 @@
+{
+ "job": "XK:g170",
+ "sig0": "17/10",
+ "R": 20.0,
+ "tube_sha256": "5f55659ab04e2a95a26c59a3cde129dbbafd8c4bb21ecf0f45aeea7801aca621",
+ "tube_source": "built in this run (53 s)",
+ "rows": [
+  {
+   "L": 0,
+   "w_minus": 1.0481365496833384,
+   "w_plus": 1.149137858349404,
+   "w0": {
+    "w": 0.0,
+    "lev": 0.001,
+    "upper": 4,
+    "lower": 3,
+    "ext": "[1.9274 +/- 2.71e-5]",
+    "why": [
+     null,
+     null
+    ]
+   },
+   "counts": [
+    {
+     "w": 1.046137,
+     "lev": 1e-05,
+     "upper": 4,
+     "lower": 4,
+     "ext": "[0.88223 +/- 4.06e-6]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 1.050137,
+     "lev": 1e-05,
+     "upper": 3,
+     "lower": 3,
+     "ext": "[0.87823 +/- 4.06e-6]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 1.147138,
+     "lev": 1e-05,
+     "upper": 3,
+     "lower": 3,
+     "ext": "[0.78122 +/- 4.95e-6]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 1.151138,
+     "lev": 1e-05,
+     "upper": 4,
+     "lower": 4,
+     "ext": "[0.77722 +/- 4.95e-6]",
+     "why": [
+      null,
+      null
+     ]
+    }
+   ],
+   "w0_booked_ok": true,
+   "lower_eq_upper": true,
+   "pattern_ok": true,
+   "drop_exactly_1": true,
+   "rise_exactly_1": true,
+   "neg_sign": "-",
+   "pos_sign": "+"
+  },
+  {
+   "L": 1,
+   "w_minus": 0.4969589004149151,
+   "w_plus": 0.8795322703685399,
+   "w0": {
+    "w": 0.0,
+    "lev": 0.001,
+    "upper": 3,
+    "lower": 2,
+    "ext": "[1.9274 +/- 2.70e-5]",
+    "why": [
+     null,
+     null
+    ]
+   },
+   "counts": [
+    {
+     "w": 0.494959,
+     "lev": 1e-05,
+     "upper": 3,
+     "lower": 3,
+     "ext": "[1.4334 +/- 4.09e-6]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 0.498959,
+     "lev": 1e-05,
+     "upper": 2,
+     "lower": 2,
+     "ext": "[1.4294 +/- 4.09e-6]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 0.877532,
+     "lev": 1e-05,
+     "upper": 2,
+     "lower": 2,
+     "ext": "[1.0508 +/- 3.11e-5]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 0.881532,
+     "lev": 1e-05,
+     "upper": 3,
+     "lower": 3,
+     "ext": "[1.0468 +/- 3.11e-5]",
+     "why": [
+      null,
+      null
+     ]
+    }
+   ],
+   "w0_booked_ok": true,
+   "lower_eq_upper": true,
+   "pattern_ok": true,
+   "drop_exactly_1": true,
+   "rise_exactly_1": true,
+   "neg_sign": "-",
+   "pos_sign": "+"
+  },
+  {
+   "L": 2,
+   "w_minus": 0.24639612120253476,
+   "w_plus": 0.5082132075176111,
+   "w0": {
+    "w": 0.0,
+    "lev": 0.001,
+    "upper": 2,
+    "lower": 2,
+    "ext": "[1.9274 +/- 2.69e-5]",
+    "why": [
+     null,
+     null
+    ]
+   },
+   "counts": [
+    {
+     "w": 0.244396,
+     "lev": 1e-05,
+     "upper": 2,
+     "lower": 2,
+     "ext": "[1.6840 +/- 3.29e-5]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 0.248396,
+     "lev": 1e-05,
+     "upper": 1,
+     "lower": 1,
+     "ext": "[1.6800 +/- 3.29e-5]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 0.506213,
+     "lev": 1e-05,
+     "upper": 1,
+     "lower": 1,
+     "ext": "[1.4222 +/- 4.99e-5]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 0.510213,
+     "lev": 1e-05,
+     "upper": 2,
+     "lower": 2,
+     "ext": "[1.4182 +/- 4.99e-5]",
+     "why": [
+      null,
+      null
+     ]
+    }
+   ],
+   "w0_booked_ok": true,
+   "lower_eq_upper": true,
+   "pattern_ok": true,
+   "drop_exactly_1": true,
+   "rise_exactly_1": true,
+   "neg_sign": "-",
+   "pos_sign": "+"
+  }
+ ],
+ "PASS": true,
+ "tube_seconds": 52.71174120903015,
+ "seconds": 93.77820205688477
+}

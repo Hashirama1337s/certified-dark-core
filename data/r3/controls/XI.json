@@ -1,0 +1,16 @@
+{
+ "cell": [
+  "1597/1000",
+  "33/20"
+ ],
+ "R": 20.0,
+ "tube_sha": [
+  "a972731286c2559bfe8df519eb1cbdeee532e433ba3c453625df3f309e3fccb9",
+  "bcf501cf76088e215f18736e2854eda8abede666184102533a67c0e1eaeb6b17"
+ ],
+ "outcome": "REJECTED",
+ "why": "tau_B data at grid 1 do not match the certified re-step (injected or corrupt)",
+ "seconds": 0.0009031295776367188,
+ "job": "XI",
+ "PASS": true
+}

@@ -1,0 +1,8 @@
+{
+ "job": "R1REG",
+ "tube_sha256": "f8b0cc27d5885a45af4b7356a1e3f6f2e0e1445510e32842cf4710f9ecfce28b",
+ "ref_sha": "f8b0cc27d5885a45af4b7356a1e3f6f2e0e1445510e32842cf4710f9ecfce28b",
+ "diffs": [],
+ "PASS": true,
+ "seconds": 15.72568416595459
+}

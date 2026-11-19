@@ -1,0 +1,219 @@
+{
+ "job": "XK:g165",
+ "sig0": "33/20",
+ "R": 20.0,
+ "tube_sha256": "bcf501cf76088e215f18736e2854eda8abede666184102533a67c0e1eaeb6b17",
+ "tube_source": "built in this run (51 s)",
+ "rows": [
+  {
+   "L": 0,
+   "w_minus": 1.0231166878309108,
+   "w_plus": 1.0925977250482561,
+   "w0": {
+    "w": 0.0,
+    "lev": 0.001,
+    "upper": 4,
+    "lower": 3,
+    "ext": "[1.8230 +/- 3.01e-5]",
+    "why": [
+     null,
+     null
+    ]
+   },
+   "counts": [
+    {
+     "w": 1.021117,
+     "lev": 1e-05,
+     "upper": 4,
+     "lower": 4,
+     "ext": "[0.80284 +/- 2.92e-6]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 1.025117,
+     "lev": 1e-05,
+     "upper": 3,
+     "lower": 3,
+     "ext": "[0.79884 +/- 2.92e-6]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 1.090598,
+     "lev": 1e-05,
+     "upper": 3,
+     "lower": 3,
+     "ext": "[0.73336 +/- 1.92e-6]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 1.094598,
+     "lev": 1e-05,
+     "upper": 4,
+     "lower": 4,
+     "ext": "[0.72936 +/- 1.92e-6]",
+     "why": [
+      null,
+      null
+     ]
+    }
+   ],
+   "w0_booked_ok": true,
+   "lower_eq_upper": true,
+   "pattern_ok": true,
+   "drop_exactly_1": true,
+   "rise_exactly_1": true,
+   "neg_sign": "-",
+   "pos_sign": "+"
+  },
+  {
+   "L": 1,
+   "w_minus": 0.4760462986680783,
+   "w_plus": 0.8446805488175305,
+   "w0": {
+    "w": 0.0,
+    "lev": 0.001,
+    "upper": 3,
+    "lower": 2,
+    "ext": "[1.8230 +/- 2.99e-5]",
+    "why": [
+     null,
+     null
+    ]
+   },
+   "counts": [
+    {
+     "w": 0.474046,
+     "lev": 1e-05,
+     "upper": 3,
+     "lower": 3,
+     "ext": "[1.3499 +/- 1.42e-5]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 0.478046,
+     "lev": 1e-05,
+     "upper": 2,
+     "lower": 2,
+     "ext": "[1.3459 +/- 1.42e-5]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 0.842681,
+     "lev": 1e-05,
+     "upper": 2,
+     "lower": 2,
+     "ext": "[0.98128 +/- 8.53e-7]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 0.846681,
+     "lev": 1e-05,
+     "upper": 3,
+     "lower": 3,
+     "ext": "[0.97728 +/- 8.53e-7]",
+     "why": [
+      null,
+      null
+     ]
+    }
+   ],
+   "w0_booked_ok": true,
+   "lower_eq_upper": true,
+   "pattern_ok": true,
+   "drop_exactly_1": true,
+   "rise_exactly_1": true,
+   "neg_sign": "-",
+   "pos_sign": "+"
+  },
+  {
+   "L": 2,
+   "w_minus": 0.22398297378800522,
+   "w_plus": 0.5008221855820214,
+   "w0": {
+    "w": 0.0,
+    "lev": 0.001,
+    "upper": 2,
+    "lower": 2,
+    "ext": "[1.8230 +/- 2.99e-5]",
+    "why": [
+     null,
+     null
+    ]
+   },
+   "counts": [
+    {
+     "w": 0.221983,
+     "lev": 1e-05,
+     "upper": 2,
+     "lower": 2,
+     "ext": "[1.6020 +/- 2.29e-5]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 0.225983,
+     "lev": 1e-05,
+     "upper": 1,
+     "lower": 1,
+     "ext": "[1.5980 +/- 2.29e-5]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 0.498822,
+     "lev": 1e-05,
+     "upper": 1,
+     "lower": 1,
+     "ext": "[1.3251 +/- 3.82e-5]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 0.502822,
+     "lev": 1e-05,
+     "upper": 2,
+     "lower": 2,
+     "ext": "[1.3211 +/- 3.82e-5]",
+     "why": [
+      null,
+      null
+     ]
+    }
+   ],
+   "w0_booked_ok": true,
+   "lower_eq_upper": true,
+   "pattern_ok": true,
+   "drop_exactly_1": true,
+   "rise_exactly_1": true,
+   "neg_sign": "-",
+   "pos_sign": "+"
+  }
+ ],
+ "PASS": true,
+ "tube_seconds": 50.64109563827515,
+ "seconds": 90.7409315109253
+}

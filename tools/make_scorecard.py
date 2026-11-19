@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 """make_scorecard.py -- build scorecard.svg and SCORECARD.md: every sealed test of this work, failures and voids
-included, with the R2 points shown as PENDING until their certified verdicts are in data/r2/.
+included, with the R2 points shown as PENDING until their certified verdicts are in data/r2/, and the R3 window test
+(version 2.0).
 
 Every R1 outcome is checked against the shipped verdict files before anything is written:
   data/r1/target_verdict.json      verdict of the amended target run (AMENDMENT-R1-1, seal 6ad54f5713)
   data/blind/verdict_blind.out     scores of the blind replication (BAR-R1-BLIND, seal f47da860b7)
 For R2 (BAR-R2-EDGES, seal 3ad051728e) the script reads data/r2/<tag>/verdict.json when it exists and shows
-PENDING otherwise. The script stops if a shipped verdict disagrees with the table below.
+PENDING otherwise. For R3 (BAR-W1, seal 5e6d7bfed0) it reads data/r3/window_verdict.json and
+data/r3/controls_verdict.json. The script stops if a shipped verdict disagrees with the table below.
 Run from anywhere:  python tools/make_scorecard.py
 """
 import json
@@ -80,6 +82,29 @@ def r2_outcomes():
     return out
 
 
+R3_SEAL = '5e6d7bfed0'
+R3_NODES = 23
+
+
+def r3_items():
+    wv = json.load(open(os.path.join(ROOT, 'data', 'r3', 'window_verdict.json'), encoding='utf-8'))
+    cv = json.load(open(os.path.join(ROOT, 'data', 'r3', 'controls_verdict.json'), encoding='utf-8'))
+    cells = wv['cells']
+    n_hold = sum(1 for c in cells if c['verdict'] == 'HOLDS')
+    ctrl = cv['controls']
+    n_nodes = sum(1 for d in os.listdir(os.path.join(ROOT, 'data', 'r3')) if d.startswith('n')
+                  and json.load(open(os.path.join(ROOT, 'data', 'r3', d, 'N.json'), encoding='utf-8')).get('ok') is True)
+    if wv['window'] != 'HOLDS on [1597/1000, 1983/1000]' or n_hold != 22 or len(cells) != 22:
+        sys.exit('data/r3/window_verdict.json disagrees with the R3 row')
+    if not cv['all_pass'] or not all(ctrl.values()) or len(ctrl) != 16 or n_nodes != R3_NODES:
+        sys.exit('data/r3 controls or nodes disagree with the R3 row')
+    return H, [('cells', H, '%d of %d cells HOLD (c01 ... c22)' % (n_hold, len(cells))),
+               ('nodes', H, '%d of %d nodes certified, K = (2, 2, 2, 0)' % (n_nodes, R3_NODES)),
+               ('controls', H, '%d of %d controls PASS (XK x9, XU x2, LOO x2, XI, XC, R1REG); XU-1985 rule set after '
+                               'seeing its data, disclosed' % (sum(ctrl.values()), len(ctrl))),
+               ('T', H, 'HOLDS on [1597/1000, 1983/1000]: spectral stability for every sigma0 in the interval, along the certified branch')]
+
+
 def chip(x, y, outcome, small=False):
     fill, fg = CHIP[outcome]
     w = (len(outcome) * (6.6 if small else 7.4)) + (14 if small else 20)
@@ -96,14 +121,17 @@ def build():
     r2_bar = P if any(o == P for _, o, _ in r2) else (H if all(o == H for _, o, _ in r2) else F)
     bars = BARS + [('R2', R2_SEAL, 'Certified edges and interior grid of the stability band (12 points)', r2_bar,
                     'seals/BAR-R2-EDGES.md', r2)]
+    r3_out, r3 = r3_items()
+    bars.append(('R3', R3_SEAL, 'Stability for every sigma0 in [1597/1000, 1983/1000] (version 2.0)', r3_out,
+                 'seals/BAR-W1.md', r3))
     n_p = sum(1 for _, o, _ in r2 if o == P)
-    title = 'Scorecard: %d sealed bars (R1: HOLD; blind: HOLD; one duplicate VOID; R2: %s)' % (
-        len(bars), 'PENDING, %d of 12 points open' % n_p if n_p else r2_bar)
+    title = 'Scorecard: %d sealed bars (R1: HOLD; blind: HOLD; one duplicate VOID; R2: %s; R3: %s)' % (
+        len(bars), 'PENDING, %d of 12 points open' % n_p if n_p else r2_bar, r3_out)
     sub = 'Sealed = predictions and pass bars hashed before the run. Failures and voids are shown. Details: SCORECARD.md.'
     W, y, body = 1000, 66, []
     body.append(f'<rect x="10" y="{y}" width="{W - 20}" height="22" fill="{BAND}"/>')
     body.append(f'<text x="20" y="{y + 16}" font-size="11.5" font-weight="600" fill="{ACCENT}" letter-spacing="0.5">'
-                f'THIS WORK: ONE POINT PROVED (R1) AND THE BAND EDGES (R2)</text>')
+                f'THIS WORK: ONE POINT PROVED (R1), THE BAND EDGES (R2) AND THE WHOLE WINDOW (R3)</text>')
     y += 22
     for tid, seal, what, out, _, its in bars:
         body.append(f'<text x="20" y="{y + 22}" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="{INK}">'
@@ -135,7 +163,8 @@ def build():
     md = ['# Scorecard', '',
           '**In plain words.** Before each test ran, we wrote down what it had to show and hashed that text, so it could not',
           'be changed afterwards. Each test is scored exactly as written. This page lists every such test of this work and',
-          'every item in it. A duplicate seal is listed as VOID. The R2 rows are read from `data/r2/<tag>/verdict.json`.',
+          'every item in it. A duplicate seal is listed as VOID. The R2 rows are read from `data/r2/<tag>/verdict.json`,',
+          'the R3 rows from `data/r3/window_verdict.json`, `data/r3/controls_verdict.json` and the node files.',
           '',
           title + '.', '',
           'Generated by `tools/make_scorecard.py`, which first checks the R1 rows against `data/r1/target_verdict.json` and',
@@ -156,7 +185,10 @@ def build():
            '  the HOLD chip.',
            '- dbcc9f9278 sealed the same file (identical sha256) a second time; it is VOID and scored under 07faff6621.',
            '- The blind replication is double precision with no enclosure: a replication, not a certificate.',
-           '- R2 per point: HOLDS, FAILED (stable points only), INCONCLUSIVE or VOID, read from data/r2/<tag>/verdict.json.']
+           '- R2 per point: HOLDS, FAILED (stable points only), INCONCLUSIVE or VOID, read from data/r2/<tag>/verdict.json.',
+           '- R3 (BAR-W1): the XU control at 1985/1000 FAILED under the rule as first written and passed under a rule the',
+           '  lab lead set after seeing its data, before the seal (disclosed in the bar; PAPER.md, Section 12.11). It',
+           '  concerns frequencies near the upper limit of the counter (w ~ 2.59), far above those the proof uses.']
     with open(os.path.join(ROOT, 'SCORECARD.md'), 'w', encoding='utf-8', newline='\n') as f:
         f.write('\n'.join(md) + '\n')
     print(title)

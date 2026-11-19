@@ -1,7 +1,9 @@
 # Reproduce
 
 **In plain words.** These are the exact commands to check this release yourself, from quick checks that take
-seconds to the full certified run that takes about half an hour on one core. Every command is run from the repository
+seconds to the full certified run that takes about half an hour on one core. Version 2.0 adds Tier 6, the
+window: a check of all its outputs in seconds, one cell rerun in about 6 minutes, and the full run (81 minutes on two
+lanes in the lab). Every command is run from the repository
 root unless a step says `cd`. Paths are relative.
 
 ## Environment
@@ -116,3 +118,66 @@ python verdict.py point <tag>                                 # -> out/<tag>/ver
 Stable tags: lo-s, hi-s, g165, g170, g175, g185, g190, g195. Unstable tags: lo-u, hi-u, in-155, in-200. The lab's
 projected cost was about 33 minutes of compute per stable point and about 8 minutes per unstable point
 (`seals/BAR-R2-EDGES.md`, "Projected time"). The control jobs (C-B1 ... CAL-ED, u150, u205) are run first, as for R1.
+
+## Tier 6: the window (version 2.0, BAR-W1)
+
+**6a. Verify the shipped window outputs (seconds to minutes).** The referee-W3 checker imports nothing from the
+instruments. It reads `data/r3/cells/*.json` and `data/r3/<node>/N.json` (plus each `tube.json`, whose sha256 it
+recomputes) and re-applies the sealed per-cell rule in exact rational arithmetic to the printed enclosures.
+
+```
+python -B checks/w3/check_w3.py          # about 5 s; last lines: TOTAL PROBLEMS: 0 and ALL 22 CELLS HOLD, ALL 23 NODES OK, TILING EXACT
+python -B checks/w3/nulls_w3.py          # 14 mutation tests; last line: NULLS: 14/14 behave as required
+python -B checks/w3/float_spot.py c05 600   # FLOAT spot recompute of one cell, about 1-2 minutes (also c01, c11, c22)
+```
+
+Shipped logs: `checks/w3/logs/` (fresh runs from the repository root; identical to the referee's own logs except the
+wall-time line of the float runs and the memory-cap line). `check_w3.py` also rewrites `checks/w3/logs/check_w3.json`; since version 2.0 it writes it with LF line endings on
+every system (PATCHES.md, S22), so the rerun output is byte-identical to the shipped file and a later
+`sha256sum -c MANIFEST.sha256` still passes. To be safe, run the manifest check before Tier 6a.
+
+**6b. Rerun one cell from scratch (about 6 minutes).** The instruments are `code/r3/` (sha256 in `code/r3/RUN.md`).
+Each node job and cell job refuses to run until its guard file `SEALED-<tag>.ok` exists, and the environment variable
+`WSU` must be unset. A cell job reads both node outputs from `code/r3/out/`. The shortest cell is c22:
+
+```
+cd code/r3
+unset WSU
+mkdir -p logs
+echo sealed > SEALED-n1980.ok ; echo sealed > SEALED-n1983.ok ; echo sealed > SEALED-c22.ok
+python -u assemble_w.py N:n1980 > logs/N_n1980.log 2>&1     # logged 127 s
+python -u assemble_w.py N:n1983 > logs/N_n1983.log 2>&1     # logged 86 s
+python -u assemble_w.py C:c22  > logs/C_c22.log  2>&1       # logged 143 s
+cd ../..
+python tools/canon.py code/r3/out/cells/c22.json > a.txt
+python tools/canon.py data/r3/cells/c22.json     > b.txt
+diff a.txt b.txt
+sha256sum code/r3/out/n1983/tube.json data/r3/n1983/tube.json
+```
+
+The node tags are `n` followed by 1000 σ0 (n1597 ... n1983); cells c01 ... c22 are the consecutive pairs
+(`code/r3/assemble_w.py`). The canonical comparison drops run times; every enclosure, count and sha256 should agree.
+This tier was repeated in a clean room for c22 and c11 (with their nodes): IDENTICAL-CANONICAL, tube hashes equal.
+The commands are POSIX shell (`unset WSU`, `;`); on Windows, Git Bash works. If you run Python through a wrapper
+that prints its own status lines (for example a memory-cap launcher), strip those lines from `a.txt` and `b.txt`
+before the `diff`.
+
+**6c. The full window run (81 minutes of wall time on two lanes in the lab).** `code/r3/run_w1.sh` is the lab's
+driver (folders replaced, PATCHES.md part A): 23 node jobs, then 22 cell jobs, at most two at once, then
+`python verdict_w.py window`, which writes `out/window_verdict.json` ("HOLDS on [1597/1000, 1983/1000]"). Logged walls:
+86-127 s per node and 143-514 s per cell (`data/r3/logs/N_*.log`, `C_*.log`, the "done in" lines).
+
+**6d. The controls (about 50 minutes of compute in the lab).** `code/r3/RUN.md`, "Commands", lists them. Two controls
+(XK and R1REG) read the R2 outputs from `../../build-3/out` relative to `code/r3/` (the lab's folder layout). In this
+repository those outputs are `data/r2/`, with the same sub-folder names, so first run, from the repository root:
+
+```
+mkdir -p build-3 && cp -r data/r2 build-3/out
+```
+
+Then `python verdict_w.py controls` in `code/r3/` must print `"all_pass": true`. The XU control at 1985/1000 uses the
+re-count rule that was set after seeing its data (PAPER.md, Section 12.11). One control cannot be rerun from this
+repository: XC (a float control) imports the lab's float probe helpers (`design/probe/fbg.py` and its float
+background solver), which are design probes, not instruments, and are not shipped; its output is shipped
+(`data/r3/controls/XC.jsonl`); copy it to `code/r3/out/controls/` before `verdict_w.py controls`, which reads it
+from there.

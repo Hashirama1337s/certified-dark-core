@@ -1,4 +1,4 @@
-Wed Nov 18 21:48:40 AST 2026
+Wed Nov 18 21:48:40 2026
 U:hi-u exit 0 21:56:47
 U:lo-u exit 0 21:57:35
 U:in-155 exit 0 22:04:11
@@ -35,7 +35,7 @@ K2:g190 exit 0 00:04:09
 K0:g195 exit 0 00:09:49
 K1:g195 exit 0 00:14:48
 K2:g195 exit 0 00:17:48
-Thu Nov 19 00:17:49 AST 2026
+Thu Nov 19 00:17:49 2026
 controls exit 0
 controls-r2 exit 0
 verdict lo-u exit 0
@@ -50,4 +50,4 @@ verdict g175 exit 0
 verdict g185 exit 0
 verdict g190 exit 0
 verdict g195 exit 0
-Thu Nov 19 00:17:52 AST 2026
+Thu Nov 19 00:17:52 2026

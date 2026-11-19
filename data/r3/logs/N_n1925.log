@@ -1,0 +1,39 @@
+float u0 = 4.39295646673935
+kappa guess 1.86546 turning radius 5.97
+  refine R*=15.8 u0=4.39295646674228325436788764799134180776936947 steps ['2.9e-12', '-4.8e-21', '3.3e-31'] err 1.0e-12
+  refine R*=18.3 u0=4.39295646674209172106895243561092800755054162 steps ['-1.9e-13', '1.7e-23', '-1.0e-34'] err 1.0e-16
+  refine R*=23.2 u0=4.39295646674209162506986686989283103243782780 steps ['-9.6e-17', '-1.1e-28', '-9.9e-45'] err 1.0e-24
+  refine R*=33.1 u0=4.39295646674209162506985384235721909573680350 steps ['-1.3e-23', '-1.7e-35', '-1.0e-49'] err 1.0e-40
+  refine R*=52.9 u0=4.39295646674209162506985384235721909567931571 steps ['-5.7e-38', '-2.2e-49', '-4.2e-63'] err 4.2e-62
+  refine R*=79.3 u0=4.39295646674209162506985384235721909567931571 steps ['-7.8e-68', '-1.8e-89', '1.8e-95'] err 2.5e-90
+  classify lo: {'result': 'escape', 'r': 42.84213090135311, 'zeros': 1, 'steps': 391}
+  classify hi: {'result': 'zeros', 'r': 42.59213090135311, 'zeros': 2, 'steps': 390}
+  r=0.000 h=0.0000 width(sigma)=3.75e-56 sigma=1.925e+00
+  r=0.010 h=0.0007 width(sigma)=2.00e-51 sigma=1.925e+00
+  r=0.312 h=0.0208 width(sigma)=1.20e-46 sigma=1.903e+00
+  r=3.035 h=0.0609 width(sigma)=1.13e-41 sigma=-2.855e-01
+  r=8.309 h=0.1651 width(sigma)=1.71e-38 sigma=-2.459e-02
+  r=20.092 h=0.2500 width(sigma)=3.96e-31 sigma=-7.329e-10
+  R=10 L=0 +: upper #(<+eps)=2  lower #(<-eps)=2  delta=[0.0480201 +/- 2.17e-8] [3s]
+  R=10 L=0 -: upper #(<+eps)=2  lower #(<-eps)=1  delta=[0.0480201 +/- 2.17e-8] [3s]
+  R=10 D0 node: n(B)=2 d2=[-2.078896261 +/- 4.36e-10] M=[2.449e+3 +/- 0.0252] ok=True -> n(L+(0)|g-perp) <= 1
+  R=10 L=1 +: upper #(<+eps)=2  lower #(<-eps)=1  delta=[0.0160067 +/- 7.22e-9] [6s]
+  R=10 L=1 -: upper #(<+eps)=1  lower #(<-eps)=1  delta=[0.0160067 +/- 7.22e-9] [6s]
+  R=10 L=2 +: upper #(<+eps)=1  lower #(<-eps)=1  delta=[0.00960402 +/- 4.33e-9] [8s]
+  R=10 L=2 -: upper #(<+eps)=1  lower #(<-eps)=1  delta=[0.00960402 +/- 4.33e-9] [8s]
+  R=10 L=3 +: upper #(<+eps)=0  lower #(<-eps)=0  delta=[0.00686002 +/- 2.63e-9] [9s]
+  R=10 L=3 -: upper #(<+eps)=0  lower #(<-eps)=0  delta=[0.00686002 +/- 2.63e-9] [9s]
+  R=14 L=0 +: upper #(<+eps)=2  lower #(<-eps)=2  delta=[0.000222480 +/- 1.37e-10] [12s]
+  R=14 L=0 -: upper #(<+eps)=2  lower #(<-eps)=1  delta=[0.000222480 +/- 1.37e-10] [12s]
+  R=14 D0 node: n(B)=2 d2=[-2.133760188 +/- 3.30e-10] M=[1.104e+8 +/- 2.15e+4] ok=True -> n(L+(0)|g-perp) <= 1
+  R=14 L=1 +: upper #(<+eps)=2  lower #(<-eps)=1  delta=[7.41600e-5 +/- 4.55e-11] [19s]
+  R=14 L=1 -: upper #(<+eps)=1  lower #(<-eps)=1  delta=[7.41600e-5 +/- 4.55e-11] [20s]
+  R=14 L=2 +: upper #(<+eps)=1  lower #(<-eps)=1  delta=[4.44960e-5 +/- 2.73e-11] [21s]
+  R=14 L=2 -: upper #(<+eps)=1  lower #(<-eps)=1  delta=[4.44960e-5 +/- 2.73e-11] [22s]
+  R=14 L=3 +: upper #(<+eps)=0  lower #(<-eps)=0  delta=[3.17829e-5 +/- 2.34e-11] [23s]
+  R=14 L=3 -: upper #(<+eps)=0  lower #(<-eps)=0  delta=[3.17829e-5 +/- 2.34e-11] [24s]
+  GREEN: U columns marched [2.2s]
+  GREEN: V1 columns marched [3.1s]
+  GREEN: Z columns marched [4.0s]
+N:n1925 done in 118 s
+memcap: exit 0, peak 0.84 GB of 8.00 GB cap

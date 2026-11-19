@@ -1,0 +1,219 @@
+{
+ "job": "XK:hi-s",
+ "sig0": "1983/1000",
+ "R": 20.0,
+ "tube_sha256": "2226779189e2c3ff423840a82b014e90e7e6a8b15c411c69087c8a73a0774a1a",
+ "tube_source": "built in this run (60 s)",
+ "rows": [
+  {
+   "L": 0,
+   "w_minus": 1.2180758396575286,
+   "w_plus": 1.4641015822636176,
+   "w0": {
+    "w": 0.0,
+    "lev": 0.001,
+    "upper": 4,
+    "lower": 3,
+    "ext": "[2.5845 +/- 2.44e-6]",
+    "why": [
+     null,
+     null
+    ]
+   },
+   "counts": [
+    {
+     "w": 1.216076,
+     "lev": 1e-05,
+     "upper": 4,
+     "lower": 4,
+     "ext": "[1.3694 +/- 1.16e-5]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 1.220076,
+     "lev": 1e-05,
+     "upper": 3,
+     "lower": 3,
+     "ext": "[1.3654 +/- 1.16e-5]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 1.462102,
+     "lev": 1e-05,
+     "upper": 3,
+     "lower": 3,
+     "ext": "[1.1234 +/- 1.45e-5]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 1.466102,
+     "lev": 1e-05,
+     "upper": 4,
+     "lower": 4,
+     "ext": "[1.1194 +/- 1.45e-5]",
+     "why": [
+      null,
+      null
+     ]
+    }
+   ],
+   "w0_booked_ok": true,
+   "lower_eq_upper": true,
+   "pattern_ok": true,
+   "drop_exactly_1": true,
+   "rise_exactly_1": true,
+   "neg_sign": "-",
+   "pos_sign": "+"
+  },
+  {
+   "L": 1,
+   "w_minus": 0.6223684269947788,
+   "w_plus": 1.087999911417765,
+   "w0": {
+    "w": 0.0,
+    "lev": 0.001,
+    "upper": 3,
+    "lower": 2,
+    "ext": "[2.5845 +/- 2.43e-6]",
+    "why": [
+     null,
+     null
+    ]
+   },
+   "counts": [
+    {
+     "w": 0.620368,
+     "lev": 1e-05,
+     "upper": 3,
+     "lower": 3,
+     "ext": "[1.9651 +/- 1.96e-5]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 0.624368,
+     "lev": 1e-05,
+     "upper": 2,
+     "lower": 2,
+     "ext": "[1.9611 +/- 1.96e-5]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 1.086,
+     "lev": 1e-05,
+     "upper": 2,
+     "lower": 2,
+     "ext": "[1.4995 +/- 1.25e-5]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 1.09,
+     "lev": 1e-05,
+     "upper": 3,
+     "lower": 3,
+     "ext": "[1.4955 +/- 1.25e-5]",
+     "why": [
+      null,
+      null
+     ]
+    }
+   ],
+   "w0_booked_ok": true,
+   "lower_eq_upper": true,
+   "pattern_ok": true,
+   "drop_exactly_1": true,
+   "rise_exactly_1": true,
+   "neg_sign": "-",
+   "pos_sign": "+"
+  },
+  {
+   "L": 2,
+   "w_minus": 0.4539843104336512,
+   "w_plus": 0.472730296450261,
+   "w0": {
+    "w": 0.0,
+    "lev": 0.001,
+    "upper": 2,
+    "lower": 2,
+    "ext": "[2.5845 +/- 2.43e-6]",
+    "why": [
+     null,
+     null
+    ]
+   },
+   "counts": [
+    {
+     "w": 0.451984,
+     "lev": 1e-05,
+     "upper": 2,
+     "lower": 2,
+     "ext": "[2.1335 +/- 3.59e-6]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 0.455984,
+     "lev": 1e-05,
+     "upper": 1,
+     "lower": 1,
+     "ext": "[2.1295 +/- 3.59e-6]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 0.47073,
+     "lev": 1e-05,
+     "upper": 1,
+     "lower": 1,
+     "ext": "[2.1148 +/- 4.25e-5]",
+     "why": [
+      null,
+      null
+     ]
+    },
+    {
+     "w": 0.47473,
+     "lev": 1e-05,
+     "upper": 2,
+     "lower": 2,
+     "ext": "[2.1108 +/- 4.25e-5]",
+     "why": [
+      null,
+      null
+     ]
+    }
+   ],
+   "w0_booked_ok": true,
+   "lower_eq_upper": true,
+   "pattern_ok": true,
+   "drop_exactly_1": true,
+   "rise_exactly_1": true,
+   "neg_sign": "-",
+   "pos_sign": "+"
+  }
+ ],
+ "PASS": true,
+ "tube_seconds": 60.554224491119385,
+ "seconds": 102.32732224464417
+}

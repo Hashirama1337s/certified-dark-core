@@ -1,0 +1,5 @@
+  XK g195 L0: w0 4/3  counts [(4, 4), (3, 3), (3, 3), (4, 4)]  drop True rise True
+  XK g195 L1: w0 3/2  counts [(3, 3), (2, 2), (2, 2), (3, 3)]  drop True rise True
+  XK g195 L2: w0 2/2  counts [(2, 2), (1, 1), (1, 1), (2, 2)]  drop True rise True
+XK:g195 done in 103 s
+memcap: exit 0, peak 0.79 GB of 8.00 GB cap

@@ -1,0 +1,66 @@
+{
+ "controls": {
+  "controls": {
+   "XK:lo-s": true,
+   "XK:g165": true,
+   "XK:g170": true,
+   "XK:g175": true,
+   "XK:r1": true,
+   "XK:g185": true,
+   "XK:g190": true,
+   "XK:g195": true,
+   "XK:hi-s": true,
+   "XU:lo-u": true,
+   "XU:hi-u": true,
+   "LOO:loo-161": true,
+   "LOO:loo-1595": true,
+   "XI": true,
+   "XC": true,
+   "R1REG": true
+  },
+  "all_pass": true,
+  "xu_detail": {
+   "lo-u": {
+    "PASS": true,
+    "source": "single job",
+    "n": 171,
+    "jmax": 171,
+    "jtop": 171,
+    "undecided": 0,
+    "drop_pairs": 0,
+    "excluded": 0
+   },
+   "hi-u": {
+    "PASS": true,
+    "source": "8 parts",
+    "n": 258,
+    "jmax": 259,
+    "jtop": 258,
+    "excluded": 1,
+    "undecided": 0,
+    "drop_pairs": 0,
+    "tiling_ok": true,
+    "recounts_used": [
+     {
+      "w": 2.27,
+      "lev": 1e-07,
+      "upper": 4,
+      "lower": 4
+     }
+    ]
+   }
+  }
+ },
+ "window": "HOLDS on [1597/1000, 1983/1000]",
+ "closed_components": [
+  [
+   "1597/1000",
+   "1983/1000"
+  ]
+ ],
+ "largest_closed_union": [
+  "1597/1000",
+  "1983/1000"
+ ]
+}
+memcap: exit 0, peak 0.01 GB of 8.00 GB cap

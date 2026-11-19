@@ -1,0 +1,55 @@
+[
+ {
+  "job": "RECOUNT:hi-u:2.27",
+  "sig0": "1985/1000",
+  "L": 2,
+  "tube_sha256": "67dbe4533c9b85661e602c9f9bff87464141aea4d64b7334c7917116f73dd129",
+  "rows": [
+   {
+    "w": 2.27,
+    "lev": 1e-05,
+    "upper": null,
+    "lower": 4,
+    "why": [
+     "endpoint inertia undecided",
+     null
+    ],
+    "ext": "[0.32055 +/- 3.74e-6]"
+   },
+   {
+    "w": 2.27,
+    "lev": 1e-06,
+    "upper": null,
+    "lower": 4,
+    "why": [
+     "endpoint inertia undecided",
+     null
+    ],
+    "ext": "[0.32056 +/- 4.74e-6]"
+   },
+   {
+    "w": 2.27,
+    "lev": 1e-07,
+    "upper": 4,
+    "lower": 4,
+    "why": [
+     null,
+     null
+    ],
+    "ext": "[0.32056 +/- 3.84e-6]"
+   }
+  ],
+  "decided": {
+   "w": 2.27,
+   "lev": 1e-07,
+   "upper": 4,
+   "lower": 4,
+   "why": [
+    null,
+    null
+   ],
+   "ext": "[0.32056 +/- 3.84e-6]"
+  },
+  "seconds": 71.71613717079163
+ }
+]

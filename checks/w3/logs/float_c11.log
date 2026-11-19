@@ -1,0 +1,22 @@
+== c11 [1775/1000, 9/5]  (N = 600, 1200; Rb = 24)
+  E float -3.0337385681  certified [-3.03373856809 +/- 1.94e-12]  inside: True
+  E float -3.1054402545  certified [-3.10544025447 +/- 3.02e-12]  inside: True
+  E float at mid -3.06945810 ; |E| lower bound of the cell [2.30505 +/- 4.01e-6]
+  sanity: |lowest-|eig| of L-(0)| 4.83e-08, of L+(1) 1.26e-07 (both should be ~0)
+  L0 H(w2): float margin a 3.0575e-02 b 3.5370e-02 | certified ma [0.0213730 +/- 3.29e-8] mb [0.0245793 +/- 6.55e-9] | ma<=float: True
+      RITZ: float top a -5.3938e-02 b -5.5575e-02 | certified -ma [0.0377546 +/- 4.69e-8] -mb [0.0384596 +/- 1.16e-8] | top<=-m: True
+      counts (N(w1), N(w2)) at t=0, 1/2, 1: (4, 3) (4, 3) (4, 3)  (need (4, 3))
+      chord loss at 1/2, upper: ['-3.890e-05', '-3.888e-05'] vs eta2(1/2) 1.818e-03 ; lower: ['-2.524e-05', '-2.525e-05'] vs eta2p(1/2) 2.532e-03 ; within: True
+  L1 H(w2): float margin a 8.7787e-02 b 8.9110e-02 | certified ma [0.0614353 +/- 5.71e-9] mb [0.0622269 +/- 4.93e-8] | ma<=float: True
+      RITZ: float top a -4.3573e-02 b -4.4462e-02 | certified -ma [0.0304976 +/- 5.81e-9] -mb [0.0308687 +/- 3.33e-8] | top<=-m: True
+      counts (N(w1), N(w2)) at t=0, 1/2, 1: (3, 2) (3, 2) (3, 2)  (need (3, 2))
+      chord loss at 1/2, upper: ['-4.700e-05', '-4.697e-05'] vs eta2(1/2) 1.015e-03 ; lower: ['-4.314e-05', '-4.315e-05'] vs eta2p(1/2) 9.602e-04 ; within: True
+  L2 H(w2): float margin a 4.1683e-02 b 3.7179e-02 | certified ma [0.0290597 +/- 2.56e-8] mb [0.0260095 +/- 1.64e-8] | ma<=float: True
+      RITZ: float top a -1.9018e-01 b -2.0129e-01 | certified -ma [0.133116 +/- 7.72e-8] -mb [0.140715 +/- 5.28e-8] | top<=-m: True
+      counts (N(w1), N(w2)) at t=0, 1/2, 1: (2, 1) (2, 1) (2, 1)  (need (2, 1))
+      chord loss at 1/2, upper: ['-5.515e-05', '-5.513e-05'] vs eta2(1/2) 8.538e-04 ; lower: ['-2.129e-05', '-2.129e-05'] vs eta2p(1/2) 6.459e-04 ; within: True
+  H(0) L0: float margin a 4.9256e-01 b 5.0475e-01 | certified ma [0.344738 +/- 4.59e-8] mb [0.351998 +/- 4.12e-7] | ma<=float: True | loss -4.355e-04 vs eta2 1.818e-03 | max mixing 0.0e+00
+  H(0) L1: float margin a 2.8196e-01 b 2.8502e-01 | certified ma [0.197353 +/- 4.60e-7] mb [0.199391 +/- 1.11e-7] | ma<=float: True | loss -4.002e-05 vs eta2 1.015e-03 | max mixing 0.0e+00
+  H(0) L2: float margin a 5.9045e-01 b 5.9731e-01 | certified ma [0.413296 +/- 4.75e-7] mb [0.417948 +/- 4.64e-7] | ma<=float: True | loss -6.220e-05 vs eta2 8.538e-04 | max mixing 0.0e+00
+  H(0) L3: float margin a 2.8785e-01 b 2.9361e-01 | certified ma [0.201490 +/- 4.88e-8] mb [0.205518 +/- 2.14e-7] | ma<=float: True | loss 8.815e-06 vs eta2 7.849e-04 | max mixing 0.0e+00
+  seconds 71

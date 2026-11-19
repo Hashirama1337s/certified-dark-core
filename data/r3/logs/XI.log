@@ -1,0 +1,38 @@
+float u0 = 3.26257829877683
+kappa guess 1.59779 turning radius 6.55
+  refine R*=18.1 u0=3.26257829877888247215094789540652999266105857 steps ['2.1e-12', '-3.4e-21', '1.5e-31'] err 1.0e-12
+  refine R*=21.0 u0=3.26257829877873239565976129843141457946618058 steps ['-1.5e-13', '1.0e-23', '-4.4e-35'] err 1.0e-16
+  refine R*=26.7 u0=3.26257829877873232632729341997975414505796433 steps ['-6.9e-17', '-4.5e-29', '1.7e-44'] err 1.0e-24
+  refine R*=38.3 u0=3.26257829877873232632728523408544749253638415 steps ['-8.2e-24', '-5.1e-36', '-1.6e-50'] err 1.0e-40
+  refine R*=61.3 u0=3.26257829877873232632728523408544749250724680 steps ['-2.9e-38', '-4.7e-50', '-3.8e-64'] err 3.8e-63
+  classify lo: {'result': 'escape', 'r': 49.10709979001482, 'zeros': 1, 'steps': 407}
+  classify hi: {'result': 'zeros', 'r': 49.10709979001482, 'zeros': 2, 'steps': 407}
+  r=0.000 h=0.0000 width(sigma)=3.11e-56 sigma=1.597e+00
+  r=0.010 h=0.0007 width(sigma)=1.66e-51 sigma=1.597e+00
+  r=0.312 h=0.0208 width(sigma)=9.54e-47 sigma=1.578e+00
+  r=3.404 h=0.0748 width(sigma)=7.40e-42 sigma=-2.828e-01
+  r=9.980 h=0.2065 width(sigma)=1.49e-38 sigma=-8.832e-03
+  r=22.357 h=0.2500 width(sigma)=8.77e-32 sigma=-1.121e-09
+  GREEN: U columns marched [1.4s]
+  GREEN: V1 columns marched [2.0s]
+  GREEN: Z columns marched [2.6s]
+float u0 = 3.4321151896038
+kappa guess 1.64035 turning radius 6.44
+  refine R*=17.7 u0=3.43211518960594393279156556658800568110938970 steps ['2.1e-12', '-3.6e-21', '1.6e-31'] err 1.0e-12
+  refine R*=20.5 u0=3.43211518960578690578395221876166218428365473 steps ['-1.6e-13', '1.1e-23', '-5.1e-35'] err 1.0e-16
+  refine R*=26.1 u0=3.43211518960578683230290112372318729660555422 steps ['-7.3e-17', '-5.3e-29', '1.8e-44'] err 1.0e-24
+  refine R*=37.3 u0=3.43211518960578683230289225606858139756501508 steps ['-8.9e-24', '-6.3e-36', '-2.2e-50'] err 1.0e-40
+  refine R*=59.8 u0=3.43211518960578683230289225606858139753236981 steps ['-3.3e-38', '-6.1e-50', '-5.6e-64'] err 5.6e-63
+  classify lo: {'result': 'escape', 'r': 47.930069508962475, 'zeros': 1, 'steps': 404}
+  classify hi: {'result': 'zeros', 'r': 47.930069508962475, 'zeros': 2, 'steps': 404}
+  r=0.000 h=0.0000 width(sigma)=3.21e-56 sigma=1.650e+00
+  r=0.010 h=0.0007 width(sigma)=1.71e-51 sigma=1.650e+00
+  r=0.312 h=0.0208 width(sigma)=9.92e-47 sigma=1.631e+00
+  r=3.335 h=0.0725 width(sigma)=7.87e-42 sigma=-2.852e-01
+  r=9.632 h=0.1967 width(sigma)=1.44e-38 sigma=-1.100e-02
+  r=21.930 h=0.2500 width(sigma)=1.08e-31 sigma=-1.075e-09
+  GREEN: U columns marched [1.4s]
+  GREEN: V1 columns marched [2.0s]
+  GREEN: Z columns marched [2.5s]
+XI done in 107 s
+memcap: exit 0, peak 0.81 GB of 8.00 GB cap

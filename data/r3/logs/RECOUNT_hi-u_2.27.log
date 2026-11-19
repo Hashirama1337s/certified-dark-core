@@ -1,0 +1,5 @@
+w 2.27 lev 1e-05: upper None lower 4 why ('endpoint inertia undecided', None)
+w 2.27 lev 1e-06: upper None lower 4 why ('endpoint inertia undecided', None)
+w 2.27 lev 1e-07: upper 4 lower 4 why (None, None)
+done in 72 s; decided: {'w': 2.27, 'lev': 1e-07, 'upper': 4, 'lower': 4, 'why': (None, None), 'ext': '[0.32056 +/- 3.84e-6]'}
+memcap: exit 0, peak 0.79 GB of 8.00 GB cap

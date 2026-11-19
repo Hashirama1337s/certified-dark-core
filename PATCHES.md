@@ -30,6 +30,15 @@ the lab can show that its unpatched file is the one that was sealed, run or pinn
 | S13 | `<TOOLS>/` | the lab's tool folder (documents) |
 | S14 | ``<a session transcript folder>`` | a folder in the operator's user profile (blind-seat RESULT.md, one mention) |
 | S15 | `The owner said "Yes, finish it"` | the lab owner's first name (BAR-R1-BLIND.md, one mention) |
+| S17 | `cd code/r3` | the change into the window instrument folder (version 2.0, `code/r3/run_w1.sh`) |
+| S18 | (removed) | the memory-cap launcher arguments in the command list of `code/r3/guard_test.py`; the test now runs the job runner with the current interpreter, and still checks for exit code 2 and the REFUSED line |
+| S19 | `'data/r3'` | the window output folder (folder literal of the referee-W3 checker scripts in `checks/w3/`) |
+| S21 | (removed) | the time-zone abbreviation in the timestamp lines of the run-driver logs (version 2.0; the date and time of day are kept) |
+| S22 | `'w', newline='
+'` | `'w'` in the one line of `checks/w3/check_w3.py` that writes `logs/check_w3.json`, so the file is written with LF on every system and a rerun keeps it byte-identical to the shipped copy (and to the manifest) |
+| S20 | (path level `out/` removed) | the shipped window outputs are one level flatter: lab `out/<tag>/` and `out/cells/` became `data/r3/<tag>/` and `data/r3/cells/` (referee-W3 checker scripts) |
+
+Version 2.0 reuses S2 (launcher prefix) and S11 (`<LAB>/`) with the same meaning for the window files.
 
 Two of these replacements are not paths:
 - S14 replaces a folder of the operator's user profile mentioned once by the blind seat (it reports that a guard
@@ -37,9 +46,10 @@ Two of these replacements are not paths:
 - S15 replaces the lab owner's first name in one sentence of BAR-R1-BLIND.md (the owner's go-ahead for the blind
   seat). The sealed meaning is unchanged.
 
-**Sealed files.** Four shipped files under `seals/` are sealed texts. Their shipped copies differ from the sealed bytes
+**Sealed files.** Five shipped files under `seals/` are sealed texts. Their shipped copies differ from the sealed bytes
 only by the substitutions listed; the original sha256 column equals the sha256 recorded when each was sealed
-(BAR-R1-FINAL 70ef9b9e..., AMENDMENT-R1-1 c0cb5b42..., BAR-R1-BLIND 97c1c3c6..., BAR-R2-EDGES 21122fca...).
+(BAR-R1-FINAL 70ef9b9e..., AMENDMENT-R1-1 c0cb5b42..., BAR-R1-BLIND 97c1c3c6..., BAR-R2-EDGES 21122fca...,
+BAR-W1 5163ac3d... (version 2.0, seal 5e6d7bfed0)).
 
 **Run logs.** In each `data/r1/*.log` and `data/r1/cal/*.log` the one line `wrote <folder>\<file>.json wall N s`
 had its lab folder replaced (S10); the same for the R2 logs in `data/r2/logs/` (S16). No other line of any log, and no
@@ -140,6 +150,16 @@ JSON output, the float-map data) is a byte-identical copy.
 | data/r2/logs/U_u150.log | `fdb661b2b8368762885851c1ad35f83be5bcaf8b24b7bafab30eca56aaff9da4` | `d33690fae6787abfe8f61a4e51e7bf922718a328ab43220b0046b3cc344620ff` | S16 x1 |
 | data/r2/logs/U_u205.log | `af52013d8173586ffad375c6a694626864e362b57bd5c0bc60681862e6165e5f` | `6b1053e7fda73410d1d161826c90c8eb05aa14977adce46aed12845b7623fe31` | S16 x1 |
 | code/r2/RUN.md | `ae0fa300c1085a0313951ca67618d6f9a9b77323f5b30a7a482fd2f2e0ab4015` | `f84084554fd02e6fcee51542a076b04ed4d42d9ce2a3a3ff4f9657559420626a` | S2 x1, S11 x2 |
+| code/r3/RUN.md | `150b381b98860a29a44e0d30696566a2374c8fb624e19916087c3a08287051e8` | `a3eedb1fb493da0e78c8fbc4653a7f47975b289aaea4f9424dc01b9041eeab1c` | S11 x2, S2 x1 |
+| code/r3/run_w1.sh | `1f362c9813949ce78e4c4bad1331f22c4a2f1d6293ca9bd7a327068dc0561fb6` | `e3dcd10605f79b64fe9037f2790c1a0d0586035d16c649b99f51155c2dde03a6` | S17 x1, S2 x1 |
+| code/r3/guard_test.py | `52510a9a9d476fba1c481a4f73c42d888f7fb20e6b73ff6c4f172be30f13c189` | `6ce267c51033aa57b82effe21ae7fb94c42ed6b260032bd6936448df816eaf52` | S18 x1 |
+| seals/BAR-W1.md | `5163ac3d4acc69ea05ad5134076e056fda5fa552ce1e99c83cf7ae10c04707be` | `b65f8bbd44e53b4a1d32ba1a3ab37117851f37dfe2c4b9e5d4ef1b589c99546c` | S11 x2 |
+| checks/w3/check_w3.py | `9c7aafde342541a78280faca771915e02fe447f201e4bf214c4444997fe9efbc` | `96e00f558d4b2a718b13829404c7a44a2c4dd1b1697c57032b99ed3dd687ac2c` | S19 x1, S20 x3, S22 x1 |
+| data/r1/run_target.log | `2a791a456aed73e198ffea4d38f3c06f2303f6c3a091f4805c717c7f7bbef6ff` | `45ffea36714e52b8199144969e05d08fa236b162859d2979493de9e621d472cc` | S21 x5 |
+| data/r2/logs/chain.log | `7d7e3fd0fbdc97eb21885b69a27bc0626b98ddb7811b8957f6bdaa75fe5faf2e` | `beb4332c480c2734d48fd08fad51d0e49c0198111a83e847105425ab6fb6a371` | S21 x10 |
+| data/r2/logs/run_r2.log | `89e91fdde595c08d0ab20e746fbb1e12abe7e850f16231df68bf5cd5bbc15362` | `7276f900056f7771e56ef56d2e86f6c0e200fdda8a48962fc9843cde537476bd` | S21 x3 |
+| data/r3/logs/run_w1.log | `68a5ae77a9b658caa9a0501a29bbf3daf486cfe8fa3aa9d6b35167b72c003a10` | `26f007822fb3ce1165e744e9ca243ac1d8b33e16de2f9330fd2656c134b9dcde` | S21 x4 |
+| checks/w3/float_spot.py | `72e0aacf3b07fd15c7a2929d5e9fd5479d1d045757bf8a761e5a45d2953b9a29` | `1c3c7bd785ad205fdfd0e98b8a1edcb68e6950ae3b9e6491dd268614620d99e8` | S19 x1, S20 x2 |
 
 ## B. Instrument changes between runs (lab history)
 
@@ -151,6 +171,15 @@ JSON output, the float-map data) is a byte-identical copy.
   `code/r2/CALIBRATION.md`: the R2 controls and the 9/5 regression, which reproduces R1 leaf for leaf.
   `code/r2/RUN.md`: the R2 hashes and commands (lab folders replaced, part A).
 - These two notes name lab folders only in relative form (for example `core/seats/audit-1/`), which are not shipped.
+- **Version 2.0.** `code/r3/PATCHES-buildW.md` (the lab's build-W PATCHES.md, byte-identical): from the R2 instruments
+  to the window instruments. Eleven build-3 instruments are copied unchanged into `code/r3/` (byte-identical to the
+  same files in `code/r2/`); the new instruments are hw3.py, green.py, cell.py, node.py, assemble_w.py,
+  verdict_w.py, recount.py, steer.py, xc.py and guard_test.py. Items 1-12 there list every change made during
+  calibration, the audit-W patches and the lead's XU-1985 decision, all before the seal. `code/r3/CALIBRATION.md`
+  (byte-identical): the controls, unit costs and the XU-1985 record. `code/r3/RUN.md`: the 21 pinned sha256 and the
+  commands (lab folders replaced, part A). All 21 pinned instruments except guard_test.py are byte-identical to the
+  sealed files; guard_test.py (a test of the job runner's seal guard, not on the proof path) had its launcher removed
+  (S18).
 
 ## C. Repository tools (new for this release)
 
@@ -175,3 +204,46 @@ JSON output, the float-map data) is a byte-identical copy.
 - tools/canon.py: `tube_source` (free-text build note, e.g. "built in this run (N s)") added to VOLATILE_KEYS. With it, every
   clean-room re-run (R1 target-B, target-K2; R2 B:lo-s, U:hi-u, K2:hi-s) is IDENTICAL-CANONICAL to the shipped data.
 - reproduce.md: the expected-difference note now covers every job type; one SEALED-<tag>.ok per tag; verdict_blind prints scores only.
+
+## F. Version 2.0 (the whole window): what was added, and notes on the shipped copies
+
+**Added files.**
+- `code/r3/`: the 21 pinned window instruments (sha256 in `code/r3/RUN.md`), the lab's driver `run_w1.sh`, and the
+  lab notes `RUN.md`, `CALIBRATION.md` and `PATCHES-buildW.md`. Development scripts (the lab's `dev/` folder) are not
+  instruments, are on no proof path and are not shipped; nor is the tube disk cache.
+- `data/r3/`: every output of the sealed run and of the final control batch, from the lab's `out/` folder one level
+  flatter (S20): `<node>/N.json` and `<node>/tube.json` for the 23 nodes, `cells/c01.json` ... `cells/c22.json`,
+  `controls/` (final control outputs; `controls/superseded/` and `controls/superseded2/` are the earlier control
+  outputs replaced after instrument changes, kept for the record; `controls/xu_fine/` holds two single-point XU jobs),
+  `controls_verdict.json`, `window_verdict.json`, and `logs/` (every log of the lab's logs folder). All are
+  byte-identical copies, except `logs/run_w1.log` (S21, time-zone token removed); none contained a local path.
+- Version 2.0 also removed the time-zone token (S21) from the two version 1.0 driver logs `data/r1/run_target.log`
+  and `data/r2/logs/run_r2.log` and from `data/r2/logs/chain.log`; nothing else in them changed.
+- `seals/BAR-W1.md` (sealed; S11 only). `design/DESIGN-W1.md`, `DESIGN-W2.md`, `DESIGN-W3.md`: byte-identical copies of
+  the lab's design files (no substitution was needed).
+- `checks/w3/`: referee-W3's independent checker (`check_w3.py`), its mutation tests (`nulls_w3.py`) and its float
+  spot recompute (`float_spot.py`), with folder literals made repository-relative (S19, S20); `nulls_w3.py` is
+  byte-identical. Logs in `checks/w3/logs/` are fresh runs from the repository root, written for this release:
+  `check_w3.log` and `nulls_w3.log` are line-for-line identical to the referee's own logs, and the four `float_c*.log`
+  differ from the referee's only in the wall-time line ("seconds"); the memory-cap line was dropped from each, and
+  they are stored with LF line endings. `check_w3.json` is written by the checker itself.
+
+**Notes on the window data (not edits).**
+- `data/r3/logs/final_hashes.txt` was written during calibration, before the last change to `verdict_w.py` (items 11-12
+  of `code/r3/PATCHES-buildW.md`); its `verdict_w.py` line is therefore an earlier hash. `code/r3/RUN.md` lists the
+  sealed hashes, and every shipped instrument matches it.
+- Two logs in `data/r3/logs/` are empty (`F_XU_hi-u_235-259.log`, `F_XU_hi-u_253-259.log`): stopped part-jobs of the XU
+  scan at 1985/1000 before the split into the final j-ranges; referee-W3 asked for one line about them, which is this
+  one. Other empty logs there (`XK_g165.log`, `XK_lo-s.log`, `XU_hi-u_p2.log`, `XU_lo-u.log`) are stopped control
+  runs from before the final batch. In general, control logs without the `F_` prefix come from earlier batches; the
+  `F_` logs (and `RECOUNT_hi-u_2.27.log`, `W_controls_presealrun.log`) belong to the final batch under the sealed
+  hashes, whose outputs are the files directly in `data/r3/controls/`.
+- The `D_XU_*` and `dev_br*` logs are diagnostic and development runs (not controls, not on a proof path).
+- Line endings: the lab's instruments, sealed files, design files and most outputs use CRLF, as did version 1.0. They
+  are shipped byte-identical, because their sha256 are pinned by `code/r3/RUN.md`, by the seal and by the cell records;
+  converting them would break those pins. Files written for this release use LF.
+
+**Tools changed for version 2.0.**
+- `tools/make_scorecard.py`: adds the R3 (BAR-W1) row, checked against `data/r3/window_verdict.json` and
+  `data/r3/controls_verdict.json` before anything is written.
+- `tools/check_numbers.py`, `tools/canon.py`, `tools/make_manifest.py`: unchanged.

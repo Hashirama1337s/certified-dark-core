@@ -1,0 +1,48 @@
+  GREEN: U columns marched [1.4s]
+  GREEN: V1 columns marched [2.0s]
+  GREEN: Z columns marched [2.6s]
+  GREEN: U columns marched [2.4s]
+  GREEN: V1 columns marched [3.3s]
+  GREEN: Z columns marched [4.3s]
+    half_tms step 0/315 [0s]
+    half_tms step 50/315 [1s]
+    half_tms step 100/315 [1s]
+    half_tms step 150/315 [2s]
+    half_tms step 200/315 [3s]
+    half_tms step 250/315 [4s]
+    half_tms step 300/315 [5s]
+    half_tms step 0/315 [0s]
+    half_tms step 50/315 [1s]
+    half_tms step 100/315 [1s]
+    half_tms step 150/315 [2s]
+    half_tms step 200/315 [3s]
+    half_tms step 250/315 [4s]
+    half_tms step 300/315 [5s]
+  cross-grid TMs [9.7s]
+    br_half step 0 [0s]
+    br_half step 50 [0s]
+    br_half step 100 [0s]
+    br_half step 150 [1s]
+    br_half step 200 [1s]
+    br_half step 250 [1s]
+    br_half step 300 [1s]
+    BR half: TM profiles [1.4s]
+    br_half step 0 [0s]
+    br_half step 50 [0s]
+    br_half step 100 [0s]
+    br_half step 150 [1s]
+    br_half step 200 [1s]
+    br_half step 250 [1s]
+    br_half step 300 [1s]
+    BR half: TM profiles [1.2s]
+  BR + CH [24.0s]
+    sector L0: w2 1.01530/1.01769 H(w2) True ; w1 0.9414/0.9386 RITZ True
+    sector L1: w2 0.66675/0.66846 H(w2) True ; w1 0.2726/0.2733 RITZ True
+    sector L2: w2 0.34669/0.34758 H(w2) True ; w1 0.0000/0.0000 RITZ True
+    H(0) L0: True (float margins 0.411 / 0.412)
+    H(0) L1: True (float margins 0.259 / 0.26)
+    H(0) L2: True (float margins 0.54 / 0.541)
+    H(0) L3: True (float margins 0.249 / 0.249)
+    PEN: True (float 0.327 / 0.328)
+C:c01 done in 320 s
+memcap: exit 0, peak 1.23 GB of 8.00 GB cap

@@ -1,0 +1,20 @@
+  R=10 L=0 +: upper #(<+eps)=2  lower #(<-eps)=2  delta=[0.0881154 +/- 4.45e-8] [2s]
+  R=10 L=0 -: upper #(<+eps)=2  lower #(<-eps)=1  delta=[0.0881154 +/- 4.45e-8] [2s]
+  R=10 D0 node: n(B)=2 d2=[-2.041380387 +/- 3.15e-10] M=[555.4 +/- 0.0353] ok=True -> n(L+(0)|g-perp) <= 1
+  R=10 L=1 +: upper #(<+eps)=2  lower #(<-eps)=1  delta=[0.0293718 +/- 1.49e-8] [4s]
+  R=10 L=1 -: upper #(<+eps)=1  lower #(<-eps)=1  delta=[0.0293718 +/- 1.49e-8] [5s]
+  R=10 L=2 +: upper #(<+eps)=1  lower #(<-eps)=1  delta=[0.0176231 +/- 2.89e-8] [6s]
+  R=10 L=2 -: upper #(<+eps)=1  lower #(<-eps)=1  delta=[0.0176231 +/- 2.89e-8] [6s]
+  R=10 L=3 +: upper #(<+eps)=0  lower #(<-eps)=0  delta=[0.0125879 +/- 7.94e-9] [7s]
+  R=10 L=3 -: upper #(<+eps)=0  lower #(<-eps)=0  delta=[0.0125879 +/- 7.94e-9] [7s]
+  R=14 L=0 +: upper #(<+eps)=2  lower #(<-eps)=2  delta=[0.000445979 +/- 1.21e-11] [9s]
+  R=14 L=0 -: upper #(<+eps)=2  lower #(<-eps)=1  delta=[0.000445979 +/- 1.21e-11] [9s]
+  R=14 D0 node: n(B)=2 d2=[-2.172289605 +/- 1.42e-10] M=[2.198e+7 +/- 1.46e+3] ok=True -> n(L+(0)|g-perp) <= 1
+  R=14 L=1 +: upper #(<+eps)=2  lower #(<-eps)=1  delta=[0.000148660 +/- 3.38e-10] [13s]
+  R=14 L=1 -: upper #(<+eps)=1  lower #(<-eps)=1  delta=[0.000148660 +/- 3.38e-10] [13s]
+  R=14 L=2 +: upper #(<+eps)=1  lower #(<-eps)=1  delta=[8.91958e-5 +/- 2.43e-12] [14s]
+  R=14 L=2 -: upper #(<+eps)=1  lower #(<-eps)=1  delta=[8.91958e-5 +/- 2.43e-12] [14s]
+  R=14 L=3 +: upper #(<+eps)=0  lower #(<-eps)=0  delta=[6.37113e-5 +/- 1.61e-11] [16s]
+  R=14 L=3 -: upper #(<+eps)=0  lower #(<-eps)=0  delta=[6.37113e-5 +/- 1.61e-11] [16s]
+R1REG done in 16 s
+memcap: exit 0, peak 0.03 GB of 8.00 GB cap

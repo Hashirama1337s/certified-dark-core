@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
-title: "A linearly stable excited dark-matter core, proved at nine points: certified spectral stability of the one-node Gross-Pitaevskii-Poisson state, and certified brackets of its stability-band edges"
+title: "A linearly stable excited dark-matter core, proved across its window up to 0.002-wide edge brackets: certified spectral stability of the one-node Gross-Pitaevskii-Poisson state for every central amplitude in [1597/1000, 1983/1000], and certified brackets of its stability-band edges"
 authors:
   - name: "Moki & Julio"
-version: "1.0"
+version: "2.0"
 doi: "10.5281/zenodo.24359032"
 license: CC-BY-4.0
 keywords:
@@ -20,16 +20,18 @@ keywords:
   - interval arithmetic
   - rigorous numerics
 abstract: >-
-  For the repulsive Gross-Pitaevskii-Poisson system in the units of arXiv:2402.07998, we prove with ball arithmetic
-  that the first excited (one-node) stationary state at central amplitude sigma0 = 9/5 is spectrally stable: the
-  linearised operator J L on L^2(R^3) has no spectrum with Re lambda > 0, and its spectrum lies on the imaginary axis.
-  The proof certifies the background (E = [-3.10544025447 +/- 3.02e-12]), brackets the Morse indices of L+ (with its
-  nonlocal Poisson term) and L- in every angular sector, giving n(L+) = (2, 1, 1, 0) and n(L-) = (1, 1, 1, 0) for
-  L = 0..3 and none beyond, certifies a negative-Krein imaginary eigenvalue in each of L = 0, 1, 2 (w =
-  [1.10491108047488 +/- 4.15e-15], [0.539925668013455 +/- 2.97e-16], [0.2968148506 +/- 6.42e-11]), and closes with a
-  direct Hamiltonian index inequality. A blind float replication reproduced every count and all six Krein frequencies
-  to ten digits (sealed pass rule: relative 1e-4; the ten-digit agreement is a POST HOC observation). A float continuation gives the common stability band [1.5963117, 1.9841288] (bisected to 1e-7 on a refined grid), narrower than the
-  published 1.55-2.07; both edges are Krein collisions (L = 0 below, L = 2 above). A sealed certified test proves
-  linear stability at eight more points (1597/1000 to 1983/1000; nine with 9/5) and linear instability at 1595/1000,
-  31/20, 2 and 1985/1000, so the edges lie in certified brackets [1.595, 1.597] and [1.983, 1.985]; 1.55 and 2 lie inside
-  the published range. Stability between certified points is not claimed. Not claimed: nonlinear or orbital stability, uniqueness of the state, any astrophysical statement.
+  For the repulsive Gross-Pitaevskii-Poisson system in the units of arXiv:2402.07998, we prove with interval (ball)
+  arithmetic that the first excited (one-node) stationary state is spectrally stable for every central amplitude
+  sigma0 in [1597/1000, 1983/1000] (version 2.0): there is a decaying one-node solution for each sigma0, continuous in
+  sigma0, equal to the certified state at 23 rational nodes and unique in an explicit ball around a cubic Hermite
+  predictor, and the linearised operator J L on L^2(R^3) has no spectrum with Re lambda > 0 for any of them. The proof
+  certifies drops in the inertia of L + i w J between two frequencies (the classical local Krein index identity, used
+  as a computer-assisted certificate), makes them uniform on 22 cells by a convexity cover with exact quadratic tests,
+  and encloses the branch between nodes by a Newton-Kantorovich argument; the sealed test held on 22 of 22 cells,
+  23 of 23 nodes and 16 of 16 controls (one control rule set after seeing its data, disclosed). Version 1.0 proved
+  stability at sigma0 = 9/5 (E = [-3.10544025447 +/- 3.02e-12]; n(L+) = (2, 1, 1, 0), n(L-) = (1, 1, 1, 0) for
+  L = 0..3; negative-Krein eigenvalues certified at L = 0, 1, 2) and at eight more points, certified linear
+  instability at 1595/1000, 31/20, 2 and 1985/1000, and mapped the float band [1.5963117, 1.9841288], whose edges are
+  Krein collisions and lie in the certified brackets [1.595, 1.597] and [1.983, 1.985]. Proved, computer-assisted,
+  internally AI-refereed; not checked in a proof assistant. Not claimed: nonlinear or orbital stability, uniqueness
+  beyond the stated ball, the exact edge points, any astrophysical statement.

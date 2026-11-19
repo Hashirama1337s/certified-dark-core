@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="370" viewBox="0 0 1000 370" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Scorecard: 5 sealed bars (R1: HOLD; blind: HOLD; one duplicate VOID; R2: HOLD)">
-<title>Scorecard: 5 sealed bars (R1: HOLD; blind: HOLD; one duplicate VOID; R2: HOLD)</title>
-<rect width="1000" height="370" rx="10" fill="#1c2026" stroke="#2f353d"/>
-<text x="20" y="34" font-size="17" font-weight="600" fill="#e8edf2">Scorecard: 5 sealed bars (R1: HOLD; blind: HOLD; one duplicate VOID; R2: HOLD)</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="424" viewBox="0 0 1000 424" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Scorecard: 6 sealed bars (R1: HOLD; blind: HOLD; one duplicate VOID; R2: HOLD; R3: HOLD)">
+<title>Scorecard: 6 sealed bars (R1: HOLD; blind: HOLD; one duplicate VOID; R2: HOLD; R3: HOLD)</title>
+<rect width="1000" height="424" rx="10" fill="#1c2026" stroke="#2f353d"/>
+<text x="20" y="34" font-size="17" font-weight="600" fill="#e8edf2">Scorecard: 6 sealed bars (R1: HOLD; blind: HOLD; one duplicate VOID; R2: HOLD; R3: HOLD)</text>
 <text x="20" y="54" font-size="12" fill="#9aa4ae">Sealed = predictions and pass bars hashed before the run. Failures and voids are shown. Details: SCORECARD.md.</text>
 <rect x="10" y="66" width="980" height="22" fill="#262b31"/>
-<text x="20" y="82" font-size="11.5" font-weight="600" fill="#39ff14" letter-spacing="0.5">THIS WORK: ONE POINT PROVED (R1) AND THE BAND EDGES (R2)</text>
+<text x="20" y="82" font-size="11.5" font-weight="600" fill="#39ff14" letter-spacing="0.5">THIS WORK: ONE POINT PROVED (R1), THE BAND EDGES (R2) AND THE WHOLE WINDOW (R3)</text>
 <text x="20" y="110" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">R1 07faff6621</text>
 <text x="210" y="110" font-size="12.5" fill="#e8edf2">Spectral stability at sigma0 = 1.80 (first run, sigma0 entered as the double nearest 1.8)</text>
 <rect x="880" y="96" width="50" height="20" rx="10" fill="#12301c"/><text x="890" y="110" font-size="11.5" font-weight="600" fill="#39ff14">HOLD</text>
@@ -79,4 +79,16 @@
 <text x="470.40000000000003" y="344" font-size="10.5" font-family="Consolas, Menlo, monospace" fill="#9aa4ae">g195</text>
 <rect x="502.8" y="332" width="40" height="16" rx="8" fill="#12301c"/><text x="509.8" y="344" font-size="10" font-weight="600" fill="#39ff14">HOLD</text>
 <line x1="10" y1="357" x2="990" y2="357" stroke="#22272e"/>
+<text x="20" y="378" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">R3 5e6d7bfed0</text>
+<text x="210" y="378" font-size="12.5" fill="#e8edf2">Stability for every sigma0 in [1597/1000, 1983/1000] (version 2.0)</text>
+<rect x="880" y="364" width="50" height="20" rx="10" fill="#12301c"/><text x="890" y="378" font-size="11.5" font-weight="600" fill="#39ff14">HOLD</text>
+<text x="210" y="398" font-size="10.5" font-family="Consolas, Menlo, monospace" fill="#9aa4ae">cells</text>
+<rect x="249.0" y="386" width="40" height="16" rx="8" fill="#12301c"/><text x="256.0" y="398" font-size="10" font-weight="600" fill="#39ff14">HOLD</text>
+<text x="303.4" y="398" font-size="10.5" font-family="Consolas, Menlo, monospace" fill="#9aa4ae">nodes</text>
+<rect x="342.4" y="386" width="40" height="16" rx="8" fill="#12301c"/><text x="349.4" y="398" font-size="10" font-weight="600" fill="#39ff14">HOLD</text>
+<text x="396.79999999999995" y="398" font-size="10.5" font-family="Consolas, Menlo, monospace" fill="#9aa4ae">controls</text>
+<rect x="455.59999999999997" y="386" width="40" height="16" rx="8" fill="#12301c"/><text x="462.59999999999997" y="398" font-size="10" font-weight="600" fill="#39ff14">HOLD</text>
+<text x="509.99999999999994" y="398" font-size="10.5" font-family="Consolas, Menlo, monospace" fill="#9aa4ae">T</text>
+<rect x="522.5999999999999" y="386" width="40" height="16" rx="8" fill="#12301c"/><text x="529.5999999999999" y="398" font-size="10" font-weight="600" fill="#39ff14">HOLD</text>
+<line x1="10" y1="411" x2="990" y2="411" stroke="#22272e"/>
 </svg>
